@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight:  bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4px 10px;
+    color: white !important;
+}
+.navLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink a{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color:white !important;
+  margin-right: 40px; 
+  /* transition-duration: .6s; */
+}
+.navLink a:hover{
+    background-color: white;
+    color: blue !important;
+    border-radius: 20px;
+}
+
+/* slider css start */
+
+.carousel-item img{
+    height: 500px;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: white;
+    text-shadow: 7px 7px 7px purple;
+    padding-bottom: 20px;
+}
+.carousel-caption p{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(252, 68, 93);
+}
+
+
+/* container Css start */
+
+.heading{
+    margin-top: 30px;
+    background-color: rgb(187, 255, 227);
+    text-align: center;
+}
+.heading div{
+    font-size: 40px;
+    color:rgba(24, 38, 243, 0.959);
+    font-family: cursive;
+    opacity: 1;
+    text-shadow: 4px 4px 5px magenta;
+    font-weight: bold;
+}
+
+
+/* Card css start */
+
+.mainContent{
+    margin-top: 10px;
+    background-color: #c9184a;
+    padding: 20px;
+}
+
+.contentChild{
+    margin: 20px;
+}
+
+.card-body h5{
+    font-size: 30px;
+    font-weight: 600;
+}
+.card-body p{
+    font-size: 22px;
+    font-weight: 500;
+    color: #ff0a54;
+}
+
+
+/* footer css start */
+
+.footerContainer{
+    background-color: rgb(20, 20, 77);
+}
+
+.footerTitle{
+    color: white;
+    background-color: rgb(16, 8, 53);
+}
