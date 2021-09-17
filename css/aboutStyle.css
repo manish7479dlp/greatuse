@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: blueviolet;
+}
+.boss{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(230, 44, 158);
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manager{
+    width: 75%;
+    height: 96%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    
+}
+
+/* .leftChild css start */
+
+.leftChild{
+    /* display: inline-block; */
+    width: 66%;
+    height: 100%;
+    background-color: rgb(250, 204, 51);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    
+}
+
+.leftChild .firstChild{
+    width: 100%;
+    height: 28%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+.firstChild .imgContainer{
+    width: 170px;
+    height: 170px;
+    background-color: rgb(250, 204, 51);
+    border-radius: 50%;
+    margin-left: 50px;
+    border: 10px solid rgb(44, 44, 44);
+    overflow: hidden;
+    z-index: 100;
+    
+}
+.firstChild .imgContainer img{
+    width: 115%;
+    height: auto;
+    
+}
+
+.contentContainer{
+    width: 50%;
+    height: 70px;
+    background-color: rgb(250, 204, 51);
+    position: absolute;
+    right: 75px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.contentContainer .firstContent , .contentContainer .secondContent{
+    color: purple;
+    padding: 2px 0px 2px 60px;
+
+
+}
+
+.contentContainer .firstContent{
+    font-size: 24px;
+    font-family:'Libre Baskerville', serif;;
+}
+
+.contentContainer .secondContent{
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;;
+    /* color: red; */
+    font-weight: bold;
+}
+
+/* leftChild secondChild css start */
+
+.leftChild .secondChild{
+    width: 100%;
+    height: 30%;
+    background-color: green;
+}
+
+
+.leftChild .secondChild .heading{
+    width: 80%;
+    height: 35px;
+    background-color: rgb(250, 204, 51);
+}
+.leftChild .secondChild .heading .headingContent{
+    font-size: 22px;
+    line-height: 35px;
+    text-align: end;
+    padding-right: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.leftChild .secondChild ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.leftChild .secondChild ul li{
+    padding-left: 20px;
+    list-style-type: square;
+    list-style-position: inside;
+    color: rgb(250, 204, 51);
+    /* font-size: 40px; */
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    background-color: red;
+}
+
+
+
+.leftChild .secondChild ul li .listFirstContent , .listSecondContent{
+    font-size: 14px;
+    
+}
+
+
+
+
+
+
+
+
+/* leftChild section css end */
+
+
+.leftChild .thirdChild{
+    width: 100%;
+    height: 36%;
+    background-color: brown;
+}
+
+/* .leftChild css end */
+
+
+
+
+/* rightChild css start */
+
+.rightChild{
+    /* display: inline-block; */
+    width: 34%;
+    height: 100%;
+    background-color: black;
+}
