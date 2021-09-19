@@ -4,4 +4,36 @@
     font-weight: 500;
 }
 
+.accordion-body code{
+    font-size: 24px;
+}
 
+.coderName{
+    color: white !important;
+    font-family: cursive !important;
+    /* display: inline !important; */
+    font-size: 16px !important;
+    font-weight: bold !important;
+    position: absolute !important;
+    right: 5%;
+    top: 33px;
+    
+}
+
+.coderName span{
+    color: maroon;
+}
+
+@media screen and (max-width :1024px) {
+    .coderName{
+        color: white !important;
+        font-family: cursive !important;
+        /* display: block !important; */
+        font-size: 16px !important;
+        font-weight: bold !important;
+        position: static !important;
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+}

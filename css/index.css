@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: grey;
+}
+
 a{
     text-decoration: none;
 }
@@ -19,6 +23,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .navLink a{
@@ -106,4 +111,13 @@ a{
 .footerTitle{
     color: white;
     background-color: rgb(16, 8, 53);
+    
+}
+
+/* mediaQuery code start */
+
+@media screen and (max-width: 500px) {
+    .sliders{
+        display: none;
+    }
 }

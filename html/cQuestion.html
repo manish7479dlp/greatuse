@@ -24,6 +24,12 @@
             top:0px;
             z-index: 100;
         }
+
+        .removeMargin{
+          margin-top: 0px;
+        }
+
+      
     </style>
     
     <!-- code of universal script for navlink message -->
@@ -35,7 +41,7 @@
 
     <!-- Accordance heading uvStyle -->
 
-    <link rel="stylesheet" href="../uvStyle/uvStyle.css">
+    <link rel="stylesheet" href="../uvStyle/uvStyle.css"> <!-- uvStyle code -->
 
 </head>
 <body>
@@ -63,7 +69,7 @@
 
       <!-- title code start -->
 
-      <div class="card heading mb-10" >
+      <div class="card heading mb-10 removeMargin" >
         <div class="card-body">
           <!-- Programming Question Links. -->
           <marquee behavior="" direction="">Programming Questions in C Language are given below.All Questions are very useful for develop programming skills..</marquee>
@@ -72,10 +78,13 @@
 
       <!-- title code end -->
 
-      <div class="card heading mb-10" >
+
+      <!--Simple C Questions heading code -->
+
+      <div class="card heading mb-10 removeMargin" >
         <div class="card-body text-success bg-warning">
-          Basic Programming Question in C
-          
+          Simple C Questions
+          <div class="coderName">Coder-Name : <span>Sukanya</span></div>
         </div>
       </div>
 
@@ -246,6 +255,211 @@ int main()
 
 
       </div>
+
+
+      <!-- If/Else Statement Questions heading code -->
+
+            <!-- heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+              <div class="card-body text-success bg-warning">
+                If/Else Statement Questions
+                <div class="coderName">Coder-Name : <span>Manish</span></div>
+              </div>
+            </div>
+
+            <!-- Accordance code start -->
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+              <!-- 21 Child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwentyOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyOne" aria-expanded="false" aria-controls="flush-collapseTwentyOne">
+                    #1. WAP To Check Whether Greatest Among The Given Three Number.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int fnum , snum ,tnum;
+    printf("Enter the first number.\n");
+    scanf("%d",&fnum);
+    printf("Enter the second number.\n");
+    scanf("%d",&snum);
+    printf("Enter the third number.\n");
+    scanf("%d",&tnum);
+
+    // 1. Method.
+
+    if(fnum &gt snum && fnum &gt tnum)
+    {
+        printf("%d is Greater than %d and %d.\n",fnum , snum , tnum);
+    }
+    else if(snum &gt fnum && snum &gt tnum)
+    {
+        printf("%d is Greater than %d and %d.\n",snum , fnum, tnum);
+    }
+    else if(tnum &gt fnum && tnum &gt snum)
+    {
+        printf("%d is Greater than %d and %d.\n",tnum , fnum ,snum);
+    }
+
+
+    // 2. Method. this method is better than first method.
+
+    if(fnum &gt snum && fnum &gt tnum)
+    {
+        printf("%d is Greater than %d and %d.\n",fnum , snum , tnum);
+    }
+    else if(snum &gt tnum)
+    {
+        printf("%d is Greater than %d and %d.\n",snum , fnum, tnum);
+    }
+    else
+    {
+        printf("%d is Greater than %d and %d.\n",tnum , fnum ,snum);
+    }
+}
+                    </code></pre></div>
+                </div>
+              </div>
+                
+              <!-- 22 child -->
+               
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwentyTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyTwo" aria-expanded="false" aria-controls="flush-collapseTwentyTwo">
+                   #2. WAP To Check Whether a Given Number is Positive Negative or Zero.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int num;
+    printf("Enter the number.\n");
+    scanf("%d",&num);
+
+    // Condition.
+
+    if(num &gt 0)
+    {
+        printf("%d is Positive Number.\n",num);
+    }
+    else if(num &lt 0)
+    {
+        printf("%d is Negative Number.\n",num);
+    }
+    else
+    {
+        printf("%d is Zero.\n",num);
+    }
+}
+                    </code></pre></div>
+                </div>
+              </div>
+
+                <!-- 23 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwentyThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyThree" aria-expanded="false" aria-controls="flush-collapseTwentyThree">
+                   #3. WAP a Program To Find Character is Vowel or Consonant.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    char ch;
+    printf("Enter the Character.\n");
+    scanf("%c",&ch);
+
+    if((ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') || (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'U'))
+    {
+        printf("%c is VoWel.\n",ch);
+    }
+    else
+    {
+        printf("%c is Cosonant.\n",ch);
+    }
+}
+
+//OUTPUT.
+//Enter the Character.
+//y
+//y is Cosonant.
+//
+//********************
+//
+//Enter the Character.
+//a
+//a is VoWel.
+                    </code></pre></div>
+                </div>
+              </div>
+
+              <!-- 24 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwentyFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyFour" aria-expanded="false" aria-controls="flush-collapseTwentyFour">
+                    #4. WAP To Check Whether Given Character is an Alphabet or Not.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    char ch;
+    printf("Enter the Character.\n");
+    scanf("%c",&ch);
+
+//    Condition. or Logic
+
+    if((ch &gt= 'a' && ch &lt= 'z') || (ch &gt= 'A' && ch &lt= 'Z'))
+    {
+        printf("%c is Alphabet.\n",ch);
+    }
+    else
+    {
+        printf("%c is not Alphabet.\n",ch);
+    }
+}
+
+//OUTPUT
+//Enter the Character.
+//a
+//a is Alphabet.
+//
+//*********************
+//
+//Enter the Character.
+//7
+//7 is not Alphabet.
+                    </code></pre></div>
+                </div>
+              </div>
+
+              <!-- 25 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentyFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyFive" aria-expanded="false" aria-controls="flush-collapseTwentyFive">
+                    #5. WAP To Check Whether a Given Character is Uppercase , Lowercase , Special Character , or Digit.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyFive" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>..</code></pre></div>
+                </div>
+              </div>
+
+              
+              <!-- last line of accordance. -->
+            </div>
 
       
       
