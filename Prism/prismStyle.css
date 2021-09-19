@@ -1,0 +1,10 @@
+.toolbar-item button{
+    background-color: white !important;
+    color: black !important;
+    font-size: 20px !important;
+    padding: 8px 21px !important;
+    font-weight: bold !important;
+    border-radius: 24px !important;
+    margin: 8px 8px !important;
+    border: 5px solid magenta !important;
+}
