@@ -114,6 +114,10 @@ a{
     
 }
 
+.removeMargin{
+    margin-top: 0px;
+}
+
 /* mediaQuery code start */
 
 @media screen and (max-width: 500px) {
