@@ -83,7 +83,7 @@
 
       <div class="card heading mb-10 removeMargin" >
         <div class="card-body text-success bg-warning">
-          Simple C Questions
+         1. Simple C Questions
           <div class="coderName">Coder-Name : <span>Sukanya</span></div>
         </div>
       </div>
@@ -97,22 +97,11 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              #1. WAP To Print Table Of Given Number.
+              #1. WAP
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
-int main()
-{
-    int tableNumber;
-    printf("Enter the Table Number.\n");
-    scanf("%d",&tableNumber);
-
-    for(int i = 1; i &lt= 10; i++)
-    {
-        printf("%d x %d = %d\n",tableNumber , i , tableNumber * i);
-    }
-}</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>..</code></pre></div>
           </div>
         </div>
     
@@ -121,61 +110,11 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              #2. WAP To Calculate the Number of Bits that changes in One Number then Number convert into Another Number.
+              #2. WAP 
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
-              
-int decimalToBinary(int num)
-{
-    int res = 0;
-    int i = 1;
-
-    while(num &gt 0)
-    {
-        int r = num % 2;
-        num /= 2;
-
-        res = res + r * i;
-        i *= 10;
-
-    }
-
-    return res;
-
-}
-
-int main()
-{
-    int fnum , snum;
-    printf("Enter the First Number.\n");
-    scanf("%d",&fnum);
-    printf("Enter the Second Number.\n");
-    scanf("%d",&snum);
-
-    int count = 0;
-    int bfnum = decimalToBinary(fnum);
-    int bsnum = decimalToBinary(snum);
-
-    printf("Binary Of %d = %d\n",fnum , bfnum);
-    printf("Binary Of %d = %d\n",snum , bsnum);
-
-    while(bfnum != 0 || bsnum != 0)
-    {
-        int fnbit = bfnum &gt 0 ? bfnum % 10 : 0;
-        bfnum /= 10;
-        int snbit = bsnum &gt 0 ? bsnum % 10 : 0;
-        bsnum /= 10;
-
-        if(fnbit != snbit)
-        {
-            count++;
-        }
-    }
-
-    printf("%d bits.\n",count);
-}</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code></code></pre></div>
           </div>
         </div>
       
@@ -263,7 +202,7 @@ int main()
 
             <div class="card heading mb-10 removeMargin" >
               <div class="card-body text-success bg-warning">
-                If/Else Statement Questions
+               2. If/Else Statement Questions
                 <div class="coderName">Coder-Name : <span>Manish</span></div>
               </div>
             </div>
@@ -453,13 +392,821 @@ int main()
                   </button>
                 </h2>
                 <div id="flush-collapseTwentyFive" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyFive" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>..</code></pre></div>
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    char ch;
+    printf("Enter the Character.\n");
+    scanf("%c",&ch);
+
+    // Logic or Conditon.
+
+    if(ch &gt= 'a' && ch &lt= 'z')
+    {
+        printf("%c is LowerCase Character.\n",ch);
+    }
+    else if(ch &gt= 'A' && ch &lt= 'Z')
+    {
+        printf("%c is UpperCase Character.\n",ch);
+    }
+    else if(ch &gt= '0' && ch &lt= '9')
+    {
+        printf("%c is Digit.\n",ch);
+    }
+    else
+    {
+        printf("%c is Special Character.\n",ch);
+    }
+}
+
+//OUTPUT
+//Enter the Character.
+//#
+//# is Special Character.
+
+//******************************
+
+//Enter the Character.
+//A
+//A is UpperCase Character.
+
+//*******************************
+
+//Enter the Character.
+//x
+//x is LowerCase Character.
+
+//*******************************
+
+//Enter the Character.
+//8
+//8 is Digit.</code></pre></div>
                 </div>
               </div>
 
               
+              <!-- 26 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentySix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentySix" aria-expanded="false" aria-controls="flush-collapseTwentySix">
+                    #6. WAP To Check Whether a Given Number is Odd or Even.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentySix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int num;
+    printf("Enter the number.\n");
+    scanf("%d",&num);
+
+    // Logic
+
+    if(num % 2 == 0)
+    {
+        printf("%d is Even Number.\n",num);
+    }
+    else {
+        printf("%d is Odd Number.\n",num);
+    }
+}
+
+//OUTPUT
+
+//Enter the number.
+//7
+//7 is Odd Number.
+
+//**********************
+
+//Enter the number.
+//24
+//24 is Even Number.
+                    </code></pre></div>
+                </div>
+              </div>
+
+              <!-- 27 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentySeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentySeven" aria-expanded="false" aria-controls="flush-collapseTwentySeven">
+                    #7. WAP To Check Whether Greatest Among Two Numbers.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentySeven" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentySeven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int fnum , snum;
+    printf("Enter the First number.\n");
+    scanf("%d",&fnum);
+    printf("Enter the second number.\n");
+    scanf("%d",&snum);
+
+    // Logic
+
+    if(fnum &gt snum)
+    {
+        printf("%d is Greater than %d\n",fnum , snum);
+    }
+    else {
+        printf("%d is Greater than %d\n",snum , fnum);
+    }
+}
+
+//OUTPUT
+
+//Enter the First number.
+//8
+//Enter the second number.
+//7
+//8 is Greater than 7</code></pre></div>
+                </div>
+              </div>
+
+              <!-- 28 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentyEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyEight" aria-expanded="false" aria-controls="flush-collapseTwentyEight">
+                    #8. WAP To Check Voting Eligibility.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyEight" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyEight" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+int main()
+{
+    int ageOfVoter;
+    printf("Enter Your Age.\n");
+    scanf("%d",&ageOfVoter);
+
+    if(ageOfVoter &gt= 18)
+    {
+        printf("You Are Eligible.\n");
+    }
+    else
+    {
+        printf("You are Not Eligible.\n");
+    }
+}
+
+//OUTPUT
+
+//Enter Your Age.
+//2
+//You are Not Eligible.
+
+//******************************
+
+//Enter Your Age.
+//23
+//You Are Eligible.
+                    </code></pre></div>
+                </div>
+              </div>
+
+              <!-- 29 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentyNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyNine" aria-expanded="false" aria-controls="flush-collapseTwentyNine">
+                    #9. WAP To Check Whether a Given Number is Divisible by 5 and 11.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyNine" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyNine" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int num;
+    printf("Enter the Number.\n");
+    scanf("%d",&num);
+
+//    logic
+
+    if(num % 5 == 0 && num % 11 == 0)
+    {
+        printf("Yes %d is divisible by 5 and 11.\n",num);
+    }
+    else
+    {
+        printf("%d is not divisible by 5 and 11.\n",num);
+
+    }
+}
+
+//OUTPUT
+
+//Enter the Number.
+//55
+//Yes 55 is divisible by 5 and 11.
+
+//**************************************
+
+//Enter the Number.
+//77
+//77 is not divisible by 5 and 11.</code></pre></div>
+                </div>
+              </div>
+
+              <!-- 30 child -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentySix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentySix" aria-expanded="false" aria-controls="flush-collapseTwentySix">
+                    #10. WAP To Enter Week Number and Print WeekDay.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentySix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code></code>#include &ltstdio.h&gt
+int main()
+{
+    int weekNumber;
+    printf("Enter a Week Number.\n");
+    scanf("%d",&weekNumber);
+
+    // Logic
+
+    if(weekNumber == 1)
+    {
+        printf("Sunday.\n");
+    }
+    else if(weekNumber == 2)
+    {
+        printf("Monday.\n");
+    }
+    else if(weekNumber == 3)
+    {
+        printf("Tuesday.\n");
+    }
+    else if(weekNumber == 4)
+    {
+        printf("Wednesday.\n");
+    }
+    else if(weekNumber == 5)
+    {
+        printf("Thursday.\n");
+    }
+    else if(weekNumber == 6)
+    {
+        printf("Friday.\n");
+    }
+    else
+    {
+        printf("Saturday.\n");
+    }
+}
+                    </pre></div>
+                </div>
+              </div>
+
+              <!-- 31 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentyEleven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyEleven" aria-expanded="false" aria-controls="flush-collapseTwentyEleven">
+                    #11. WAP To Input Month Number and Print Number of Days in That Month.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyEleven" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyEleven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int monthNumber;
+    printf("Enter the Month Number.\n");
+    scanf("%d",&monthNumber);
+
+    if(monthNumber == 1)
+    {
+        printf("31 days.");
+    }
+    else if(monthNumber == 2)
+    {
+        printf("28 / 29 days.");
+    }
+    else if(monthNumber == 3)
+    {
+        printf("31 days.");
+    }
+    else if(monthNumber == 4)
+    {
+        printf("30 days.");
+    }
+    else if(monthNumber == 5)
+    {
+        printf("31 days.");
+    }
+    else if(monthNumber == 6)
+    {
+        printf("30 days.");
+    }
+    else if(monthNumber == 7)
+    {
+        printf("31 days.");
+    }
+    else if(monthNumber == 8)
+    {
+        printf("31 days.");
+    }
+    else if(monthNumber == 9)
+    {
+        printf("30 days.");
+    }
+    else if(monthNumber == 10)
+    {
+        printf("31 days.");
+    }
+    else if(monthNumber == 11)
+    {
+        printf("30 days.");
+    }
+    else if(monthNumber == 12)
+    {
+        printf("31 days.");
+    }
+
+}
+
+//OUTPUT
+
+// Enter the Month Number.
+// 12
+// 31 days.
+                    
+                    </code></pre></div>
+                </div>
+              </div>
+
+              <!-- 32 child -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentyTwelve">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyTwelve" aria-expanded="false" aria-controls="flush-collapseTwentyTwelve">
+                    #12. WAP To Enter Total Number of Notes in a Given Amount.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentyTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyTwelve" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int amount;
+    int  twoThousand = 0 , fiveHundere = 0, twoHundred = 0, hundred = 0
+        , fifty = 0 , twenty = 0 , ten = 0, five = 0 , two = 0, one = 0;
+    printf("Enter the Amount.\n");
+    scanf("%d",&amount);
+
+    while(amount &gt 0)
+    {
+            if(amount &gt= 2000)
+            {
+                twoThousand++;
+                amount -= 2000;
+                continue;
+            }
+            if(amount &gt= 500)
+            {
+                fiveHundere++;
+                amount -= 500;
+                continue;
+            }
+            if(amount &gt= 100)
+            {
+                hundred++;
+                amount -= 100;
+                continue;
+            }
+            if(amount &gt= 50)
+            {
+                fifty++;
+                amount -= 50;
+                continue;
+            }
+            if(amount &gt= 20)
+            {
+                twenty++;
+                amount -= 20;
+                continue;
+            }
+            if(amount &gt= 10)
+            {
+                ten++;
+                amount -= 10;
+                continue;
+            }
+            if(amount &gt= 5)
+            {
+                five++;
+                amount -= 5;
+                continue;
+            }
+            if(amount &gt= 2)
+            {
+                two++;
+                amount -= 2;
+                continue;
+            }
+            if(amount &gt= 1)
+            {
+                one++;
+                amount -= 1;
+                continue;
+            }
+    }
+
+    printf("%d : %d.\n",2000 , twoThousand);
+    printf("%d : %d.\n",500 , fiveHundere);
+    printf("%d : %d.\n",100 , hundred);
+    printf("%d : %d.\n",50 , fifty);
+    printf("%d : %d.\n",20 , twenty);
+    printf("%d : %d.\n",10 , ten);
+    printf("%d : %d.\n",5 , five);
+    printf("%d : %d.\n",2 , two);
+    printf("%d : %d.\n",1 , one);
+
+}
+
+
+//OUTPUT
+
+//Enter the Amount.
+//5299
+//2000 : 2.
+//500 : 2.
+//100 : 2.
+//50 : 1.
+//20 : 2.
+//10 : 0.
+//5 : 1.
+//2 : 2.
+//1 : 0.</code></pre></div>
+                </div>
+              </div>
+
+            <!-- copy and past the below code for adding more content. -->
+
+               <!-- 33 child -->
+<!-- 
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headineTwentySix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentySix" aria-expanded="false" aria-controls="flush-collapseTwentySix">
+                    #31. WAP To Check Whether a Given Character is Uppercase , Lowercase , Special Character , or Digit.
+                  </button>
+                </h2>
+                <div id="flush-collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentySix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><pre class="language-c"><code></code></pre></div>
+                </div>
+              </div>  -->
+
+            
               <!-- last line of accordance. -->
             </div>
+
+
+            <!--Loop C Questions heading code -->
+
+      <div class="card heading mb-10 removeMargin" >
+        <div class="card-body text-success bg-warning">
+         3. While Loop C Questions
+          <div class="coderName">Coder-Name : <span>Manish</span></div>
+        </div>
+      </div>
+
+      <!-- Accordance code start -->
+
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <!-- 41 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortyOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyOne" aria-expanded="false" aria-controls="flush-collapseFortyOne">
+              #1. WAP to Print Reverse of a Number.
+            </button>
+          </h2>
+          <div id="flush-collapseFortyOne" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int num;
+    printf("Enter the Number.\n");
+    scanf("%d",&num);
+
+//    Logic
+
+    while(num != 0)
+    {
+        printf("%d",num % 10);
+        num /= 10;
+    }
+
+}
+
+//OUTPUT
+//
+//Enter the Number.
+//12345
+
+              </code></pre></div>
+          </div>
+        </div>
+        
+        <!-- 42 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortyTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyTwo" aria-expanded="false" aria-controls="flush-collapseFortyTwo">
+            #2. WAP To Calculate the Sum of n Natural Numbers.
+            </button>
+          </h2>
+          <div id="flush-collapseFortyTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int n;
+    printf("Enter the Number.\n");
+    scanf("%d",&n);
+
+    int sum_of_NaturalNumber;
+    int temp = n; // Copy value of n into temp variable.
+
+    while(n != 0)
+    {
+        sum_of_NaturalNumber += n;
+        n--;
+    }
+
+    printf("The Sum %d Natural Number is %d.\n",temp , sum_of_NaturalNumber);
+}
+
+//OUTPUT
+//
+//Enter the Number.
+//10
+//The Sum 10 Natural Number is 55.
+
+              </code></pre></div>
+          </div>
+        </div>
+
+        <!-- 43 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortyThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyThree" aria-expanded="false" aria-controls="flush-collapseFortyThree">
+            #3. WAP to Display Fibonacci Series of n Number.
+            </button>
+          </h2>
+          <div id="flush-collapseFortyThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int num;
+    printf("Enter the Number.\n");
+    scanf("%d",&num);
+
+//    Logic
+
+//    1. Method
+
+      int first = 0 , second = 1 , result = 0;
+
+      for(int i = 0; i &lt num; i++)
+      {
+          if(i &lt= 1)
+          {
+              printf("%d + ",i);
+          }
+          else
+          {
+              result = first + second;
+              first = second;
+              second = result;
+
+              if(i != num -1)
+              {
+                  printf("%d + ",result);
+              }
+              else
+              {
+                  printf("%d.\n",result);
+              }
+          }
+      }
+
+//     2. Method   this logic is little bit tricky.
+
+//       int this method we use previous variable like ( first , second or result)
+        first = 0;
+        second = 1;
+        result = 0;
+
+        for(int i = 0; i &lt num; i++)
+        {
+            if(i != num -1)
+            {
+                printf("%d + ",first);
+            }
+            else
+            {
+                printf("%d.\n",first);
+            }
+            result = first + second;
+            first = second;
+            second = result;
+
+        }
+}
+
+//OUTPUT
+//
+//Enter the Number.
+//10
+//0 + 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + 34.
+              </code></pre></div>
+          </div>
+        </div>
+
+        <!-- 44 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortyFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyFour" aria-expanded="false" aria-controls="flush-collapseFortyFour">
+            #4. Write a Program to Reverse a Number and Stored in Another Variable.
+            </button>
+          </h2>
+          <div id="flush-collapseFortyFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int num;
+    printf("Enter the Number.\n");
+    scanf("%d",&num);
+
+//    Logic
+
+    int temp = num; // copy the value of num into temp variable.
+    int reverseNumber = 0;
+
+    while(num &gt 0)
+    {
+        int lastDigit = num % 10; // Get Last digit from the number.
+        num /= 10;  // Remove Last digit from the number.
+        reverseNumber = reverseNumber * 10 + lastDigit;
+
+    }
+
+    printf("Reverse of %d is %d.\n",temp , reverseNumber);
+
+}
+
+//OUTPUT
+//
+//Enter the Number.
+//12345
+//Reverse of 12345 is 54321.
+
+              </code></pre></div>
+          </div>
+        </div>
+
+       <!-- 45 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortyFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyFive" aria-expanded="false" aria-controls="flush-collapseFortyFive">
+            #5. WAP To Check Whether Given Number is Palindrome or Not.
+            </button>
+          </h2>
+          <div id="flush-collapseFortyFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int num;
+    int revNum;
+    printf("Enter the Number.\n");
+    scanf("%d",&num);
+
+    // Code for Reversing a num.
+
+    int temp = num;
+    while(temp != 0)
+    {
+        int lastDigit = temp % 10;
+        temp /= 10;
+        revNum = revNum * 10 + lastDigit;
+    }
+
+//    reverse of the number equal to actual number then the number is Palindrome.
+
+    if(revNum == num)
+    {
+        printf("%d is Palindrome.\n",num);
+    }
+    else
+    {
+        printf("%d is Not Palindrome.\n",num);
+    }
+}
+
+//OUTPUT
+
+//Enter the Number.
+//123
+//123 is Not Palindrome.
+
+//***************************
+
+//Enter the Number.
+//121
+//121 is Palindrome.
+              </code></pre></div>
+          </div>
+        </div>
+
+        <!-- 46 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortySix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortySix" aria-expanded="false" aria-controls="flush-collapseFortySix">
+            #6. WAP to Calculate the Count of Digits in a Number.
+            </button>
+          </h2>
+          <div id="flush-collapseFortySix" class="accordion-collapse collapse" aria-labelledby="flush-headingFortySix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    int num;
+    printf("Enter the number.\n");
+    scanf("%d",&num);
+
+    int countOfDigit = 0;
+    int temp = num;
+
+//    Logic
+
+    while(num != 0)
+    {
+        countOfDigit++;
+        num /= 10;
+    }
+
+    printf("%d digits are Present in %d.\n",countOfDigit, temp);
+}
+
+//OUTPUT
+
+//Enter the number.
+//747932
+//6 digits are Present in 747932.</code></pre></div>
+          </div>
+        </div>
+
+        <!-- 47 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortySeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortySeven" aria-expanded="false" aria-controls="flush-collapseFortySeven">
+            #7. WAP 
+            </button>
+          </h2>
+          <div id="flush-collapseFortySeven" class="accordion-collapse collapse" aria-labelledby="flush-headingFortySeven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code></code></pre></div>
+          </div>
+        </div>
+
+        <!-- 48 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortyEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyEight" aria-expanded="false" aria-controls="flush-collapseFortyEight">
+            #8. WAP 
+            </button>
+          </h2>
+          <div id="flush-collapseFortyThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code></code></pre></div>
+          </div>
+        </div>
+
+        <!-- 49 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFortyNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyNine" aria-expanded="false" aria-controls="flush-collapseFortyNine">
+            #9. WAP 
+            </button>
+          </h2>
+          <div id="flush-collapseFortyNine" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyNine" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code></code></pre></div>
+          </div>
+        </div>
+
+
+
+        <!-- last line -->
+      </div>
 
       
       
