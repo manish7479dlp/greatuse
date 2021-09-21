@@ -2659,11 +2659,26 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="string-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseOne" aria-expanded="false" aria-controls="string-collapseOne">
-              #1. WAP 
+              #1.WAP to Get String From The User.
             </button>
           </h2>
           <div id="string-collapseOne" class="accordion-collapse collapse" aria-labelledby="string-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    char string[100];
+    printf("Enter Your Name.\n");
+    gets(string);
+
+    printf("Your Name is %s.\n",string);
+}
+
+//OUTPUT
+//
+//Enter Your Name.
+//Manish Kumar
+//Your Name is Manish Kumar.
+              </code></pre></div>
           </div>
 
         </div>
@@ -2673,11 +2688,34 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="string-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwo" aria-expanded="false" aria-controls="string-collapseTwo">
-              #2. WAP 
+              #2. WAP To Find The Length Of a String.
             </button>
           </h2>
           <div id="string-collapseTwo" class="accordion-collapse collapse" aria-labelledby="string-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    char string[100];
+    printf("Enter a String.\n");
+    gets(string);
+    printf("Entered String is %s.\n",string);
+
+    int length = 0;
+    while(string[length] != '\0')
+    {
+        length++;
+
+    }
+
+      printf("Length of the String is %d.\n",length);
+}
+
+//OUTPUT
+//
+//Enter a String.
+//Manish Kumar
+//Entered String is Manish Kumar.
+//Length of the String is 12.</code></pre></div>
           </div>
 
         </div>
@@ -2687,11 +2725,38 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="string-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseThree" aria-expanded="false" aria-controls="string-collapseThree">
-              #3. WAP 
+              #3. WAP To Convert The Characters Of a String into Lower Case.
             </button>
           </h2>
           <div id="string-collapseThree" class="accordion-collapse collapse" aria-labelledby="string-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    char string[100];
+    printf("Enter a String.\n");
+    gets(string);
+    printf("Entered String is %s.\n",string);
+
+//    logic
+
+      for(int i = 0; string[i] != '\0'; i++)
+      {
+          if(string[i] &gt= 'A' && string[i] &lt= 'Z')
+          {
+              string[i] = (char)'a' + string[i] - 'A';
+          }
+      }
+
+      printf("Transform String is %s.\n",string);
+}
+
+//OUTPUT
+
+//Enter a String.
+//Manish Kumar
+//Entered String is Manish Kumar.
+//Transform String is manish kumar.
+              </code></pre></div>
           </div>
 
         </div>  
@@ -2702,11 +2767,38 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="string-headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFour" aria-expanded="false" aria-controls="string-collapseFour">
-              #4. WAP 
+              #4. WAP To Convert The Character Of a String into Upper Case.
             </button>
           </h2>
           <div id="string-collapseFour" class="accordion-collapse collapse" aria-labelledby="string-headingFour" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+int main()
+{
+    char string[100];
+    printf("Enter a String.\n");
+    gets(string);
+    printf("Entered String is %s.\n",string);
+
+//    logic
+
+      for(int i = 0; string[i] != '\0'; i++)
+      {
+          if(string[i] &gt= 'a' && string[i] &lt= 'z')
+          {
+              string[i] = (char)'A' + string[i] - 'a';
+          }
+      }
+
+      printf("Transform String is %s.\n",string);
+}
+
+//OUTPUT
+
+//Enter a String.
+//Mintu Kumar
+//Entered String is Mintu Kumar.
+//Transform String is MINTU KUMAR.
+              </code></pre></div>
           </div>
 
         </div>   
