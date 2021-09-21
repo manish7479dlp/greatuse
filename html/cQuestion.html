@@ -97,11 +97,25 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              #1. WAP
+              #1. WAP To Area And Circumferance Of The Circle.
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>..</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+float r,ar,c;
+
+printf("Enter The Radius Of The Circle:");
+scanf("%f",&r);
+ar=3.14*r*r;
+c=2*3.14*r;
+printf("The Area Of The Circle is %f",ar);
+printf("The Circumferance Of The Circle is %f",c);
+getch();	
+return(0);
+}</code></pre></div>
           </div>
         </div>
     
@@ -110,11 +124,21 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              #2. WAP 
+              #2. WAP For Printing Ascii Value Of the Character.
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code></code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+char ch;
+printf("Enter The Character:");
+ch=getche();
+printf("Ascii Value of %c is %u",ch,ch);
+getch();
+return(0);	
+}</code></pre></div>
           </div>
         </div>
       
@@ -188,6 +212,365 @@ int main()
               </code></pre></div>
           </div>
         </div>
+
+        <!-- 5 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            #5. WAP To Find Area Of Triangle.
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+float b,h,ar;
+printf("Enter The Base Of The Triangle:");
+scanf("%f",&b);
+printf("Enter The Height Of the Triangle:");
+scanf("%f",&h);
+ar=0.5*b*h;
+printf("The Area Of The Triangle Is %f",ar);
+getch();
+return(0);
+}</code></pre></div>
+          </div>
+        </div>
+        
+        <!-- 6 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            #6. WAP To Convert Name Of A Person In Abbreviated Form.
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+char fname[20],mname[20],lname[20];
+printf("Enter The Full Name:");
+scanf("%s%s%s",fname,mname,lname);
+printf("The Abbreviated Name is %c%c%s",fname[20],mname[20],lname);
+return(0);	
+}</code></pre></div>
+          </div>
+        </div>
+
+        <!-- 7 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            #7. WAP To Calculate Simple Interest.
+            </button>
+          </h2>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+float p,r,i;
+int t;
+printf("Enter The Principal Amount:");
+scanf("%f",&p);
+printf("Enter The Rate Of The Interest:");
+scanf("%f",&r);
+printf("Enter The Time Period:");
+scanf("%d",&t);
+i=(p*r*t)/100;
+printf("The Amount Of Interest is %f",i);
+getch();
+return(0);	
+}
+              </code></pre></div>
+          </div>
+        </div>
+
+        <!-- 8 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+            #8. WAP To Calculate Gross Salary Of An Employee.
+            </button>
+          </h2>
+          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+float bs,da,hra,p,t;
+printf("Enter The Basic Salary:");
+scanf("%f",&bs);
+printf("Enter The Dearness Allowance:");
+scanf("%f",&da);
+printf("Enter The House Rent Allowance:");
+scanf("%f",&hra);
+printf("Enter The P-Tax:");
+scanf("%f",&p);
+t=bs+da+hra-p;
+printf("The given salary is %f",t);
+getch();
+return(0);
+}
+              </code></pre></div>
+          </div>
+        </div>
+
+       <!-- 9 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+            #9. WAP To Calculate Percentage Of 5 Subjects.
+            </button>
+          </h2>
+          <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+float a,b,c,d,e,t,p;
+printf("Enter the marks of the first subject:");
+scanf("%f",&a);
+printf("Enter the Marks Of the second subject:");
+scanf("%f",&b);
+printf("Enter the Marks Of the third subject:")	;
+scanf("%f",&c);
+printf("Enter the Marks Of the fourth subject:");
+scanf("%f",&d);
+printf("Enter the Marks Of the fifth subject:");
+scanf("%f",&e);
+t=a+b+c+d+e;
+p=(t/500)*100;
+printf("The total marks is %f",t);
+printf("The percentage of marks is %f",p);
+getch();
+return(0);
+}
+              </code></pre></div>
+          </div>
+        </div>
+   
+        
+        <!-- 10 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+            #10. WAP To Convert The Temperature Celcius Into Farenheit.
+            </button>
+          </h2>
+          <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+float g,c;
+printf("Enter The Temperature in Celcius Scale:");
+scanf("%f",&c);
+g=1.8*c+32;
+printf("The temperature in farenheit scale is %f",g);
+getch();
+return(0);
+}
+              </code></pre></div>
+          </div>
+        </div>
+
+       <!-- 11 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+            #11. WAP To Display Size Of Different Data Type.
+            </button>
+          </h2>
+          <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+printf("char is %d bytes",sizeof(char));
+printf("unsigned char is %d bytes",sizeof(unsigned char));
+printf("integer is %d bytes",sizeof(int));
+printf("short integer is %d bytes",sizeof(short int));
+printf("unsigned short integer is %d bytes",sizeof(unsigned short int));
+printf("long integer is %d bytes",sizeof(long int));
+printf("unsigned long integer is %d bytes",sizeof(unsigned long int));
+printf("float is %d bytes",sizeof(float));
+printf("double is %d bytes",sizeof(double));
+printf("long double is %d bytes",sizeof(long double));
+getch();
+return(0);	
+}
+              </code></pre></div>
+          </div>
+        </div>
+
+       <!-- 12 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+            #12. WAP To Calculate Factorial Of A Given Number.
+            </button>
+          </h2>
+          <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+int n,fact=1;
+printf("Enter The Number:");
+scanf("%d",&n);
+while(n&gt1)
+{
+  fact*=n;
+  n--;
+}
+printf("The factorial of the number is %d",fact);
+getch();
+return(0);	
+}
+              
+              </code></pre></div>
+          </div>
+        </div>
+
+        
+       <!-- 13 child -->
+
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThirteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+          #13. WAP To Read Integer N And Print Its First Three Powers.
+          </button>
+        </h2>
+        <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+int n;
+printf("Enter the number:");
+scanf("%d",&n);
+printf("%d%d%d",n,n*n,n*n*n);
+getch();
+return(0);	
+}
+            </code></pre></div>
+        </div>
+      </div>
+
+       <!-- 14 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFourteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+            #14. WAP To Calculate Area Of A Circle.
+            </button>
+          </h2>
+          <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+float r,ar;
+printf("Enter The Radius Of The circle:");
+scanf("%f",&r);
+ar=3.14*r*r;
+printf("The Area Of The Circle Is %f",ar);
+getch();
+return(0);
+}
+              </code></pre></div>
+          </div>
+        </div>
+
+       <!-- 15 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFifteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+            #15. WAP To Calculate The Greatest Number Among The Given Three Numbers.
+            </button>
+          </h2>
+          <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+int a,b,c;
+printf("Enter The Three Numbers:");
+scanf("%d%d%d",&a,&b,&c);
+if(a&gtb && a&gtc)
+{
+  printf("The Greatest Of Three Numbers Is %d",a);
+  
+  }
+else
+if(b&gta && b&gtc)
+{
+  printf("The Greatest Of Three Numbers Is %d",b);
+  }	
+else
+printf("The Greatest OF The Three Numbers Is %d",c);
+getch;
+return(0);
+  
+}</code></pre></div>
+          </div>
+        </div>
+
+       <!-- 16 child -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSixteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+            #16. WAP To Print The Table Of A Number.
+            </button>
+          </h2>
+          <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+#include&ltconio.h&gt
+int main()
+{
+int i,n,table=1;
+printf("Enter The Number:");
+scanf("%d",&n);
+for(i=1;i&lt=10;i++)
+{
+  table=n*i;
+  printf("The Table Of The Number Is %d",table);
+}	
+getch();
+return(0);
+}</code></pre></div>
+          </div>
+        </div>
+
+        
+<!-- copy the below code for add more Question.
+        17 child 
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeventeen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+            #17. WAP 
+            </button>
+          </h2>
+          <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code></code></pre></div>
+          </div>
+        </div> -->
+
+
 
         
        
