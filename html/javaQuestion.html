@@ -86,21 +86,1370 @@
       <!-- Accordance code start -->
 
       <div class="accordion accordion-flush" id="accordionFlushExample">
-        
-        <!-- AccordionChild -->
+    
 
-        <div class="accordion-item" >
-          <h2 class="accordion-header" id="flush-headingOne" >
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne " >
-              #1 Print Z
+      <!-- Accordions code Start head is at top -->
+
+        <!-- 1 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseOne" aria-expanded="false" aria-controls="string-collapseOne">
+              #1. WAP Print Z.
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-java"><code>....</code></pre></div>
+          <div id="string-collapseOne" class="accordion-collapse collapse" aria-labelledby="string-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Write your code here
+        System.out.println("*****");
+        System.out.println("   *");
+        System.out.println("  * ");
+        System.out.println(" *  ");
+        System.out.println("*****");
+
+    }
+}</code></pre></div>
           </div>
+
         </div>
 
+        <!-- 2 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwo" aria-expanded="false" aria-controls="string-collapseTwo">
+              #2. Is A Number Prime.
+            </button>
+          </h2>
+          <div id="string-collapseTwo" class="accordion-collapse collapse" aria-labelledby="string-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+  
+public class Main{
+
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+
+      // write ur code here
+      
+      int t = scn.nextInt();
+      
+      while(t-- &gt 0){
+          int temp = scn.nextInt();
+          boolean flag = true;
+          for(int i = 2; i * i &lt= temp; i++){
+              if(temp % i == 0){
+                  System.out.println("not prime");
+                  flag = false;
+                  break;
+              }
+          }
+          if(flag){
+              System.out.println("prime");
+          }
+      }
+
+  }
+}</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 3 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseThree" aria-expanded="false" aria-controls="string-collapseThree">
+              #3. Print All Primes Till N
+            </button>
+          </h2>
+          <div id="string-collapseThree" class="accordion-collapse collapse" aria-labelledby="string-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        // write your code here
+        Scanner scan = new Scanner(System.in);
+        int lo = scan.nextInt();
+        int hi = scan.nextInt();
+        
+        for(int i = lo; i &lt= hi; i++){
+            boolean flag = true;
+            for(int j = 2; j * j &lt= i; j++){
+                if(i % j == 0){
+                    flag = false;
+                    break;
+                }
+            }
+            
+            if(flag){
+                System.out.println(i);
+            }
+            
+        }
+    }
+}</code></pre></div>
+          </div>
+
+        </div>  
+        
+
+        <!-- 4 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFour" aria-expanded="false" aria-controls="string-collapseFour">
+              #4. Print Fibonacci Numbers Till N.
+            </button>
+          </h2>
+          <div id="string-collapseFour" class="accordion-collapse collapse" aria-labelledby="string-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>import java.util.*;
+  
+public class Main{
+
+public static void main(String[] args) {
+    // write your code here
+    Scanner scan = new Scanner(System.in);
+    int n = scan.nextInt();
+    int first = 0 , second = 1, result = 0;
+    
+    for(int i = 0; i &lt n; i++){
+        System.out.println(first);
+        result = first + second;
+        first = second;
+        second = result;
+    }
+  }
+}</code></pre></div>
+          </div>
+
+        </div>   
+
+        <!-- 5 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFive" aria-expanded="false" aria-controls="string-collapseFive">
+              #5.Count Digits In A Number.
+            </button>
+          </h2>
+          <div id="string-collapseFive" class="accordion-collapse collapse" aria-labelledby="string-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>import java.util.*;
+  
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here 
+  Scanner scan = new Scanner(System.in);
+  int num = scan.nextInt();
+  int count = 0;
+  
+  while(num &gt 0){
+      count++;
+      num /= 10;
+  }
+  
+  System.out.println(count);
+  }
+}</code></pre></div>
+          </div>
+
+        </div>  
+
+        <!-- 6 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseSix" aria-expanded="false" aria-controls="string-collapseSix">
+              #6. Digits Of A Number
+            </button>
+          </h2>
+          <div id="string-collapseSix" class="accordion-collapse collapse" aria-labelledby="string-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+    
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here 
+  Scanner scan = new Scanner(System.in);
+  int num = scan.nextInt();
+  
+  int count = 0 , temp = num;
+  
+  while(temp &gt 0){
+      count++;
+      temp /= 10;
+  }
+  
+  int power = (int)Math.pow(10 , count - 1);
+  
+  while(power &gt  0){
+      System.out.println(num / power);
+      num %= power;
+      power /= 10;
+  }
+  }
+}</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 7 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseSeven" aria-expanded="false" aria-controls="string-collapseSeven">
+              #7. Reverse A Number.
+            </button>
+          </h2>
+          <div id="string-collapseSeven" class="accordion-collapse collapse" aria-labelledby="string-headingSeven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+   
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here 
+      
+      Scanner scan = new Scanner(System.in);
+      int num = scan.nextInt();
+      while(num &gt 0){
+          System.out.println(num % 10);
+          num /= 10;
+      }
+  }
+}</code></pre></div>
+          </div>
+
+        </div> 
+
+        <!-- 8 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseEight" aria-expanded="false" aria-controls="string-collapseEight">
+              #8. Inverse Of A Number. 
+            </button>
+          </h2>
+          <div id="string-collapseEight" class="accordion-collapse collapse" aria-labelledby="string-headingEight" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here 
+  Scanner scan = new Scanner(System.in);
+  int num = scan.nextInt();
+  
+  int i = 1;
+  int nnum = 0;
+  
+  while(num &gt 0){
+      int temp = num % 10; num /= 10;
+      
+      int power = (int)Math.pow(10 , temp - 1);
+      nnum += i * power;
+      i++;
+  }
+  
+  System.out.println(nnum);
+  }
+}</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 9 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseNine" aria-expanded="false" aria-controls="string-collapseNine">
+              #9. Rotate A Number.
+            </button>
+          </h2>
+          <div id="string-collapseNine" class="accordion-collapse collapse" aria-labelledby="string-headingNine" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+   
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here  
+  Scanner scan = new Scanner(System.in);
+  int n = scan.nextInt();
+  int k = scan.nextInt();
+  
+  int count = 0;
+  int temp = n;
+  
+  while(temp &gt 0){
+      count++;
+      temp /= 10;
+  }
+  
+  k %= count;
+  
+  if(k &lt 0){
+      k += count;
+  }
+  
+  
+  int div = 1 , mul = 1;
+  
+  for(int i = 1; i &lt= count; i++){
+      if(i &lt= k){
+          div *= 10;
+      } else {
+          mul *= 10;
+      }
+  }
+  
+  temp = n % div;
+  n /= div;
+  
+  int nnum = temp * mul + n;
+  
+  System.out.println(nnum);
+  }
+}</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 10 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTen" aria-expanded="false" aria-controls="string-collapseTen">
+              #10. Gcd And Lcm.
+            </button>
+          </h2>
+          <div id="string-collapseTen" class="accordion-collapse collapse" aria-labelledby="string-headingTen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+    
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here  
+      
+      Scanner scan = new Scanner(System.in);
+      int fnum = scan.nextInt();
+      int snum = scan.nextInt();
+      
+      int max = fnum &gt snum ? fnum : snum;
+      int min = fnum &lt snum ? fnum : snum;
+      
+      for(int i = min; i &gt= 1; i--){
+          if(fnum % i == 0 && snum % i == 0){
+              System.out.println(i);
+              break;
+          }
+      }
+      
+      for(int i = max; i &lt= fnum * snum; i = (i + max)){
+          if(i % fnum == 0 && i % snum == 0){
+              System.out.println(i);
+              break;
+          }
+      }
+  }
+}       
+              </code></pre></div>
+          </div>
+
+        </div>  
+        
+        <!-- 11 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseEleven" aria-expanded="false" aria-controls="string-collapseEleven">
+              #11. Prime Factorisation Of A Number.
+            </button>
+          </h2>
+          <div id="string-collapseEleven" class="accordion-collapse collapse" aria-labelledby="string-headingEleven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here 
+        
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        int i = 2;
+        
+        while(num &gt 1){
+            if(num % i == 0){
+                System.out.print(i + " ");
+                num /= i;
+                
+            } else {
+                i++;
+            }
+        }
+  }
+}</code></pre></div>
+          </div>
+
+        </div>       
+        
+        <!-- 12 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwelve" aria-expanded="false" aria-controls="string-collapseTwelve">
+        #12. Pythagorean Triplet.
+            </button>
+          </h2>
+          <div id="string-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="string-headingTwelve" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+  
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here  
+  Scanner scan = new Scanner(System.in);
+  int a = scan.nextInt();
+  int b = scan.nextInt();
+  int c = scan.nextInt();
+  
+  int A = a * a;
+  int B = b * b;
+  int C = c * c;
+  
+  if(A == B + C){
+      System.out.println(true);
+  } else if(B == A + C){
+      System.out.println(true);
+  } else if(C == A + B){
+      System.out.println(true);
+  } else {
+      System.out.println(false);
+  }
+  }
+}</code></pre></div>
+          </div>
+
+        </div>          
+        
+        <!-- 13 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingThirteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseThirteen" aria-expanded="false" aria-controls="string-collapseThirteen">
+              #13. Digit Frequency.
+            </button>
+          </h2>
+          <div id="string-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="string-headingThirteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int d = scn.nextInt();
+        int f = getDigitFrequency(n, d);
+        System.out.println(f);
+    }
+
+    public static int getDigitFrequency(int n, int d) {
+        // write code here
+        
+        int count = 0;
+        
+        while(n &gt 0){
+            if(n % 10 == d){
+                count++;
+            }
+            
+            n /= 10;
+        }
+        
+        return count;
+    }
+}</code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 14 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingFourteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFourteen" aria-expanded="false" aria-controls="string-collapseFourteen">
+              #14. Decimal To Any Base.
+            </button>
+          </h2>
+          <div id="string-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="string-headingFourteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+  
+public class Main{
+
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int b = scn.nextInt();
+    int dn = getValueInBase(n, b);
+    System.out.println(dn);
+  }
+
+  public static int getValueInBase(int n, int b){
+      // write code here
+      
+      int nnum = 0;
+      int i = 1;
+      
+      while(n &gt 0){
+          int temp = n % b;
+          n /= b;
+          nnum += temp * i;
+          i *= 10;
+      }
+      
+      return nnum;
+  }
+}</code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 15 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingFifteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFifteen" aria-expanded="false" aria-controls="string-collapseEleven">
+              #15. Any Base To Decimal.
+            </button>
+          </h2>
+          <div id="string-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="string-headingFifteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+  
+public class Main{
+
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int b = scn.nextInt();
+    int d = getValueIndecimal(n, b);
+    System.out.println(d);
+  }
+
+  public static int getValueIndecimal(int n, int b){
+    // write your code here
+    int result = 0;
+    int i = 1;
+    
+    while(n &gt 0){
+        int temp = n % 10; n /= 10;
+        
+        result += temp * i;
+        i *= b;
+    }
+    
+    return result;
+  }
+}</code></pre></div>
+          </div>
+
+        </div> 
+
+        <!-- 16 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingSixteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseSixteen" aria-expanded="false" aria-controls="string-collapseSixteen">
+              #16. Any Base To Any Base.
+            </button>
+          </h2>
+          <div id="string-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="string-headingSixteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+  
+public class Main{
+
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int sourceBase = scn.nextInt();
+    int  destBase= scn.nextInt();
+    
+    int fnum = 0;
+    int i = 1;
+    
+    while(n &gt 0){
+        int temp = n % 10;  n /= 10;
+        fnum += temp * i;
+        i *= sourceBase;
+    }
+    
+    int snum = 0;
+    i = 1;
+    
+    while(fnum &gt 0){
+        int temp = fnum % destBase;  fnum /= destBase;
+        snum += temp * i;
+        i *= 10;
+    }
+    
+    System.out.println(snum);
+  }   
+}</code></pre></div>
+          </div>
+
+        </div>    
+               
+        <!-- 17 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingSeventeen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseSeventeen" aria-expanded="false" aria-controls="string-collapseSeventeen">
+              #17. Any Base Addition.
+            </button>
+          </h2>
+          <div id="string-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="string-headingSeventeen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+  
+              public class Main{
+              
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int b = scn.nextInt();
+    int n1 = scn.nextInt();
+    int n2 = scn.nextInt();
+
+    int d = getSum(b, n1, n2);
+    System.out.println(d);
+  }
+
+  public static int getSum(int b, int n1, int n2){
+      // write ur code here
+      int res = 0;
+      int i = 1;
+      int count = 0;
+      
+      while(n1 > 0 || n2 > 0 || count > 0){
+          
+          int temp = count;
+          temp += n1 % 10; n1 /= 10;
+          temp += n2 % 10; n2 /= 10;
+          
+          count = temp / b;
+          temp %= b;
+          
+          res += temp * i;
+          i *= 10;
+          
+      }
+      
+      return res;
+  }
+}</code></pre></div>
+          </div>
+
+        </div>  
+        
+        <!-- 18 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingEighteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseEighteen" aria-expanded="false" aria-controls="string-collapseEighteen">
+              #18. Any Base Subtraction.
+            </button>
+          </h2>
+          <div id="string-collapseEighteen" class="accordion-collapse collapse" aria-labelledby="string-headingEighteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+  
+public class Main{
+
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int b = scn.nextInt();
+    int n1 = scn.nextInt();
+    int n2 = scn.nextInt();
+
+    int d = getDifference(b, n1, n2);
+    System.out.println(d);
+  }
+
+  public static int getDifference(int b, int n1, int n2){
+      // write your code here
+      int res = 0;
+      int c = 0; 
+      int i = 1;
+      
+      while(n2 &gt 0){
+          int temp = 0;
+          int x = n2 % 10; n2 /= 10;
+          int y = n1 &gt 0 ? n1 % 10 : 0; n1 /= 10;
+          
+          if(x + c &gt= y){
+              temp = x + c - y;
+              c = 0;
+          } else {
+              temp = x + c + b - y;
+              c = -1;
+          }
+          
+          res += temp * i;
+          i *= 10;
+      }
+      
+      return res;
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div>  
+        
+        <!-- 19 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingNinteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseNinteen" aria-expanded="false" aria-controls="string-collapseNinteen">
+              #19. Any Base Multiplication.
+            </button>
+          </h2>
+          <div id="string-collapseNinteen" class="accordion-collapse collapse" aria-labelledby="string-headingNinteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int b = scn.nextInt();
+    int n1 = scn.nextInt();
+    int n2 = scn.nextInt();
+
+    int d = getProduct(b, n1, n2);
+    System.out.println(d);
+  }
+
+  public static int getProduct(int b, int n1, int n2){
+      // write your code here
+      int res = 0;
+      int i = 1;
+      
+      while(n2 &gt 0){
+          int temp = n2 % 10; n2 /= 10;
+          int tres = product(b , n1 , temp);
+          res = sum(b , tres * i , res);
+          i *= 10;
+      }
+      
+      return res;
+  }
+  
+  static int product(int b , int n1 , int n2){
+      int c = 0 ,  i = 1 , res = 0;
+      
+      while(n1 &gt 0 || c &gt 0){
+          int temp = n1 % 10; n1 /= 10;
+          
+          int tprd = temp * n2 + c;
+          c = tprd / b;
+          tprd %= b;
+          
+          res += tprd * i;
+          i *= 10;
+      }
+      
+      return res;
+  }
+  
+  static int sum(int b , int n1 , int n2 ){
+      int c = 0 , i = 1 , res = 0;
+      
+      while(n1 &gt 0 || n2 &gt 0 || c &gt 0){
+          int temp = c;
+          
+          temp += n1 % 10; n1 /= 10;
+          temp += n2 % 10; n2 /= 10;
+          
+          c = temp / b;
+          temp %= b;
+          
+          res += temp * i;
+          i *= 10;
+      }
+      
+      return res;
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 20 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwenty">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwenty" aria-expanded="false" aria-controls="string-collapseTwenty">
+              #20. Span Of Array.
+            </button>
+          </h2>
+          <div id="string-collapseTwenty" class="accordion-collapse collapse" aria-labelledby="string-headingTwenty" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    // write your code here
+    Scanner scan = new Scanner(System.in);
+    int[] arr = new int[scan.nextInt()];
+    
+    for(int i = 0; i &lt arr.length; i++){
+        arr[i] = scan.nextInt();
+    }
+    
+    int min = Integer.MAX_VALUE;
+    int max = Integer.MIN_VALUE;
+    
+    for(int i = 0; i &lt arr.length; i++){
+        if(arr[i] &gt max){
+            max = arr[i];
+        }
+        
+        if(arr[i] &lt min){
+            min = arr[i];
+        }
+    }
+    
+    int diff = max - min;
+    
+    System.out.println(diff);
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div>  
+        
+        <!-- 21 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwentyOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwentyOne" aria-expanded="false" aria-controls="string-collapseTwentyOne">
+              #21. Find Element In An Array.
+            </button>
+          </h2>
+          <div id="string-collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="string-headingTwentyOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    // write your code here
+    Scanner scan = new Scanner(System.in);
+    int col = scan.nextInt();
+    int[] arr = new int[col];
+    for(int i = 0; i &lt arr.length; i++){
+        arr[i] = scan.nextInt();
+    }
+    int d = scan.nextInt();
+    
+    for(int i = 0; i &lt arr.length; i++){
+        if(arr[i] == d){
+            System.out.println(i);
+            return;
+        }
+    }
+    System.out.println(-1);
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 22 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwentyTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwentyTwo" aria-expanded="false" aria-controls="string-collapseTwentyTwo">
+              #22. Bar Chart.
+            </button>
+          </h2>
+          <div id="string-collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="string-headingTwentyTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    // write your code here
+    
+    Scanner scan = new Scanner(System.in);
+    int[] arr = new int[scan.nextInt()];
+    
+    int max = Integer.MIN_VALUE;
+    
+    for(int i = 0; i < arr.length; i++){
+        arr[i] = scan.nextInt();
+        
+        if(arr[i] &gt max){
+            max = arr[i];
+        }
+    }
+    
+    for(int i = max; i &gt= 1; i--){
+        
+        for(int j = 0; j < arr.length; j++){
+            
+            if(arr[j] &gt= i){
+                System.out.print("*	");
+            } else {
+                System.out.print("	");
+            }
+        }
+        
+        System.out.println();
+    }
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div>                                        
+        
+        <!-- 23 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwentyThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwentyThree" aria-expanded="false" aria-controls="string-collapseTwentyThree">
+              #23. Sum Of Two Arrays.
+            </button>
+          </h2>
+          <div id="string-collapseTwentyThree" class="accordion-collapse collapse" aria-labelledby="string-headingTwentyThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    // write your code here
+    Scanner scan = new Scanner(System.in);
+    int[] farr = new int[scan.nextInt()];
+    
+    for(int i = 0; i &lt farr.length; i++){
+        farr[i] = scan.nextInt();
+    }
+    
+    int[] sarr = new int[scan.nextInt()];
+    
+    for(int i = 0; i &lt sarr.length; i++){
+        sarr[i] = scan.nextInt();
+    }
+    
+    int soa = farr.length &gt sarr.length ? farr.length : sarr.length;
+    int[] res = new int[soa];
+    
+    int c = 0;
+    
+    int fai = farr.length - 1;
+    int sai = sarr.length - 1;
+    int rai = res.length - 1;
+    
+    while(rai &gt= 0){
+        
+        int temp = c;
+        
+        if(fai &gt= 0){
+            temp += farr[fai]; fai--;
+        }
+        
+        if(sai &gt= 0){
+            temp += sarr[sai]; sai--;
+        }
+        
+        c = temp / 10;
+        temp %= 10;
+        
+        res[rai] = temp; rai--;
+        
+        
+    }
+    
+    if(c &gt 0){
+        System.out.println(c);
+    }
+    
+    for(int x : res){
+        System.out.println(x);
+    }
+    
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 24 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwentyFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwentyFour" aria-expanded="false" aria-controls="string-collapseTwentyFour">
+              #24. Difference Of Two Arrays.
+            </button>
+          </h2>
+          <div id="string-collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="string-headingTwentyFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    // write your code here
+    Scanner scan = new Scanner(System.in);
+    
+    int[] farr = new int[scan.nextInt()];
+    for(int i = 0; i &lt farr.length; i++){
+        farr[i] = scan.nextInt();
+    }
+    
+    int[] sarr = new int[scan.nextInt()];
+    
+    for(int i = 0; i &lt sarr.length; i++){
+        sarr[i] = scan.nextInt();
+    }
+    
+    int[] res = new int[sarr.length];
+    int c = 0;
+    
+    int rai = res.length- 1;
+    int fai = farr.length - 1;
+    int sai = sarr.length - 1;
+    
+    
+    while(rai &gt= 0){
+        
+        int x = 0 , y = 0, temp = 0;
+        
+        if(fai &gt= 0){
+            y = farr[fai]; fai--;
+        }else {
+            y = 0;
+        }
+        
+        if(sai &gt= 0){
+            x = sarr[sai]; sai--;
+        }
+        
+        if(x + c &gt= y){
+            temp = x + c - y;
+            c = 0;
+        } else {
+            temp = x + c + 10 - y;
+            c = -1;
+        }
+        
+        res[rai] = temp;
+        rai--;
+    }
+    
+    int x = 0;
+    
+    while(x &lt res.length){
+        if(res[x] == 0){
+            x++;
+        } else {
+            break;
+        }
+    }
+    
+    for(int i = x; i &lt res.length; i++){
+        System.out.println(res[i]);
+    }
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div>
+        
+        <!-- 25 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwentyFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwentyFive" aria-expanded="false" aria-controls="string-collapseTwentyFive">
+              #25. Reverse An Array.
+            </button>
+          </h2>
+          <div id="string-collapseTwentyFive" class="accordion-collapse collapse" aria-labelledby="string-headingTwentyFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+  public static void display(int[] a){
+    StringBuilder sb = new StringBuilder();
+
+    for(int val: a){
+      sb.append(val + " ");
+    }
+    System.out.println(sb);
+  }
+
+  public static void reverse(int[] a){
+    // write your code here
+    
+    int lo = 0;
+    int hi = a.length- 1;
+    
+    while(lo &lt hi){
+        int temp = a[lo];
+        a[lo] = a[hi];
+        a[hi] = temp;
+        
+        lo++;
+        hi--;
+    }
+  }
+
+public static void main(String[] args) throws Exception {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    int n = Integer.parseInt(br.readLine());
+    int[] a = new int[n];
+    for(int i = 0; i &lt n; i++){
+        a[i] = Integer.parseInt(br.readLine());
+    }
+
+    reverse(a);
+    display(a);
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div>  
+        
+        <!-- 26 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwentySix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwentySix" aria-expanded="false" aria-controls="string-collapseTwentySix">
+              #26. Rotate An Array.
+            </button>
+          </h2>
+          <div id="string-collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="string-headingTwentySix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+  public static void display(int[] a){
+    StringBuilder sb = new StringBuilder();
+
+    for(int val: a){
+      sb.append(val + " ");
+    }
+    System.out.println(sb);
+  }
+
+  public static void rotate(int[] a, int k){
+    // write your code here
+    
+    k %= a.length;
+    
+    if(k &lt 0){
+        k += a.length;
+    }
+    
+    reverse(a , 0 , a.length - k - 1);
+    reverse(a , a.length - k , a.length - 1);
+    reverse(a , 0 , a.length- 1);
+    
+    
+  }
+  
+  static void reverse(int[] arr , int lo , int hi){
+      while(lo &lt hi){
+          int temp = arr[lo];
+          arr[lo] = arr[hi];
+          arr[hi] = temp;
+          
+          lo++;
+          hi--;
+      }
+  }
+
+public static void main(String[] args) throws Exception {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    int n = Integer.parseInt(br.readLine());
+    int[] a = new int[n];
+    for(int i = 0; i &lt n; i++){
+        a[i] = Integer.parseInt(br.readLine());
+    }
+    int k = Integer.parseInt(br.readLine());
+
+    rotate(a, k);
+    display(a);
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 28 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwentyEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwentyEight" aria-expanded="false" aria-controls="string-collapseTwentyEight">
+              #28. Inverse Of An Array.
+            </button>
+          </h2>
+          <div id="string-collapseTwentyEight" class="accordion-collapse collapse" aria-labelledby="string-headingTwentyEight" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+  public static void display(int[] a){
+    StringBuilder sb = new StringBuilder();
+
+    for(int val: a){
+      sb.append(val + "");
+    }
+    System.out.println(sb);
+  }
+
+  public static int[] inverse(int[] a){
+          
+          int[] res = new int[a.length];
+          
+          for(int i = 0; i &lt a.length; i++){
+              int temp = a[i];
+              res[temp] = i;
+          }
+          
+          
+          return res;
+  }
+
+public static void main(String[] args) throws Exception {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    int n = Integer.parseInt(br.readLine());
+    int[] a = new int[n];
+    for(int i = 0; i &lt n; i++){
+        a[i] = Integer.parseInt(br.readLine());
+    }
+
+    int[] inv = inverse(a);
+    display(inv);
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 29 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingTwentyNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwentyNine" aria-expanded="false" aria-controls="string-collapseTwentyNine">
+              #29. Subarray Problem.
+            </button>
+          </h2>
+          <div id="string-collapseTwentyNine" class="accordion-collapse collapse" aria-labelledby="string-headingTwentyNine" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    // write your code here
+    Scanner scan = new Scanner(System.in);
+    int[] arr = new int[scan.nextInt()];
+    
+    for(int i = 0; i  &lt arr.length; i++){
+        arr[i] = scan.nextInt();
+    }
+    
+    for(int i = 0; i &lt arr.length; i++){
+        for(int j = i; j &lt arr.length; j++){
+            
+            for(int k = i; k &lt= j; k++){
+                System.out.print(arr[k] + "	");
+            }
+            
+            System.out.println();
+        }
+    }
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 30 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="string-headingThirty">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseThirty" aria-expanded="false" aria-controls="string-collapseThirty">
+              #30. Broken Economy.
+            </button>
+          </h2>
+          <div id="string-collapseThirty" class="accordion-collapse collapse" aria-labelledby="string-headingThirty" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-java"><code>import java.io.*;
+import java.util.*;
+              
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    // write your code here
+    Scanner scan = new Scanner(System.in);
+    int[] arr = new int[scan.nextInt()];
+    
+    for(int i = 0; i &lt arr.length; i++){
+        arr[i] = scan.nextInt();
+    }
+    
+    int data = scan.nextInt();
+    
+    int ceil = Integer.MIN_VALUE;
+    int floor = Integer.MAX_VALUE;
+    
+    int lo = 0 , hi = arr.length - 1;
+    
+    while(lo &lt= hi){
+        int mid = (lo + hi) / 2;
+        
+        if(arr[mid] &gt data){
+            ceil = arr[mid];
+            hi = mid - 1;
+        } else if(arr[mid] &lt data){
+            floor = arr[mid];
+            lo = mid + 1;
+        } else {
+            System.out.println(data);
+            return;
+        }
+    }
+    
+    System.out.println(ceil);
+    System.out.println(floor);
+  }
+
+}</code></pre></div>
+          </div>
+
+        </div>
+        
+        
+         <!-- last code of accordions -->
+        </div> 
        
+
+       <!-- last line -->
         </div>
 
      
