@@ -128,7 +128,7 @@ a{
 
 
 /* visitor counter code */
-
+/* 
 .counter {
     width: 102px;
     height: 114px;
@@ -136,12 +136,8 @@ a{
     bottom: 0px;
     right: 0px;
     z-index: 10;
-    /* border: 3px solid purple;
-    border-radius: 50%; */
-    /* color: red; */
-    /* background-color: gray; */
-    /* text-align: center; */
-    /* vertical-align: middle; */
+    overflow: hidden;
+    border: 2px solid red;
+    
+} */
 
-
-}
