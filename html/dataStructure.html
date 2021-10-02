@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Data Structure Using C Language</title>
+=======
+    <title>Data Structure Question</title>
+>>>>>>> Feature
 
     <link rel="stylesheet" href="../Bootstrap Download folder/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css">
     <script src="../Bootstrap Download folder/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
@@ -30,6 +34,16 @@
         .removeMargin{
           margin-top: 0px;
         }
+
+        .headingContainer .col div:hover{
+                 border-radius: 400px;
+                 background-color: rgb(245, 129, 34);
+                
+        }
+
+        .ArrayListContent , .LinkedListContent, .StackContent, .DoublyLinkedListContent, .QueueContent,.TreeContent , .AVLTreeContent, .GraphContent , .HashTableContent{
+          display: none;
+        }
     </style>
     
     <!-- code of universal script -->
@@ -41,6 +55,9 @@
 
     <!-- accorence button uvStyle link -->
     <link rel="stylesheet" href = "../uvStyle/uvStyle.css">
+
+
+    
 
 </head>
 <body>
@@ -78,18 +95,21 @@
      
       <!-- card is added.. -->
 
+
       <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-3 g-5 " style="padding: 40px; background-color: rgb(43, 42, 42)">
+        <div class="row row-cols-1 row-cols-md-3 g-4  headingContainer" style="padding: 40px; background-color: rgb(43, 42, 42)">
         
-          <div class="col ">
-            <div class="card bg-primary text-white">
+         
+          <div class="col " id="ArrayList">     
+            <div  class="card bg-primary text-white"  >
               <div class="card-body">
                 <h5 class="card-title text-center">ArrayList</h5>
               </div>
             </div>
           </div>
+         
           
-          <div class="col">
+          <div class="col" id="LinkedList">
             <div class="card bg-secondary text-white">
               <div class="card-body">
                 <h5 class="card-title text-center">Linked List</h5>
@@ -97,7 +117,7 @@
             </div>
           </div>
           
-          <div class="col">
+          <div class="col" id="DoublyLinkedList">
             <div class="card bg-success text-white">
               <div class="card-body">
                 <h5 class="card-title text-center">Doubly Linked List</h5>
@@ -106,7 +126,7 @@
           </div>
   
   
-          <div class="col">
+          <div class="col" id="Stack">
             <div class="card bg-danger text-white">
               <div class="card-body">
                 <h5 class="card-title text-center">Stack</h5>
@@ -115,7 +135,7 @@
           </div>
   
   
-          <div class="col">
+          <div class="col" id="Queue">
             <div class="card bg-warning text-white">
               <div class="card-body">
                 <h5 class="card-title text-center">Queue</h5>
@@ -124,7 +144,7 @@
           </div>
   
           
-          <div class="col">
+          <div class="col" id="Tree">
             <div class="card bg-info text-white">
               <div class="card-body">
                 <h5 class="card-title text-center">Tree</h5>
@@ -132,7 +152,7 @@
             </div>
           </div>
   
-          <div class="col">
+          <div class="col" id="AVLTree">
             <div class="card text-white" style="background-color: #99154E;">
               <div class="card-body">
                 <h5 class="card-title text-center">AVL Tree</h5>
@@ -141,7 +161,7 @@
           </div>
   
   
-          <div class="col">
+          <div class="col" id="Graph">
             <div class="card text-white" style="background-color: #293B5F;">
               <div class="card-body">
                 <h5 class="card-title text-center">Graph</h5>
@@ -150,7 +170,7 @@
           </div>
   
   
-          <div class="col">
+          <div class="col" id="HashTable">
             <div class="card text-white" style="background-color: #e91449;">
               <div class="card-body">
                 <h5 class="card-title text-center">HashTable</h5>
@@ -162,7 +182,1469 @@
         </div>
       </div>
 
-     
+       <!-- ArrayList Accordions Code start -->
+      <div class="accordion accordion-flush ArrayListContent" id="accordionFlushExample ">
+         
+               <!--ArrayList Questions heading code -->
+
+      <div class="card heading mb-10 removeMargin" >
+        <div class="card-body text-success bg-warning">
+         1. ArrayList Implementation.
+          <div class="coderName">Coder-Name : <span>Manish</span></div>
+        </div>
+      </div>
+        
+        <!-- 1 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseOne" aria-expanded="false" aria-controls="arrayList-collapseOne">
+              #1. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseOne" class="accordion-collapse collapse" aria-labelledby="arrayList-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 2 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseTwo" aria-expanded="false" aria-controls="arrayList-collapseTwo">
+              #2. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="arrayList-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 3 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseThree" aria-expanded="false" aria-controls="arrayList-collapseThree">
+              #3. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseThree" class="accordion-collapse collapse" aria-labelledby="arrayList-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+          </div>
+
+        </div>  
+        
+
+        <!-- 4 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseFour" aria-expanded="false" aria-controls="arrayList-collapseFour">
+              #4. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseFour" class="accordion-collapse collapse" aria-labelledby="arrayList-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+          </div>
+
+        </div>   
+
+        <!-- 5 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseFive" aria-expanded="false" aria-controls="arrayList-collapseFive">
+              #5. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseFive" class="accordion-collapse collapse" aria-labelledby="arrayList-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+          </div>
+
+        </div>  
+
+        <!-- 6 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseSix" aria-expanded="false" aria-controls="arrayList-collapseSix">
+              #6. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseSix" class="accordion-collapse collapse" aria-labelledby="arrayList-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 7 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseSeven" aria-expanded="false" aria-controls="arrayList-collapseSeven">
+              #7. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="arrayList-headingSeven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+          </div>
+
+        </div> 
+
+        <!-- 8 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseEight" aria-expanded="false" aria-controls="arrayList-collapseEight">
+              #8. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseEight" class="accordion-collapse collapse" aria-labelledby="arrayList-headingEight" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 9 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseNine" aria-expanded="false" aria-controls="arrayList-collapseNine">
+              #9. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseNine" class="accordion-collapse collapse" aria-labelledby="arrayList-headingNine" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+          </div>
+
+        </div>
+
+        <!-- 10 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseTen" aria-expanded="false" aria-controls="arrayList-collapseTen">
+              #10. WAP 
+            </button>
+          </h2>
+          <div id="arrayList-collapseTen" class="accordion-collapse collapse" aria-labelledby="arrayList-headingTen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+          </div>
+
+        </div>  
+        
+      
+          
+      </div> <!-- last line of ArrayList. -->
+
+
+
+      <!-- ***************************** LinkedList **************************************** -->
+
+      
+       <!--LinkedList Accordions code Start  -->
+
+       <div class="accordion accordion-flush LinkedListContent" id="accordionFlushExample ">
+         
+        <!--linkedList Questions heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+            <div class="card-body text-success bg-warning">
+                  2. LinkedList Implementation.
+              <div class="coderName">Coder-Name : <span>Manish</span></div>
+            </div>
+            </div>
+            
+            <!-- 1 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseOne" aria-expanded="false" aria-controls="linkedList-collapseOne">
+                  #1. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseOne" class="accordion-collapse collapse" aria-labelledby="linkedList-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 2 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseTwo" aria-expanded="false" aria-controls="linkedList-collapseTwo">
+                  #2. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="linkedList-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 3 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseThree" aria-expanded="false" aria-controls="linkedList-collapseThree">
+                  #3. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseThree" class="accordion-collapse collapse" aria-labelledby="linkedList-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>  
+            
+
+            <!-- 4 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseFour" aria-expanded="false" aria-controls="linkedList-collapseFour">
+                  #4. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseFour" class="accordion-collapse collapse" aria-labelledby="linkedList-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>   
+
+            <!-- 5 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseFive" aria-expanded="false" aria-controls="linkedList-collapseFive">
+                  #5. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseFive" class="accordion-collapse collapse" aria-labelledby="linkedList-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 6 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseSix" aria-expanded="false" aria-controls="linkedList-collapseSix">
+                  #6. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseSix" class="accordion-collapse collapse" aria-labelledby="linkedList-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 7 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseSeven" aria-expanded="false" aria-controls="linkedList-collapseSeven">
+                  #7. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="linkedList-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div> 
+
+            <!-- 8 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseEight" aria-expanded="false" aria-controls="linkedList-collapseEight">
+                  #8. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseEight" class="accordion-collapse collapse" aria-labelledby="linkedList-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 9 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseNine" aria-expanded="false" aria-controls="linkedList-collapseNine">
+                  #9. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseNine" class="accordion-collapse collapse" aria-labelledby="linkedList-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 10 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="linkedList-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseTen" aria-expanded="false" aria-controls="linkedList-collapseTen">
+                  #10. WAP 
+                </button>
+              </h2>
+              <div id="linkedList-collapseTen" class="accordion-collapse collapse" aria-labelledby="linkedList-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+        
+       
+   
+      </div>
+      
+
+
+      
+      <!-- ***************************** doublyLinkedList **************************************** -->
+
+      
+       <!--doublyLinkedList Accordions code Start  -->
+       <div class="accordion accordion-flush DoublyLinkedListContent" id="accordionFlushExample ">
+         
+        <!--doublyLinkedList Questions heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+            <div class="card-body text-success bg-warning">
+                  3. DoublyLinkedList Implementation.
+              <div class="coderName">Coder-Name : <span>Manish</span></div>
+            </div>
+            </div>
+            
+            <!-- 1 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseOne" aria-expanded="false" aria-controls="doublyLinkedList-collapseOne">
+                  #1. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseOne" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 2 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseTwo" aria-expanded="false" aria-controls="doublyLinkedList-collapseTwo">
+                  #2. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 3 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseThree" aria-expanded="false" aria-controls="doublyLinkedList-collapseThree">
+                  #3. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseThree" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>  
+            
+
+            <!-- 4 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseFour" aria-expanded="false" aria-controls="doublyLinkedList-collapseFour">
+                  #4. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseFour" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>   
+
+            <!-- 5 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseFive" aria-expanded="false" aria-controls="doublyLinkedList-collapseFive">
+                  #5. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseFive" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 6 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseSix" aria-expanded="false" aria-controls="doublyLinkedList-collapseSix">
+                  #6. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseSix" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 7 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseSeven" aria-expanded="false" aria-controls="doublyLinkedList-collapseSeven">
+                  #7. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div> 
+
+            <!-- 8 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseEight" aria-expanded="false" aria-controls="doublyLinkedList-collapseEight">
+                  #8. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseEight" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 9 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseNine" aria-expanded="false" aria-controls="doublyLinkedList-collapseNine">
+                  #9. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseNine" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 10 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="doublyLinkedList-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doublyLinkedList-collapseTen" aria-expanded="false" aria-controls="doublyLinkedList-collapseTen">
+                  #10. WAP 
+                </button>
+              </h2>
+              <div id="doublyLinkedList-collapseTen" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+        
+       
+   
+      </div>
+
+
+      
+      <!-- ***************************** Stack **************************************** -->
+
+      
+       <!--stack Accordions code Start head is at top -->
+       <div class="accordion accordion-flush StackContent" id="accordionFlushExample ">
+         
+        <!--stack Questions heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+            <div class="card-body text-success bg-warning">
+                  4. Stack Implementation.
+              <div class="coderName">Coder-Name : <span>Manish</span></div>
+            </div>
+            </div>
+            
+            <!-- 1 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseOne" aria-expanded="false" aria-controls="stack-collapseOne">
+                  #1. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseOne" class="accordion-collapse collapse" aria-labelledby="stack-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 2 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseTwo" aria-expanded="false" aria-controls="stack-collapseTwo">
+                  #2. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseTwo" class="accordion-collapse collapse" aria-labelledby="stack-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 3 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseThree" aria-expanded="false" aria-controls="stack-collapseThree">
+                  #3. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseThree" class="accordion-collapse collapse" aria-labelledby="stack-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>  
+            
+
+            <!-- 4 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseFour" aria-expanded="false" aria-controls="stack-collapseFour">
+                  #4. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseFour" class="accordion-collapse collapse" aria-labelledby="stack-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>   
+
+            <!-- 5 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseFive" aria-expanded="false" aria-controls="stack-collapseFive">
+                  #5. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseFive" class="accordion-collapse collapse" aria-labelledby="stack-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 6 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseSix" aria-expanded="false" aria-controls="stack-collapseSix">
+                  #6. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseSix" class="accordion-collapse collapse" aria-labelledby="stack-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 7 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseSeven" aria-expanded="false" aria-controls="stack-collapseSeven">
+                  #7. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseSeven" class="accordion-collapse collapse" aria-labelledby="stack-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div> 
+
+            <!-- 8 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseEight" aria-expanded="false" aria-controls="stack-collapseEight">
+                  #8. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseEight" class="accordion-collapse collapse" aria-labelledby="stack-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 9 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseNine" aria-expanded="false" aria-controls="stack-collapseNine">
+                  #9. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseNine" class="accordion-collapse collapse" aria-labelledby="stack-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 10 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="stack-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseTen" aria-expanded="false" aria-controls="stack-collapseTen">
+                  #10. WAP 
+                </button>
+              </h2>
+              <div id="stack-collapseTen" class="accordion-collapse collapse" aria-labelledby="stack-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+        
+       
+   
+      </div>
+      
+
+      
+      <!-- ***************************** Queue **************************************** -->
+
+      
+       <!--queue Accordions code Start head is at top -->
+       <div class="accordion accordion-flush QueueContent" id="accordionFlushExample ">
+         
+        <!--queue Questions heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+            <div class="card-body text-success bg-warning">
+                  5. Queue Implementation.
+              <div class="coderName">Coder-Name : <span>Manish</span></div>
+            </div>
+            </div>
+            
+            <!-- 1 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseOne" aria-expanded="false" aria-controls="queue-collapseOne">
+                  #1. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseOne" class="accordion-collapse collapse" aria-labelledby="queue-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 2 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseTwo" aria-expanded="false" aria-controls="queue-collapseTwo">
+                  #2. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseTwo" class="accordion-collapse collapse" aria-labelledby="queue-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 3 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseThree" aria-expanded="false" aria-controls="queue-collapseThree">
+                  #3. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseThree" class="accordion-collapse collapse" aria-labelledby="queue-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>  
+            
+
+            <!-- 4 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseFour" aria-expanded="false" aria-controls="queue-collapseFour">
+                  #4. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseFour" class="accordion-collapse collapse" aria-labelledby="queue-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>   
+
+            <!-- 5 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseFive" aria-expanded="false" aria-controls="queue-collapseFive">
+                  #5. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseFive" class="accordion-collapse collapse" aria-labelledby="queue-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 6 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseSix" aria-expanded="false" aria-controls="queue-collapseSix">
+                  #6. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseSix" class="accordion-collapse collapse" aria-labelledby="queue-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 7 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseSeven" aria-expanded="false" aria-controls="queue-collapseSeven">
+                  #7. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseSeven" class="accordion-collapse collapse" aria-labelledby="queue-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div> 
+
+            <!-- 8 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseEight" aria-expanded="false" aria-controls="queue-collapseEight">
+                  #8. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseEight" class="accordion-collapse collapse" aria-labelledby="queue-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 9 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseNine" aria-expanded="false" aria-controls="queue-collapseNine">
+                  #9. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseNine" class="accordion-collapse collapse" aria-labelledby="queue-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 10 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="queue-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseTen" aria-expanded="false" aria-controls="queue-collapseTen">
+                  #10. WAP 
+                </button>
+              </h2>
+              <div id="queue-collapseTen" class="accordion-collapse collapse" aria-labelledby="queue-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+        
+       
+   
+      </div>
+      
+    
+      <!-- ***************************** Tree **************************************** -->
+
+      
+       <!--tree Accordions code Start head is at top -->
+       <div class="accordion accordion-flush TreeContent" id="accordionFlushExample ">
+         
+        <!--tree Questions heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+            <div class="card-body text-success bg-warning">
+                  6. Tree Implementation.
+              <div class="coderName">Coder-Name : <span>Manish</span></div>
+            </div>
+            </div>
+            
+            <!-- 1 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseOne" aria-expanded="false" aria-controls="tree-collapseOne">
+                  #1. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseOne" class="accordion-collapse collapse" aria-labelledby="tree-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 2 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseTwo" aria-expanded="false" aria-controls="tree-collapseTwo">
+                  #2. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseTwo" class="accordion-collapse collapse" aria-labelledby="tree-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 3 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseThree" aria-expanded="false" aria-controls="tree-collapseThree">
+                  #3. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseThree" class="accordion-collapse collapse" aria-labelledby="tree-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>  
+            
+
+            <!-- 4 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseFour" aria-expanded="false" aria-controls="tree-collapseFour">
+                  #4. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseFour" class="accordion-collapse collapse" aria-labelledby="tree-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>   
+
+            <!-- 5 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseFive" aria-expanded="false" aria-controls="tree-collapseFive">
+                  #5. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseFive" class="accordion-collapse collapse" aria-labelledby="tree-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 6 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseSix" aria-expanded="false" aria-controls="tree-collapseSix">
+                  #6. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseSix" class="accordion-collapse collapse" aria-labelledby="tree-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 7 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseSeven" aria-expanded="false" aria-controls="tree-collapseSeven">
+                  #7. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseSeven" class="accordion-collapse collapse" aria-labelledby="tree-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div> 
+
+            <!-- 8 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseEight" aria-expanded="false" aria-controls="tree-collapseEight">
+                  #8. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseEight" class="accordion-collapse collapse" aria-labelledby="tree-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 9 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseNine" aria-expanded="false" aria-controls="tree-collapseNine">
+                  #9. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseNine" class="accordion-collapse collapse" aria-labelledby="tree-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 10 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseTen" aria-expanded="false" aria-controls="tree-collapseTen">
+                  #10. WAP 
+                </button>
+              </h2>
+              <div id="tree-collapseTen" class="accordion-collapse collapse" aria-labelledby="tree-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+        
+       
+   
+      </div>
+      
+    
+      <!-- ***************************** AVL Tree **************************************** -->
+
+      
+       <!--AVLTree Accordions code Start head is at top -->
+       <div class="accordion accordion-flush AVLTreeContent" id="accordionFlushExample ">
+         
+        <!--AVLTree Questions heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+            <div class="card-body text-success bg-warning">
+                  7. AVLTree Implementation.
+              <div class="coderName">Coder-Name : <span>Manish</span></div>
+            </div>
+            </div>
+            
+            <!-- 1 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseOne" aria-expanded="false" aria-controls="AVLTree-collapseOne">
+                  #1. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseOne" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 2 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseTwo" aria-expanded="false" aria-controls="AVLTree-collapseTwo">
+                  #2. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseTwo" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 3 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseThree" aria-expanded="false" aria-controls="AVLTree-collapseThree">
+                  #3. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseThree" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>  
+            
+
+            <!-- 4 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseFour" aria-expanded="false" aria-controls="AVLTree-collapseFour">
+                  #4. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseFour" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>   
+
+            <!-- 5 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseFive" aria-expanded="false" aria-controls="AVLTree-collapseFive">
+                  #5. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseFive" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 6 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseSix" aria-expanded="false" aria-controls="AVLTree-collapseSix">
+                  #6. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseSix" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 7 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseSeven" aria-expanded="false" aria-controls="AVLTree-collapseSeven">
+                  #7. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseSeven" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div> 
+
+            <!-- 8 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseEight" aria-expanded="false" aria-controls="AVLTree-collapseEight">
+                  #8. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseEight" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 9 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseNine" aria-expanded="false" aria-controls="AVLTree-collapseNine">
+                  #9. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseNine" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 10 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="AVLTree-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseTen" aria-expanded="false" aria-controls="AVLTree-collapseTen">
+                  #10. WAP 
+                </button>
+              </h2>
+              <div id="AVLTree-collapseTen" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+        
+       
+   
+      </div>
+      
+
+      
+      <!-- ***************************** Graph **************************************** -->
+
+      
+       <!--graph Accordions code Start head is at top -->
+       <div class="accordion accordion-flush GraphContent" id="accordionFlushExample ">
+         
+        <!--graph Questions heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+            <div class="card-body text-success bg-warning">
+                  8. Graph Implementation.
+              <div class="coderName">Coder-Name : <span>Manish</span></div>
+            </div>
+            </div>
+            
+            <!-- 1 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseOne" aria-expanded="false" aria-controls="graph-collapseOne">
+                  #1. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseOne" class="accordion-collapse collapse" aria-labelledby="graph-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 2 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseTwo" aria-expanded="false" aria-controls="graph-collapseTwo">
+                  #2. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseTwo" class="accordion-collapse collapse" aria-labelledby="graph-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 3 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseThree" aria-expanded="false" aria-controls="graph-collapseThree">
+                  #3. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseThree" class="accordion-collapse collapse" aria-labelledby="graph-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>  
+            
+
+            <!-- 4 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseFour" aria-expanded="false" aria-controls="graph-collapseFour">
+                  #4. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseFour" class="accordion-collapse collapse" aria-labelledby="graph-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>   
+
+            <!-- 5 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseFive" aria-expanded="false" aria-controls="graph-collapseFive">
+                  #5. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseFive" class="accordion-collapse collapse" aria-labelledby="graph-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 6 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseSix" aria-expanded="false" aria-controls="graph-collapseSix">
+                  #6. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseSix" class="accordion-collapse collapse" aria-labelledby="graph-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 7 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseSeven" aria-expanded="false" aria-controls="graph-collapseSeven">
+                  #7. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseSeven" class="accordion-collapse collapse" aria-labelledby="graph-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div> 
+
+            <!-- 8 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseEight" aria-expanded="false" aria-controls="graph-collapseEight">
+                  #8. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseEight" class="accordion-collapse collapse" aria-labelledby="graph-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 9 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseNine" aria-expanded="false" aria-controls="graph-collapseNine">
+                  #9. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseNine" class="accordion-collapse collapse" aria-labelledby="graph-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 10 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="graph-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#graph-collapseTen" aria-expanded="false" aria-controls="graph-collapseTen">
+                  #10. WAP 
+                </button>
+              </h2>
+              <div id="graph-collapseTen" class="accordion-collapse collapse" aria-labelledby="graph-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+        
+       
+   
+      </div>
+      
+
+      
+      <!-- ***************************** HashTable **************************************** -->
+
+      
+       <!--hashTable Accordions code Start head is at top -->
+       <div class="accordion accordion-flush HashTableContent" id="accordionFlushExample ">
+         
+        <!--hashTable Questions heading code -->
+
+            <div class="card heading mb-10 removeMargin" >
+            <div class="card-body text-success bg-warning">
+                  9. HashTable Implementation.
+              <div class="coderName">Coder-Name : <span>Manish</span></div>
+            </div>
+            </div>
+            
+            <!-- 1 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseOne" aria-expanded="false" aria-controls="hashTable-collapseOne">
+                  #1. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseOne" class="accordion-collapse collapse" aria-labelledby="hashTable-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 2 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseTwo" aria-expanded="false" aria-controls="hashTable-collapseTwo">
+                  #2. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseTwo" class="accordion-collapse collapse" aria-labelledby="hashTable-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 3 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseThree" aria-expanded="false" aria-controls="hashTable-collapseThree">
+                  #3. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseThree" class="accordion-collapse collapse" aria-labelledby="hashTable-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              </div>
+
+            </div>  
+            
+
+            <!-- 4 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseFour" aria-expanded="false" aria-controls="hashTable-collapseFour">
+                  #4. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseFour" class="accordion-collapse collapse" aria-labelledby="hashTable-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>   
+
+            <!-- 5 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseFive" aria-expanded="false" aria-controls="hashTable-collapseFive">
+                  #5. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseFive" class="accordion-collapse collapse" aria-labelledby="hashTable-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 6 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseSix" aria-expanded="false" aria-controls="hashTable-collapseSix">
+                  #6. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseSix" class="accordion-collapse collapse" aria-labelledby="hashTable-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 7 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseSeven" aria-expanded="false" aria-controls="hashTable-collapseSeven">
+                  #7. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseSeven" class="accordion-collapse collapse" aria-labelledby="hashTable-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div> 
+
+            <!-- 8 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseEight" aria-expanded="false" aria-controls="hashTable-collapseEight">
+                  #8. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseEight" class="accordion-collapse collapse" aria-labelledby="hashTable-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 9 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseNine" aria-expanded="false" aria-controls="hashTable-collapseNine">
+                  #9. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseNine" class="accordion-collapse collapse" aria-labelledby="hashTable-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>
+
+            <!-- 10 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hashTable-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hashTable-collapseTen" aria-expanded="false" aria-controls="hashTable-collapseTen">
+                  #10. WAP 
+                </button>
+              </h2>
+              <div id="hashTable-collapseTen" class="accordion-collapse collapse" aria-labelledby="hashTable-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              </div>
+
+            </div>  
+        
+       
+   
+      </div>
+      
+
+
+      
+
+
+
+     <!-- //  link dataStructure javaScript file. -->
+    <script src="../uvScript/dataStructure.js"></script>
+
+
     
 </body>
 </html>
