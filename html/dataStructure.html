@@ -197,11 +197,17 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseOne" aria-expanded="false" aria-controls="arrayList-collapseOne">
-              #1. WAP 
+              #1. Create ArrayList ADT (Abstract Data Type).
             </button>
           </h2>
           <div id="arrayList-collapseOne" class="accordion-collapse collapse" aria-labelledby="arrayList-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+          <div class="accordion-body"><pre class="language-c"><code>struct ArrayList
+{
+    int *arr;  // Array Pointer
+    int length; // No of elements of an Array.
+    int capacity;  // size of an Array.
+};
+        </code></pre></div>
           </div>
 
         </div>
@@ -211,11 +217,20 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseTwo" aria-expanded="false" aria-controls="arrayList-collapseTwo">
-              #2. WAP 
+              #2. Initilise ArrayList.
             </button>
           </h2>
           <div id="arrayList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="arrayList-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>struct ArrayList* create(int size)
+{
+    struct ArrayList *array = (struct ArrayList*)malloc(sizeof(struct ArrayList));
+    array-&gtcapacity = size;
+    array-&gtlength = 0;
+    array-&gtarr = (int *)malloc(array-&gtlength * sizeof(int));
+    return array;
+
+}
+            </code></pre></div>
           </div>
 
         </div>
@@ -225,11 +240,27 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseThree" aria-expanded="false" aria-controls="arrayList-collapseThree">
-              #3. WAP 
+              #3. Add First Function of ArrayList. 
             </button>
           </h2>
           <div id="arrayList-collapseThree" class="accordion-collapse collapse" aria-labelledby="arrayList-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>void addFirst(struct ArrayList *array, int data)
+{
+    if(array-&gtcapacity == array-&gtlength)
+    {
+        printf("ArrayList overflow.\n");
+    }
+    else
+    {
+        for(int i = array-&gtlength-1; i &gt= 0; i--)
+        {
+            array-&gtarr[i + 1] = array-&gtarr[i];
+        }
+        array-&gtarr[0] = data;
+        array-&gtlength++;
+    }
+}
+            </code></pre></div>
           </div>
 
         </div>  
@@ -240,11 +271,23 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseFour" aria-expanded="false" aria-controls="arrayList-collapseFour">
-              #4. WAP 
+              #4. Add Last Function of ArrayList. 
             </button>
           </h2>
           <div id="arrayList-collapseFour" class="accordion-collapse collapse" aria-labelledby="arrayList-headingFour" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>void addLast(struct ArrayList * array, int data)
+{
+    if(array-&gtcapacity == array-&gtlength)
+    {
+        printf("ArrayList Overflow.\n");
+    }
+    else
+    {
+        array-&gtarr[array-&gtlength] = data;
+        array-&gtlength++;
+    }
+}
+            </code></pre></div>
           </div>
 
         </div>   
@@ -254,11 +297,26 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseFive" aria-expanded="false" aria-controls="arrayList-collapseFive">
-              #5. WAP 
+              #5. Display the Elements of  ArrayList. 
             </button>
           </h2>
           <div id="arrayList-collapseFive" class="accordion-collapse collapse" aria-labelledby="arrayList-headingFive" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>void display(struct ArrayList *array)
+{
+    if(array-&gtlength == 0)
+    {
+        printf("ArrayList is underflow.\n");
+    }
+    else
+    {
+        for(int i = 0; i &lt array-&gtlength; i++)
+        {
+            printf("%d  ",array-&gtarr[i]);
+        }
+        printf("\n");
+    }
+}
+              </code></pre></div>
           </div>
 
         </div>  
@@ -268,11 +326,22 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingSix">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseSix" aria-expanded="false" aria-controls="arrayList-collapseSix">
-              #6. WAP 
+              #6. Find the Length of  ArrayList. 
             </button>
           </h2>
           <div id="arrayList-collapseSix" class="accordion-collapse collapse" aria-labelledby="arrayList-headingSix" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>int length(struct ArrayList *array)
+{
+    if(array-&gtlength == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return array-&gtlength;
+    }
+}
+            </code></pre></div>
           </div>
 
         </div>
@@ -282,11 +351,23 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingSeven">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseSeven" aria-expanded="false" aria-controls="arrayList-collapseSeven">
-              #7. WAP 
+              #7. Get First Function of ArrayList. 
             </button>
           </h2>
           <div id="arrayList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="arrayList-headingSeven" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>int getFirst(struct ArrayList *array)
+{
+    if(array-&gtlength == 0)
+    {
+        printf("ArrayList underflow.\n");
+        return -1;
+    }
+    else
+    {
+        return array-&gtarr[0];
+    }
+}
+            </code></pre></div>
           </div>
 
         </div> 
@@ -296,11 +377,23 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingEight">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseEight" aria-expanded="false" aria-controls="arrayList-collapseEight">
-              #8. WAP 
+              #8. Get Last Function of ArrayList. 
             </button>
           </h2>
           <div id="arrayList-collapseEight" class="accordion-collapse collapse" aria-labelledby="arrayList-headingEight" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>int getLast(struct ArrayList *array)
+{
+    if(array-&gtlength == 0)
+    {
+        printf("ArrayList underflow\n");
+        return -1;
+    }
+    else
+    {
+        return array-&gtarr[array-&gtlength-1];
+    }
+}
+            </code></pre></div>
           </div>
 
         </div>
@@ -310,11 +403,31 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingNine">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseNine" aria-expanded="false" aria-controls="arrayList-collapseNine">
-              #9. WAP 
+              #9. Insert Element at Any index in ArrayList. 
             </button>
           </h2>
           <div id="arrayList-collapseNine" class="accordion-collapse collapse" aria-labelledby="arrayList-headingNine" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>void insertElement(struct ArrayList *array , int idx , int data)
+{
+    if(array-&gtlength == array-&gtcapacity)
+    {
+        printf("ArrayList overflow.\n");
+    }
+    else if(idx &lt 0 || idx &gt array-&gtlength)
+    {
+        printf("Invalid Arguments.\n");
+    }
+    else
+    {
+        for(int i = array-&gtlength-1; i &gt= idx; i--)
+        {
+            array-&gtarr[i + 1] = array-&gtarr[i];
+        }
+        array-&gtarr[idx] = data;
+        array-&gtlength++;
+    }
+}
+            </code></pre></div>
           </div>
 
         </div>
@@ -324,15 +437,153 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingTen">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseTen" aria-expanded="false" aria-controls="arrayList-collapseTen">
-              #10. WAP 
+              #10. Delete Element at any Index in ArrayList. 
             </button>
           </h2>
           <div id="arrayList-collapseTen" class="accordion-collapse collapse" aria-labelledby="arrayList-headingTen" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>int deleteElement(struct ArrayList *array , int idx)
+{
+    if(array-&gtlength == 0)
+    {
+        printf("ArrayList underflow.\n");
+        return -1;
+    }
+    else if(idx &lt 0 || idx &gt= array-&gtlength)
+    {
+        printf("Invalid Argument.\n");
+        return -1;
+    }
+    else
+    {
+        int data = array-&gtarr[idx];
+        for(int i = idx; i &lt array-&gtlength -1; i++)
+        {
+            array-&gtarr[i] = array-&gtarr[i + 1];
+        }
+        array-&gtlength--;
+        return data;
+    }
+}
+            </code></pre></div>
           </div>
 
         </div>  
         
+         <!-- 11 child -->
+        
+         <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseEleven" aria-expanded="false" aria-controls="arrayList-collapseEleven">
+              #11. Delete First Element of an ArrayList. 
+            </button>
+          </h2>
+          <div id="arrayList-collapseEleven" class="accordion-collapse collapse" aria-labelledby="arrayList-headingEleven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>int deleteFirst(struct ArrayList *array)
+{
+    if(array-&gtlength == 0)
+    {
+        printf("ArrayList underflow.\n");
+        return -1;
+    }
+    else
+    {
+        int data = array-&gtarr[0];
+        for(int i = 0; i &lt array-&gtlength - 1; i++)
+        {
+            array-&gtarr[i] = array-&gtarr[i + 1];
+        }
+        array-&gtlength--;
+        return data;
+    }
+
+}
+            </code></pre></div>
+          </div>
+
+        </div>       
+        
+        <!-- 12 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseTwelve" aria-expanded="false" aria-controls="arrayList-collapseTwelve">
+           12. Delete Last Element of an ArrayList.
+            </button>
+          </h2>
+          <div id="arrayList-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="arrayList-headingTwelve" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>int deleteLast(struct ArrayList *array)
+{
+    if(array-&gtlength == 0)
+    {
+        printf("ArrayList underflow.\n");
+        return -1;
+    }
+    else
+    {
+        array-&gtlength--;
+        return array-&gtarr[array-&gtlength + 1];
+    }
+}
+            </code></pre></div>
+          </div>
+
+        </div>          
+        
+        <!-- 13 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingThirteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseThirteen" aria-expanded="false" aria-controls="arrayList-collapseThirteen">
+              #13. Update Element of an Array List by Using index.
+            </button>
+          </h2>
+          <div id="arrayList-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="arrayList-headingThirteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>void update(struct ArrayList *array , int idx , int data)
+{
+    if(array-&gtlength == 0)
+    {
+        printf("ArrayList underflow.\n");
+    }
+    else if(idx &lt 0 || idx &gt= array-&gtlength)
+    {
+        printf("Invalid argument.\n");
+    }
+    else
+    {
+        array-&gtarr[idx] = data;
+    }
+}
+            </code></pre></div>
+          </div>
+
+        </div> 
+        
+        <!-- 14 child -->
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="arrayList-headingFourteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseFourteen" aria-expanded="false" aria-controls="arrayList-collapseFourteen">
+              #14. Main Function Code. 
+            </button>
+          </h2>
+          <div id="arrayList-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="arrayList-headingFourteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre class="language-c"><code>int main()
+{
+    struct ArrayList *array = NULL;
+    array =  create(6);
+
+    addLast(array , 2);
+    addLast(array , 3);
+    addLast(array , 4);
+    display(array);
+
+}
+            </code></pre></div>
+          </div>
+
+        </div> 
+
+       
       
           
       </div> <!-- last line of ArrayList. -->
