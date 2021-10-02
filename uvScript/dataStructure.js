@@ -15,23 +15,23 @@ function toggleButton(idx) {
 
 function alertMessage(idx){
     if(idx == 1){
-        alert("ArrayList tab is Open First Close it.");
+        alert("ArrayList tab is Open First Close it. ( Single click on ArrayList Tab for Close )");
     } else if(idx == 2){
-        alert("LinkedList tab is Open First Close it.");
+        alert("LinkedList tab is Open First Close it.  ( Single click on LinkedList Tab for Close )");
     } else if(idx == 3){
-        alert("Doubly LinkedList tab is Open First Close it.");
+        alert("Doubly LinkedList tab is Open First Close it. ( Single click on DoublyLinkedList Tab for Close )");
     } else if(idx == 4) {
-        alert("Stack tab is Open First Close it.");
+        alert("Stack tab is Open First Close it. ( Single click on Stack Tab for Close )");
     } else if(idx == 5) {
-        alert("Queue tab is Open First Close it.");
+        alert("Queue tab is Open First Close it. ( Single click on Queue Tab for Close )");
     } else if(idx == 6){
-        alert("Tree tab is Open First Close it.");
+        alert("Tree tab is Open First Close it. ( Single click on Tree Tab for Close )");
     } else if(idx == 7) {
-        alert("AVL Tree tab is Open First Close it.");
+        alert("AVL Tree tab is Open First Close it. ( Single click on AVL Tree Tab for Close )");
     } else if(idx == 8) {
-        alert("Graph tab is Open First Close it.");
+        alert("Graph tab is Open First Close it. ( Single click on Graph Tab for Close )");
     } else if(idx == 9) {
-        alert("HashTable tab is Open First Close it.");
+        alert("HashTable tab is Open First Close it. ( Single click on HashTable Tab for Close )");
     }
 }
 
