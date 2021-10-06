@@ -42,6 +42,19 @@
         .ArrayListContent , .LinkedListContent, .StackContent, .DoublyLinkedListContent, .QueueContent,.TreeContent , .AVLTreeContent, .GraphContent , .HashTableContent{
           display: none;
         }
+
+        
+
+        .card-title span{
+          padding: 10px;
+          background-color: rgba(213, 233, 247, 0.171);
+          border-radius: 50%;
+          /* border: 2px solid white; */
+          color: #3f071ad5;
+          margin-right: 4px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          /* text-align: center; */
+        }
     </style>
     
     <!-- code of universal script -->
@@ -60,23 +73,23 @@
 </head>
 <body>
     
-    <!-- navbar code  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary header">
-        <div class="container-fluid">
-          <a class="navbar-brand logo" href="#">GreatUse</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse navLink" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="../index.html" target="_blank">Home</a>
-              <a class="nav-link active" aria-current="page" href="#" onclick="progress('About')">About</a>
-              <a class="nav-link active" aria-current="page" href="#" onclick="progress('Features')">Feature</a>
-              <a class="nav-link active" aria-current="page" href="#" onclick="progress('Resources')">Resources</a>
-             
+     <!-- navbar code  -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary header">
+          <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">GreatUse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navLink" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="../index.html" target="_blank">Home</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="progress('About')">About</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="progress('Features')">Feature</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="progress('Resources')">Resources</a>
+              
+              </div>
             </div>
           </div>
-        </div>
       </nav>
 
       <!-- navbar code end.. -->
@@ -101,7 +114,7 @@
           <div class="col " id="ArrayList">     
             <div  class="card bg-primary text-white"  >
               <div class="card-body">
-                <h5 class="card-title text-center">ArrayList</h5>
+                <h5 class="card-title text-center"><span>#1.</span> ArrayList</h5>
               </div>
             </div>
           </div>
@@ -110,7 +123,7 @@
           <div class="col" id="LinkedList">
             <div class="card bg-secondary text-white">
               <div class="card-body">
-                <h5 class="card-title text-center">Linked List</h5>
+                <h5 class="card-title text-center"><span>#2.</span> Linked List</h5>
               </div>
             </div>
           </div>
@@ -118,7 +131,7 @@
           <div class="col" id="DoublyLinkedList">
             <div class="card bg-success text-white">
               <div class="card-body">
-                <h5 class="card-title text-center">Doubly Linked List</h5>
+                <h5 class="card-title text-center"><span>#3.</span> Doubly Linked List</h5>
               </div>
             </div>
           </div>
@@ -127,7 +140,7 @@
           <div class="col" id="Stack">
             <div class="card bg-danger text-white">
               <div class="card-body">
-                <h5 class="card-title text-center">Stack</h5>
+                <h5 class="card-title text-center"><span>#4.</span> Stack</h5>
               </div>
             </div>
           </div>
@@ -136,7 +149,7 @@
           <div class="col" id="Queue">
             <div class="card bg-warning text-white">
               <div class="card-body">
-                <h5 class="card-title text-center">Queue</h5>
+                <h5 class="card-title text-center"><span>#5.</span> Queue</h5>
               </div>
             </div>
           </div>
@@ -145,7 +158,7 @@
           <div class="col" id="Tree">
             <div class="card bg-info text-white">
               <div class="card-body">
-                <h5 class="card-title text-center">Tree</h5>
+                <h5 class="card-title text-center"><span>#6.</span> Tree</h5>
               </div>
             </div>
           </div>
@@ -153,7 +166,7 @@
           <div class="col" id="AVLTree">
             <div class="card text-white" style="background-color: #99154E;">
               <div class="card-body">
-                <h5 class="card-title text-center">AVL Tree</h5>
+                <h5 class="card-title text-center"><span>#7.</span> AVL Tree</h5>
               </div>
             </div>
           </div>
@@ -162,7 +175,7 @@
           <div class="col" id="Graph">
             <div class="card text-white" style="background-color: #293B5F;">
               <div class="card-body">
-                <h5 class="card-title text-center">Graph</h5>
+                <h5 class="card-title text-center"><span>#8.</span> Graph</h5>
               </div>
             </div>
           </div>
@@ -171,7 +184,7 @@
           <div class="col" id="HashTable">
             <div class="card text-white" style="background-color: #e91449;">
               <div class="card-body">
-                <h5 class="card-title text-center">HashTable</h5>
+                <h5 class="card-title text-center"><span>#9.</span> HashTable</h5>
               </div>
             </div>
           </div>
@@ -180,18 +193,23 @@
         </div>
       </div>
 
-       <!-- ArrayList Accordions Code start -->
-      <div class="accordion accordion-flush ArrayListContent" id="accordionFlushExample ">
-         
-               <!--ArrayList Questions heading code -->
 
-      <div class="card heading mb-10 removeMargin" >
-        <div class="card-body text-success bg-warning">
-         1. ArrayList Implementation.
-          <div class="coderName">Coder-Name : <span>Manish</span></div>
+
+      <!-- ***************************** ArrayList **************************************** -->
+
+
+       <!-- ArrayList Accordions Code start -->
+      <div class="accordion accordion-flush ArrayListContent" id="accordionFlushExample">
+         
+            <!--ArrayList Questions heading code -->
+
+        <div class="card heading mb-10 removeMargin" >
+          <div class="card-body text-success bg-warning">
+          1. ArrayList Implementation.
+            <div class="coderName">Coder-Name : <span>Manish</span></div>
+          </div>
         </div>
-      </div>
-        
+    
         <!-- 1 child -->
         
         <div class="accordion-item">
@@ -469,9 +487,9 @@
 
         </div>  
         
-         <!-- 11 child -->
+        <!-- 11 child -->
         
-         <div class="accordion-item">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingEleven">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseEleven" aria-expanded="false" aria-controls="arrayList-collapseEleven">
               #11. Delete First Element of an ArrayList. 
@@ -507,7 +525,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="arrayList-headingTwelve">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arrayList-collapseTwelve" aria-expanded="false" aria-controls="arrayList-collapseTwelve">
-           12. Delete Last Element of an ArrayList.
+          12. Delete Last Element of an ArrayList.
             </button>
           </h2>
           <div id="arrayList-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="arrayList-headingTwelve" data-bs-parent="#accordionFlushExample">
@@ -582,20 +600,18 @@
           </div>
 
         </div> 
-
-       
-      
-          
+ 
       </div> <!-- last line of ArrayList. -->
 
 
 
-      <!-- ***************************** LinkedList **************************************** -->
+          <!-- ***************************** LinkedList **************************************** -->
 
       
        <!--LinkedList Accordions code Start  -->
-
-       <div class="accordion accordion-flush LinkedListContent" id="accordionFlushExample ">
+       
+       
+       <div class="accordion accordion-flush LinkedListContent" id="LinkedListExample">   <!--change id name -->
          
         <!--linkedList Questions heading code -->
 
@@ -614,7 +630,7 @@
                   #1. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseOne" class="accordion-collapse collapse" aria-labelledby="linkedList-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseOne" class="accordion-collapse collapse" aria-labelledby="linkedList-headingOne" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -628,7 +644,7 @@
                   #2. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="linkedList-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="linkedList-headingTwo" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -642,7 +658,7 @@
                   #3. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseThree" class="accordion-collapse collapse" aria-labelledby="linkedList-headingThree" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseThree" class="accordion-collapse collapse" aria-labelledby="linkedList-headingThree" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -657,7 +673,7 @@
                   #4. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseFour" class="accordion-collapse collapse" aria-labelledby="linkedList-headingFour" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseFour" class="accordion-collapse collapse" aria-labelledby="linkedList-headingFour" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -671,7 +687,7 @@
                   #5. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseFive" class="accordion-collapse collapse" aria-labelledby="linkedList-headingFive" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseFive" class="accordion-collapse collapse" aria-labelledby="linkedList-headingFive" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -685,7 +701,7 @@
                   #6. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseSix" class="accordion-collapse collapse" aria-labelledby="linkedList-headingSix" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseSix" class="accordion-collapse collapse" aria-labelledby="linkedList-headingSix" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -699,7 +715,7 @@
                   #7. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="linkedList-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="linkedList-headingSeven" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -713,7 +729,7 @@
                   #8. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseEight" class="accordion-collapse collapse" aria-labelledby="linkedList-headingEight" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseEight" class="accordion-collapse collapse" aria-labelledby="linkedList-headingEight" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -727,7 +743,7 @@
                   #9. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseNine" class="accordion-collapse collapse" aria-labelledby="linkedList-headingNine" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseNine" class="accordion-collapse collapse" aria-labelledby="linkedList-headingNine" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -741,7 +757,7 @@
                   #10. WAP 
                 </button>
               </h2>
-              <div id="linkedList-collapseTen" class="accordion-collapse collapse" aria-labelledby="linkedList-headingTen" data-bs-parent="#accordionFlushExample">
+              <div id="linkedList-collapseTen" class="accordion-collapse collapse" aria-labelledby="linkedList-headingTen" data-bs-parent="#LinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -750,6 +766,7 @@
        
    
       </div>
+
       
 
 
@@ -758,7 +775,7 @@
 
       
        <!--doublyLinkedList Accordions code Start  -->
-       <div class="accordion accordion-flush DoublyLinkedListContent" id="accordionFlushExample ">
+       <div class="accordion accordion-flush DoublyLinkedListContent" id="DoublyLinkedListExample">
          
         <!--doublyLinkedList Questions heading code -->
 
@@ -777,7 +794,7 @@
                   #1. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseOne" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseOne" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingOne" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -791,7 +808,7 @@
                   #2. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingTwo" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -805,7 +822,7 @@
                   #3. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseThree" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingThree" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseThree" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingThree" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -820,7 +837,7 @@
                   #4. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseFour" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingFour" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseFour" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingFour" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -834,7 +851,7 @@
                   #5. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseFive" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingFive" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseFive" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingFive" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -848,7 +865,7 @@
                   #6. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseSix" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingSix" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseSix" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingSix" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -862,7 +879,7 @@
                   #7. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingSeven" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -876,7 +893,7 @@
                   #8. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseEight" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingEight" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseEight" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingEight" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -890,7 +907,7 @@
                   #9. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseNine" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingNine" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseNine" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingNine" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -904,7 +921,7 @@
                   #10. WAP 
                 </button>
               </h2>
-              <div id="doublyLinkedList-collapseTen" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingTen" data-bs-parent="#accordionFlushExample">
+              <div id="doublyLinkedList-collapseTen" class="accordion-collapse collapse" aria-labelledby="doublyLinkedList-headingTen" data-bs-parent="#DoublyLinkedListExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -920,7 +937,7 @@
 
       
        <!--stack Accordions code Start head is at top -->
-       <div class="accordion accordion-flush StackContent" id="accordionFlushExample ">
+       <div class="accordion accordion-flush StackContent" id="StackExample">
          
         <!--stack Questions heading code -->
 
@@ -936,11 +953,17 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseOne" aria-expanded="false" aria-controls="stack-collapseOne">
-                  #1. WAP 
+                  #1. Stack ADT Implementation. 
                 </button>
               </h2>
-              <div id="stack-collapseOne" class="accordion-collapse collapse" aria-labelledby="stack-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              <div id="stack-collapseOne" class="accordion-collapse collapse" aria-labelledby="stack-headingOne" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>struct Stack
+{
+  int top;
+  int size;
+  int *arr;
+};
+                </code></pre></div>
               </div>
 
             </div>
@@ -950,11 +973,17 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseTwo" aria-expanded="false" aria-controls="stack-collapseTwo">
-                  #2. WAP 
+                  #2. Initilise Stack ADT.
                 </button>
               </h2>
-              <div id="stack-collapseTwo" class="accordion-collapse collapse" aria-labelledby="stack-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              <div id="stack-collapseTwo" class="accordion-collapse collapse" aria-labelledby="stack-headingTwo" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>void create(struct Stack *st , int size)
+{
+    st-&gtsize = size;
+    st-&gttop = -1;
+    st-&gtarr = (int *)malloc(st-&gtsize * sizeof(int));
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -964,11 +993,23 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseThree" aria-expanded="false" aria-controls="stack-collapseThree">
-                  #3. WAP 
+                  #3. Implementation of Push Function. 
                 </button>
               </h2>
-              <div id="stack-collapseThree" class="accordion-collapse collapse" aria-labelledby="stack-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              <div id="stack-collapseThree" class="accordion-collapse collapse" aria-labelledby="stack-headingThree" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>void push(struct Stack *st , int data)
+{
+    if(st-&gttop == st-&gtsize -1)
+    {
+        printf("Stack overflow.\n");
+    }
+    else
+    {
+        st-&gttop++;
+        st-&gtarr[st-&gttop] = data;
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -979,11 +1020,24 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseFour" aria-expanded="false" aria-controls="stack-collapseFour">
-                  #4. WAP 
+                  #4. Implementation of POP Function. 
                 </button>
               </h2>
-              <div id="stack-collapseFour" class="accordion-collapse collapse" aria-labelledby="stack-headingFour" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              <div id="stack-collapseFour" class="accordion-collapse collapse" aria-labelledby="stack-headingFour" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>int pop(struct Stack *st)
+{
+    if(st-&gttop == -1)
+    {
+        printf("Stack underflow.\n");
+    }
+    else
+    {
+        int data = st-&gtarr[st-&gttop];
+        st-&gttop--;
+        return data;
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>   
@@ -993,11 +1047,22 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseFive" aria-expanded="false" aria-controls="stack-collapseFive">
-                  #5. WAP 
+                  #5. Implementation of Peek Function. 
                 </button>
               </h2>
-              <div id="stack-collapseFive" class="accordion-collapse collapse" aria-labelledby="stack-headingFive" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              <div id="stack-collapseFive" class="accordion-collapse collapse" aria-labelledby="stack-headingFive" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>int peek(struct Stack st)
+{
+    if(st.top == -1)
+    {
+        printf("Stack underflow.\n");
+    }
+    else
+    {
+        return (st.arr[st.top]);
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -1007,11 +1072,19 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseSix" aria-expanded="false" aria-controls="stack-collapseSix">
-                  #6. WAP 
+                  #6. Implementation of Display Function. 
                 </button>
               </h2>
-              <div id="stack-collapseSix" class="accordion-collapse collapse" aria-labelledby="stack-headingSix" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              <div id="stack-collapseSix" class="accordion-collapse collapse" aria-labelledby="stack-headingSix" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>void display(struct Stack st)
+{
+    for(int i = st.top; i &gt= 0; i--)
+    {
+        printf("%d ",st.arr[i]);
+    }
+    printf("\n");
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -1021,11 +1094,15 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseSeven" aria-expanded="false" aria-controls="stack-collapseSeven">
-                  #7. WAP 
+                  #7. Implementation of Size Function. 
                 </button>
               </h2>
-              <div id="stack-collapseSeven" class="accordion-collapse collapse" aria-labelledby="stack-headingSeven" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              <div id="stack-collapseSeven" class="accordion-collapse collapse" aria-labelledby="stack-headingSeven" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>int size(struct Stack st)
+{
+    return (st.top + 1);
+}
+                </code></pre></div>
               </div>
 
             </div> 
@@ -1035,11 +1112,28 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingEight">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseEight" aria-expanded="false" aria-controls="stack-collapseEight">
-                  #8. WAP 
+                  #8. Call Function from Main Function. 
                 </button>
               </h2>
-              <div id="stack-collapseEight" class="accordion-collapse collapse" aria-labelledby="stack-headingEight" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              <div id="stack-collapseEight" class="accordion-collapse collapse" aria-labelledby="stack-headingEight" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>int main()
+{
+      struct Stack st;
+      create(&st , 5);
+      push(&st , 1);
+      push(&st , 2);
+      push(&st , 3);
+      push(&st , 4);
+      push(&st , 5);
+      display(st);
+      int res = peek(st);
+      printf("%d  \n",res);
+      res = size(st);
+      printf("%d  \n",res);
+      display(st);
+
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -1049,11 +1143,99 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingNine">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseNine" aria-expanded="false" aria-controls="stack-collapseNine">
-                  #9. WAP 
+                  #9. Stack Full Implementation at a Single Place. 
                 </button>
               </h2>
-              <div id="stack-collapseNine" class="accordion-collapse collapse" aria-labelledby="stack-headingNine" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+              <div id="stack-collapseNine" class="accordion-collapse collapse" aria-labelledby="stack-headingNine" data-bs-parent="#StackExample">
+                <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+#include &ltstdlib.h&gt
+
+struct Stack{
+  int top;
+  int size;
+  int *arr;
+};
+
+void create(struct Stack *st , int size)
+{
+    st-&gtsize = size;
+    st-&gttop = -1;
+    st-&gtarr = (int *)malloc(st-&gtsize * sizeof(int));
+}
+
+void push(struct Stack *st , int data)
+{
+    if(st-&gttop == st-&gtsize -1)
+    {
+        printf("Stack overflow.\n");
+    }
+    else
+    {
+        st-&gttop++;
+        st-&gtarr[st-&gttop] = data;
+    }
+}
+
+int pop(struct Stack *st)
+{
+    if(st-&gttop == -1)
+    {
+        printf("Stack underflow.\n");
+    }
+    else
+    {
+        int data = st-&gtarr[st-&gttop];
+        st-&gttop--;
+        return data;
+    }
+}
+
+int size(struct Stack st)
+{
+    return (st.top + 1);
+}
+
+int peek(struct Stack st)
+{
+    if(st.top == -1)
+    {
+        printf("Stack underflow.\n");
+    }
+    else
+    {
+        return (st.arr[st.top]);
+    }
+}
+
+void display(struct Stack st)
+{
+    for(int i = st.top; i &gt= 0; i--)
+    {
+        printf("%d ",st.arr[i]);
+    }
+    printf("\n");
+}
+int main()
+{
+      struct Stack st;
+      create(&st , 5);
+      push(&st , 1);
+      push(&st , 2);
+      push(&st , 3);
+      push(&st , 4);
+      push(&st , 5);
+      display(st);
+      int res = peek(st);
+      printf("%d  \n",res);
+      res = size(st);
+      printf("%d  \n",res);
+      display(st);
+
+
+
+
+}
+                  </code></pre></div>
               </div>
 
             </div>
@@ -1063,10 +1245,10 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="stack-headingTen">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stack-collapseTen" aria-expanded="false" aria-controls="stack-collapseTen">
-                  #10. WAP 
+                  #10. Some Important Question is added soon. 
                 </button>
               </h2>
-              <div id="stack-collapseTen" class="accordion-collapse collapse" aria-labelledby="stack-headingTen" data-bs-parent="#accordionFlushExample">
+              <div id="stack-collapseTen" class="accordion-collapse collapse" aria-labelledby="stack-headingTen" data-bs-parent="#StackExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1082,7 +1264,7 @@
 
       
        <!--queue Accordions code Start head is at top -->
-       <div class="accordion accordion-flush QueueContent" id="accordionFlushExample ">
+       <div class="accordion accordion-flush QueueContent" id="QueueExample">
          
         <!--queue Questions heading code -->
 
@@ -1101,7 +1283,7 @@
                   #1. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseOne" class="accordion-collapse collapse" aria-labelledby="queue-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseOne" class="accordion-collapse collapse" aria-labelledby="queue-headingOne" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1115,7 +1297,7 @@
                   #2. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseTwo" class="accordion-collapse collapse" aria-labelledby="queue-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseTwo" class="accordion-collapse collapse" aria-labelledby="queue-headingTwo" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1129,7 +1311,7 @@
                   #3. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseThree" class="accordion-collapse collapse" aria-labelledby="queue-headingThree" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseThree" class="accordion-collapse collapse" aria-labelledby="queue-headingThree" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1144,7 +1326,7 @@
                   #4. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseFour" class="accordion-collapse collapse" aria-labelledby="queue-headingFour" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseFour" class="accordion-collapse collapse" aria-labelledby="queue-headingFour" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1158,7 +1340,7 @@
                   #5. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseFive" class="accordion-collapse collapse" aria-labelledby="queue-headingFive" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseFive" class="accordion-collapse collapse" aria-labelledby="queue-headingFive" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1172,7 +1354,7 @@
                   #6. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseSix" class="accordion-collapse collapse" aria-labelledby="queue-headingSix" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseSix" class="accordion-collapse collapse" aria-labelledby="queue-headingSix" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1186,7 +1368,7 @@
                   #7. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseSeven" class="accordion-collapse collapse" aria-labelledby="queue-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseSeven" class="accordion-collapse collapse" aria-labelledby="queue-headingSeven" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1200,7 +1382,7 @@
                   #8. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseEight" class="accordion-collapse collapse" aria-labelledby="queue-headingEight" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseEight" class="accordion-collapse collapse" aria-labelledby="queue-headingEight" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1214,7 +1396,7 @@
                   #9. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseNine" class="accordion-collapse collapse" aria-labelledby="queue-headingNine" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseNine" class="accordion-collapse collapse" aria-labelledby="queue-headingNine" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1228,7 +1410,7 @@
                   #10. WAP 
                 </button>
               </h2>
-              <div id="queue-collapseTen" class="accordion-collapse collapse" aria-labelledby="queue-headingTen" data-bs-parent="#accordionFlushExample">
+              <div id="queue-collapseTen" class="accordion-collapse collapse" aria-labelledby="queue-headingTen" data-bs-parent="#QueueExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1236,14 +1418,14 @@
         
        
    
-      </div>
+       </div>
       
     
       <!-- ***************************** Tree **************************************** -->
 
       
        <!--tree Accordions code Start head is at top -->
-       <div class="accordion accordion-flush TreeContent" id="accordionFlushExample ">
+       <div class="accordion accordion-flush TreeContent" id="TreeExample">
          
         <!--tree Questions heading code -->
 
@@ -1259,11 +1441,130 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseOne" aria-expanded="false" aria-controls="tree-collapseOne">
-                  #1. WAP 
+                  #1. Implementation of Binary Tree. 
                 </button>
               </h2>
-              <div id="tree-collapseOne" class="accordion-collapse collapse" aria-labelledby="tree-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+              <div id="tree-collapseOne" class="accordion-collapse collapse" aria-labelledby="tree-headingOne" data-bs-parent="#TreeExample">
+                <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+#include &ltstdlib.h&gt
+
+// Tree Node
+struct Node
+{
+    int data;
+    struct Node *lchild , *rchild;
+};
+
+struct Node *root;
+
+// Queue Implementation.
+
+  struct Queue
+{
+    int size , front , rear;
+    struct Node **Q;
+};
+
+void CreateQueue(struct Queue *q , int size)
+{
+    q-&gtsize = size;
+    q-&gtfront = q-&gtrear = 0;
+    q-&gtQ = (struct Node**)malloc(q-&gtsize * sizeof(struct Node*));
+}
+void enqueue(struct Queue *q , struct Node *x)
+{
+    if((q-&gtrear + 1) % q-&gtsize == q-&gtfront)
+    {
+        printf("Queue overflow.\n");
+    }
+    else
+    {
+        q-&gtrear = (q-&gtrear + 1) % q-&gtsize;
+        q-&gtQ[q-&gtrear] = x;
+    }
+}
+
+struct Node* dequeue(struct Queue* q)
+{
+    if(q-&gtfront == q-&gtrear)
+    {
+        printf("Queue underflow.\n");
+        return NULL;
+    }
+    else
+    {
+        q-&gtfront = (q-&gtfront + 1) % q-&gtsize;
+        struct Node *x = q-&gtQ[q-&gtfront];
+        return x;
+    }
+}
+
+int isEmpty(struct Queue q)
+{
+    return q.rear == q.front;
+}
+
+void CreateTree()
+{
+    struct Node *t , *p;
+    int x;
+    struct Queue q;
+    CreateQueue(&q , 100);
+
+    root = (struct Node *)malloc(sizeof(struct Node));
+    printf("Enter the Root Element.\n");
+    scanf("%d",&x);
+    root-&gtdata = x;
+    root-&gtlchild = root-&gtrchild = NULL;
+
+    enqueue(&q , root);
+
+
+    while(!isEmpty(q))
+    {
+        p = dequeue(&q);
+        printf("Enter the lchild Element of %d.\n",p-&gtdata);
+        scanf("%d",&x);
+
+        if(x != -1)
+        {
+            t = (struct Node *)malloc(sizeof(struct Node));
+            t-&gtdata = x;
+            t-&gtlchild = t-&gtrchild = NULL;
+            p-&gtlchild = t;
+            enqueue(&q , t);
+        }
+
+        printf("Enter the rchild Element of %d.\n",p-&gtdata);
+        scanf("%d",&x);
+
+        if(x != -1)
+        {
+            t = (struct Node *)malloc(sizeof(struct Node));
+            t-&gtdata = x;
+            t-&gtlchild = t-&gtrchild = NULL;
+            p-&gtrchild = t;
+            enqueue(&q , t);
+        }
+    }
+}
+
+void preOrder(struct Node *p)
+{
+    if(p)
+    {
+        printf("%d ",p-&gtdata);
+        preOrder(p-&gtlchild);
+        preOrder(p-&gtrchild);
+    }
+}
+
+int main()
+{
+    CreateTree();
+    preOrder(root);
+}
+                  </code></pre></div>
               </div>
 
             </div>
@@ -1276,7 +1577,7 @@
                   #2. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseTwo" class="accordion-collapse collapse" aria-labelledby="tree-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseTwo" class="accordion-collapse collapse" aria-labelledby="tree-headingTwo" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1290,7 +1591,7 @@
                   #3. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseThree" class="accordion-collapse collapse" aria-labelledby="tree-headingThree" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseThree" class="accordion-collapse collapse" aria-labelledby="tree-headingThree" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1305,7 +1606,7 @@
                   #4. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseFour" class="accordion-collapse collapse" aria-labelledby="tree-headingFour" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseFour" class="accordion-collapse collapse" aria-labelledby="tree-headingFour" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1319,7 +1620,7 @@
                   #5. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseFive" class="accordion-collapse collapse" aria-labelledby="tree-headingFive" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseFive" class="accordion-collapse collapse" aria-labelledby="tree-headingFive" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1333,7 +1634,7 @@
                   #6. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseSix" class="accordion-collapse collapse" aria-labelledby="tree-headingSix" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseSix" class="accordion-collapse collapse" aria-labelledby="tree-headingSix" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1347,7 +1648,7 @@
                   #7. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseSeven" class="accordion-collapse collapse" aria-labelledby="tree-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseSeven" class="accordion-collapse collapse" aria-labelledby="tree-headingSeven" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1361,7 +1662,7 @@
                   #8. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseEight" class="accordion-collapse collapse" aria-labelledby="tree-headingEight" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseEight" class="accordion-collapse collapse" aria-labelledby="tree-headingEight" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1375,7 +1676,7 @@
                   #9. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseNine" class="accordion-collapse collapse" aria-labelledby="tree-headingNine" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseNine" class="accordion-collapse collapse" aria-labelledby="tree-headingNine" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1389,7 +1690,7 @@
                   #10. WAP 
                 </button>
               </h2>
-              <div id="tree-collapseTen" class="accordion-collapse collapse" aria-labelledby="tree-headingTen" data-bs-parent="#accordionFlushExample">
+              <div id="tree-collapseTen" class="accordion-collapse collapse" aria-labelledby="tree-headingTen" data-bs-parent="#TreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1404,7 +1705,7 @@
 
       
        <!--AVLTree Accordions code Start head is at top -->
-       <div class="accordion accordion-flush AVLTreeContent" id="accordionFlushExample ">
+       <div class="accordion accordion-flush AVLTreeContent" id="AVLTreeExample">
          
         <!--AVLTree Questions heading code -->
 
@@ -1423,7 +1724,7 @@
                   #1. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseOne" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseOne" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingOne" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1437,7 +1738,7 @@
                   #2. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseTwo" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseTwo" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingTwo" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1451,7 +1752,7 @@
                   #3. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseThree" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingThree" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseThree" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingThree" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1466,7 +1767,7 @@
                   #4. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseFour" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingFour" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseFour" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingFour" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1480,7 +1781,7 @@
                   #5. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseFive" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingFive" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseFive" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingFive" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1494,7 +1795,7 @@
                   #6. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseSix" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingSix" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseSix" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingSix" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1508,7 +1809,7 @@
                   #7. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseSeven" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseSeven" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingSeven" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1522,7 +1823,7 @@
                   #8. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseEight" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingEight" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseEight" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingEight" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1536,7 +1837,7 @@
                   #9. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseNine" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingNine" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseNine" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingNine" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1550,7 +1851,7 @@
                   #10. WAP 
                 </button>
               </h2>
-              <div id="AVLTree-collapseTen" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingTen" data-bs-parent="#accordionFlushExample">
+              <div id="AVLTree-collapseTen" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingTen" data-bs-parent="#AVLTreeExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1566,7 +1867,7 @@
 
       
        <!--graph Accordions code Start head is at top -->
-       <div class="accordion accordion-flush GraphContent" id="accordionFlushExample ">
+       <div class="accordion accordion-flush GraphContent" id="GraphExample">
          
         <!--graph Questions heading code -->
 
@@ -1585,7 +1886,7 @@
                   #1. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseOne" class="accordion-collapse collapse" aria-labelledby="graph-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseOne" class="accordion-collapse collapse" aria-labelledby="graph-headingOne" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1599,7 +1900,7 @@
                   #2. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseTwo" class="accordion-collapse collapse" aria-labelledby="graph-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseTwo" class="accordion-collapse collapse" aria-labelledby="graph-headingTwo" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1613,7 +1914,7 @@
                   #3. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseThree" class="accordion-collapse collapse" aria-labelledby="graph-headingThree" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseThree" class="accordion-collapse collapse" aria-labelledby="graph-headingThree" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1628,7 +1929,7 @@
                   #4. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseFour" class="accordion-collapse collapse" aria-labelledby="graph-headingFour" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseFour" class="accordion-collapse collapse" aria-labelledby="graph-headingFour" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1642,7 +1943,7 @@
                   #5. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseFive" class="accordion-collapse collapse" aria-labelledby="graph-headingFive" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseFive" class="accordion-collapse collapse" aria-labelledby="graph-headingFive" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1656,7 +1957,7 @@
                   #6. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseSix" class="accordion-collapse collapse" aria-labelledby="graph-headingSix" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseSix" class="accordion-collapse collapse" aria-labelledby="graph-headingSix" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1670,7 +1971,7 @@
                   #7. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseSeven" class="accordion-collapse collapse" aria-labelledby="graph-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseSeven" class="accordion-collapse collapse" aria-labelledby="graph-headingSeven" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1684,7 +1985,7 @@
                   #8. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseEight" class="accordion-collapse collapse" aria-labelledby="graph-headingEight" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseEight" class="accordion-collapse collapse" aria-labelledby="graph-headingEight" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1698,7 +1999,7 @@
                   #9. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseNine" class="accordion-collapse collapse" aria-labelledby="graph-headingNine" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseNine" class="accordion-collapse collapse" aria-labelledby="graph-headingNine" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1712,7 +2013,7 @@
                   #10. WAP 
                 </button>
               </h2>
-              <div id="graph-collapseTen" class="accordion-collapse collapse" aria-labelledby="graph-headingTen" data-bs-parent="#accordionFlushExample">
+              <div id="graph-collapseTen" class="accordion-collapse collapse" aria-labelledby="graph-headingTen" data-bs-parent="#GraphExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1728,7 +2029,7 @@
 
       
        <!--hashTable Accordions code Start head is at top -->
-       <div class="accordion accordion-flush HashTableContent" id="accordionFlushExample ">
+       <div class="accordion accordion-flush HashTableContent" id="HashTableExample">
          
         <!--hashTable Questions heading code -->
 
@@ -1747,7 +2048,7 @@
                   #1. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseOne" class="accordion-collapse collapse" aria-labelledby="hashTable-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseOne" class="accordion-collapse collapse" aria-labelledby="hashTable-headingOne" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1761,7 +2062,7 @@
                   #2. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseTwo" class="accordion-collapse collapse" aria-labelledby="hashTable-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseTwo" class="accordion-collapse collapse" aria-labelledby="hashTable-headingTwo" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1775,7 +2076,7 @@
                   #3. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseThree" class="accordion-collapse collapse" aria-labelledby="hashTable-headingThree" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseThree" class="accordion-collapse collapse" aria-labelledby="hashTable-headingThree" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
               </div>
 
@@ -1790,7 +2091,7 @@
                   #4. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseFour" class="accordion-collapse collapse" aria-labelledby="hashTable-headingFour" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseFour" class="accordion-collapse collapse" aria-labelledby="hashTable-headingFour" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1804,7 +2105,7 @@
                   #5. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseFive" class="accordion-collapse collapse" aria-labelledby="hashTable-headingFive" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseFive" class="accordion-collapse collapse" aria-labelledby="hashTable-headingFive" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1818,7 +2119,7 @@
                   #6. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseSix" class="accordion-collapse collapse" aria-labelledby="hashTable-headingSix" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseSix" class="accordion-collapse collapse" aria-labelledby="hashTable-headingSix" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1832,7 +2133,7 @@
                   #7. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseSeven" class="accordion-collapse collapse" aria-labelledby="hashTable-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseSeven" class="accordion-collapse collapse" aria-labelledby="hashTable-headingSeven" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1846,7 +2147,7 @@
                   #8. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseEight" class="accordion-collapse collapse" aria-labelledby="hashTable-headingEight" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseEight" class="accordion-collapse collapse" aria-labelledby="hashTable-headingEight" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1860,7 +2161,7 @@
                   #9. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseNine" class="accordion-collapse collapse" aria-labelledby="hashTable-headingNine" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseNine" class="accordion-collapse collapse" aria-labelledby="hashTable-headingNine" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1874,7 +2175,7 @@
                   #10. WAP 
                 </button>
               </h2>
-              <div id="hashTable-collapseTen" class="accordion-collapse collapse" aria-labelledby="hashTable-headingTen" data-bs-parent="#accordionFlushExample">
+              <div id="hashTable-collapseTen" class="accordion-collapse collapse" aria-labelledby="hashTable-headingTen" data-bs-parent="#HashTableExample">
                 <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
               </div>
 
@@ -1885,11 +2186,7 @@
       </div>
       
 
-
       
-
-
-
      <!-- //  link dataStructure javaScript file. -->
     <script src="../uvScript/dataStructure.js"></script>
 
