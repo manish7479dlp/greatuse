@@ -1441,129 +1441,63 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseOne" aria-expanded="false" aria-controls="tree-collapseOne">
-                  #1. Implementation of Binary Tree. 
+                  #1. UseFul Code for Implementation of Binray Tree. (Its Queue Implementation) 
                 </button>
               </h2>
               <div id="tree-collapseOne" class="accordion-collapse collapse" aria-labelledby="tree-headingOne" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
-#include &ltstdlib.h&gt
-
-// Tree Node
-struct Node
+                <div class="accordion-body"><pre class="language-c"><code>struct Queue
 {
-    int data;
-    struct Node *lchild , *rchild;
-};
-
-struct Node *root;
-
-// Queue Implementation.
-
-  struct Queue
-{
-    int size , front , rear;
+    int front , size , rear;
     struct Node **Q;
 };
 
-void CreateQueue(struct Queue *q , int size)
+void createQueue(struct Queue *q, int size)
 {
-    q-&gtsize = size;
     q-&gtfront = q-&gtrear = 0;
-    q-&gtQ = (struct Node**)malloc(q-&gtsize * sizeof(struct Node*));
-}
-void enqueue(struct Queue *q , struct Node *x)
+    q-&gtsize = size;
+    q-&gtQ = (struct Node **) malloc(q-&gtsize * sizeof(struct Node*));
+
+};
+
+void enqueue(struct Queue *q , struct Node *key)
 {
-    if((q-&gtrear + 1) % q-&gtsize == q-&gtfront)
+    if(q-&gtfront == (q-&gtrear + 1) % q-&gtsize)
     {
-        printf("Queue overflow.\n");
+        return;
     }
     else
     {
         q-&gtrear = (q-&gtrear + 1) % q-&gtsize;
-        q-&gtQ[q-&gtrear] = x;
+        q-&gtQ[q-&gtrear] = key;
     }
 }
 
-struct Node* dequeue(struct Queue* q)
+struct Node* dequeue(struct Queue *q)
 {
     if(q-&gtfront == q-&gtrear)
     {
-        printf("Queue underflow.\n");
         return NULL;
     }
     else
     {
         q-&gtfront = (q-&gtfront + 1) % q-&gtsize;
-        struct Node *x = q-&gtQ[q-&gtfront];
-        return x;
+        return q-&gtQ[q-&gtfront];
+
     }
 }
 
 int isEmpty(struct Queue q)
 {
-    return q.rear == q.front;
-}
-
-void CreateTree()
-{
-    struct Node *t , *p;
-    int x;
-    struct Queue q;
-    CreateQueue(&q , 100);
-
-    root = (struct Node *)malloc(sizeof(struct Node));
-    printf("Enter the Root Element.\n");
-    scanf("%d",&x);
-    root-&gtdata = x;
-    root-&gtlchild = root-&gtrchild = NULL;
-
-    enqueue(&q , root);
-
-
-    while(!isEmpty(q))
+    if(q.front == q.rear)
     {
-        p = dequeue(&q);
-        printf("Enter the lchild Element of %d.\n",p-&gtdata);
-        scanf("%d",&x);
-
-        if(x != -1)
-        {
-            t = (struct Node *)malloc(sizeof(struct Node));
-            t-&gtdata = x;
-            t-&gtlchild = t-&gtrchild = NULL;
-            p-&gtlchild = t;
-            enqueue(&q , t);
-        }
-
-        printf("Enter the rchild Element of %d.\n",p-&gtdata);
-        scanf("%d",&x);
-
-        if(x != -1)
-        {
-            t = (struct Node *)malloc(sizeof(struct Node));
-            t-&gtdata = x;
-            t-&gtlchild = t-&gtrchild = NULL;
-            p-&gtrchild = t;
-            enqueue(&q , t);
-        }
+        return 0;
+    }
+    else
+    {
+        return 1;
     }
 }
-
-void preOrder(struct Node *p)
-{
-    if(p)
-    {
-        printf("%d ",p-&gtdata);
-        preOrder(p-&gtlchild);
-        preOrder(p-&gtrchild);
-    }
-}
-
-int main()
-{
-    CreateTree();
-    preOrder(root);
-}
+                  
                   </code></pre></div>
               </div>
 
@@ -1574,11 +1508,62 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseTwo" aria-expanded="false" aria-controls="tree-collapseTwo">
-                  #2. WAP 
+                  #2. CreateTree Function. (Its Create The BinaryTree)
                 </button>
               </h2>
               <div id="tree-collapseTwo" class="accordion-collapse collapse" aria-labelledby="tree-headingTwo" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Node
+{
+    int data;
+    struct Node *lchild , *rchild;
+};
+
+void createTree(struct Node *root)
+{
+    struct Node *temp, *r;
+    int x;
+    struct Queue que;
+    createQueue(&que , 100);
+
+    printf("Enter the Element of Root.\n");
+    scanf("%d",&x);
+    root-&gtdata = x;
+    root-&gtlchild = root-&gtrchild = NULL;
+    enqueue(&que , root);
+
+    while(isEmpty(que))
+    {   temp = dequeue(&que);
+        printf("Enter the LeftChild Element of %d\n",temp-&gtdata);
+        scanf("%d",&x);
+
+        // for left_child.
+
+
+        if(x != -1)
+        {
+            r = (struct Node *)malloc(sizeof(struct Node));
+            r-&gtdata = x;
+            r-&gtlchild = r-&gtrchild = NULL;
+            temp-&gtlchild = r;
+            enqueue(&que , r);
+        }
+
+        printf("Enter the RightChild Element of %d\n",temp-&gtdata);
+        scanf("%d",&x);
+
+        // for right_child.
+
+        if(x != -1)
+        {
+            r = (struct Node *)malloc(sizeof(struct Node));
+            r-&gtdata = x;
+            r-&gtlchild = r-&gtrchild = NULL;
+            temp-&gtrchild = r;
+            enqueue(&que , r);
+        }
+    }
+}
+                  </code></pre></div>
               </div>
 
             </div>
@@ -1588,11 +1573,23 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseThree" aria-expanded="false" aria-controls="tree-collapseThree">
-                  #3. WAP 
+                  #3. PreOrder Traversal. (Using Recursion) 
                 </button>
               </h2>
               <div id="tree-collapseThree" class="accordion-collapse collapse" aria-labelledby="tree-headingThree" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void preOrder(struct Node *q)
+{
+    if(q == NULL)
+    {
+        return;
+    }
+    else
+    {
+        printf("%d ",q-&gtdata);
+        preOrder(q-&gtlchild);
+        preOrder(q-&gtrchild);
+    }
+}</code></pre></div>
               </div>
 
             </div>  
@@ -1603,11 +1600,23 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseFour" aria-expanded="false" aria-controls="tree-collapseFour">
-                  #4. WAP 
+                  #4. PostOrder Traversal. (Using Recursion) 
                 </button>
               </h2>
               <div id="tree-collapseFour" class="accordion-collapse collapse" aria-labelledby="tree-headingFour" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void postOrder(struct Node *q)
+{
+    if(q == NULL)
+    {
+        return;
+    }
+    else
+    {
+        postOrder(q-&gtlchild);
+        postOrder(q-&gtrchild);
+        printf("%d ",q-&gtdata);
+    }
+}</code></pre></div>
               </div>
 
             </div>   
@@ -1617,11 +1626,23 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseFive" aria-expanded="false" aria-controls="tree-collapseFive">
-                  #5. WAP 
+                  #5. InOrder Traversal. (Using Recursion) 
                 </button>
               </h2>
               <div id="tree-collapseFive" class="accordion-collapse collapse" aria-labelledby="tree-headingFive" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void inOrder(struct Node *q)
+{
+    if(q == NULL)
+    {
+        return;
+    }
+    else
+    {
+        inOrder(q-&gtlchild);
+        printf("%d ",q-&gtdata);
+        inOrder(q-&gtrchild);
+    }
+}</code></pre></div>
               </div>
 
             </div>  
@@ -1631,11 +1652,27 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseSix" aria-expanded="false" aria-controls="tree-collapseSix">
-                  #6. WAP 
+                  #6. Height of BinaryTree. 
                 </button>
               </h2>
               <div id="tree-collapseSix" class="accordion-collapse collapse" aria-labelledby="tree-headingSix" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int height(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        int hlc = height(root-&gtlchild);
+        int hrc = height(root-&gtrchild);
+
+        if(hlc &gt hrc)
+            return (hlc + 1);
+        else
+            return (hrc + 1);
+    }
+}</code></pre></div>
               </div>
 
             </div>
@@ -1645,11 +1682,23 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseSeven" aria-expanded="false" aria-controls="tree-collapseSeven">
-                  #7. WAP 
+                  #7. Number of Nodes In a BinaryTree. 
                 </button>
               </h2>
               <div id="tree-collapseSeven" class="accordion-collapse collapse" aria-labelledby="tree-headingSeven" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int nodeCount(struct Node *root)
+{
+    if(root == NULL)
+        return 0;
+    else
+    {
+        int clcn = nodeCount(root-&gtlchild);
+        int crcn = nodeCount(root-&gtrchild);
+
+        return (clcn + crcn + 1);
+    }
+}
+                  </code></pre></div>
               </div>
 
             </div> 
@@ -1659,11 +1708,42 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingEight">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseEight" aria-expanded="false" aria-controls="tree-collapseEight">
-                  #8. WAP 
+                  #8. LevelOrder Traversal Of BinaryTree. 
                 </button>
               </h2>
               <div id="tree-collapseEight" class="accordion-collapse collapse" aria-labelledby="tree-headingEight" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void levelOrderTraversal(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return;
+    }
+    else
+    {
+        struct Queue q;
+        createQueue(&q , 100);
+        printf("%d ",root-&gtdata);
+        enqueue(&q , root);
+
+        while(isEmpty(q))
+        {
+            struct Node *p = dequeue(&q);
+            if(p-&gtlchild != NULL)
+            {
+                printf("%d ",p-&gtlchild-&gtdata);
+                enqueue(&q , p-&gtlchild);
+            }
+            if(p-&gtrchild != NULL)
+            {
+                printf("%d ",p-&gtrchild-&gtdata);
+                enqueue(&q , p-&gtrchild);
+            }
+        }
+
+        printf(".\n");
+    }
+}
+                  </code></pre></div>
               </div>
 
             </div>
@@ -1673,11 +1753,32 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingNine">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseNine" aria-expanded="false" aria-controls="tree-collapseNine">
-                  #9. WAP 
+                  #9. Number of Leaf Nodes In a BinaryTree. 
                 </button>
               </h2>
               <div id="tree-collapseNine" class="accordion-collapse collapse" aria-labelledby="tree-headingNine" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int numberOfLeafNode(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        int llc = numberOfLeafNode(root-&gtlchild);
+        int rlc = numberOfLeafNode(root-&gtrchild);
+
+        if(root-&gtlchild == NULL && root-&gtrchild == NULL)
+        {
+            return llc + rlc + 1;
+        }
+        else
+        {
+            return llc + rlc;
+        }
+    }
+}
+                  </code></pre></div>
               </div>
 
             </div>
@@ -1687,14 +1788,377 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="tree-headingTen">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseTen" aria-expanded="false" aria-controls="tree-collapseTen">
-                  #10. WAP 
+                  #10. Count The Number Of Number Of Nodes Whose Degree is 1. 
                 </button>
               </h2>
               <div id="tree-collapseTen" class="accordion-collapse collapse" aria-labelledby="tree-headingTen" data-bs-parent="#TreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int oneDegreeNode(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        int lc = oneDegreeNode(root-&gtlchild);
+        int rc = oneDegreeNode(root-&gtrchild);
+
+        if((root-&gtlchild == NULL && root-&gtrchild != NULL) || (root-&gtlchild != NULL && root-&gtrchild == NULL))
+        {
+            return (lc + rc + 1);
+        }
+        else
+        {
+            return (lc + rc);
+        }
+    }
+}
+                  </code></pre></div>
               </div>
 
             </div>  
+
+            <!-- 11 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingEleven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseEleven" aria-expanded="false" aria-controls="tree-collapseEleven">
+                  #11. Count The Number Of Number Of Nodes Whose Degree is 2. 
+                </button>
+              </h2>
+              <div id="tree-collapseEleven" class="accordion-collapse collapse" aria-labelledby="tree-headingEleven" data-bs-parent="#TreeExample">
+                <div class="accordion-body"><pre class="language-c"><code>int TwoDegreeNode(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        int lc = TwoDegreeNode(root-&gtlchild);
+        int rc = TwoDegreeNode(root-&gtrchild);
+
+        if(root-&gtlchild != NULL && root-&gtrchild != NULL)
+        {
+            return lc + rc + 1;
+        }
+        else
+        {
+            return lc + rc;
+        }
+    }
+}
+                  </code></pre></div>
+              </div>
+
+            </div>  
+
+            <!-- 12 child -->
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tree-headingTwelve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tree-collapseTwelve" aria-expanded="false" aria-controls="tree-collapseTwelve">
+                  #12. ALL IN ONE. ( FULL BINARYTREE CODE )
+                </button>
+              </h2>
+              <div id="tree-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="tree-headingTwelve" data-bs-parent="#TreeExample">
+                <div class="accordion-body"><pre class="language-c"><code>// Code for binary Tree.
+#include &ltstdio.h&gt
+#include &ltstdlib.h&gt
+
+struct Queue
+{
+    int front , size , rear;
+    struct Node **Q;
+};
+
+void createQueue(struct Queue *q, int size)
+{
+    q-&gtfront = q-&gtrear = 0;
+    q-&gtsize = size;
+    q-&gtQ = (struct Node **) malloc(q-&gtsize * sizeof(struct Node*));
+
+};
+
+void enqueue(struct Queue *q , struct Node *key)
+{
+    if(q-&gtfront == (q-&gtrear + 1) % q-&gtsize)
+    {
+        return;
+    }
+    else
+    {
+        q-&gtrear = (q-&gtrear + 1) % q-&gtsize;
+        q-&gtQ[q-&gtrear] = key;
+    }
+}
+
+struct Node* dequeue(struct Queue *q)
+{
+    if(q-&gtfront == q-&gtrear)
+    {
+        return NULL;
+    }
+    else
+    {
+        q-&gtfront = (q-&gtfront + 1) % q-&gtsize;
+        return q-&gtQ[q-&gtfront];
+
+    }
+}
+
+int isEmpty(struct Queue q)
+{
+    if(q.front == q.rear)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+// Create Tree..
+
+struct Node
+{
+    int data;
+    struct Node *lchild , *rchild;
+};
+
+void createTree(struct Node *root)
+{
+    struct Node *temp, *r;
+    int x;
+    struct Queue que;
+    createQueue(&que , 100);
+
+    printf("Enter the Element of Root.\n");
+    scanf("%d",&x);
+    root-&gtdata = x;
+    root-&gtlchild = root-&gtrchild = NULL;
+    enqueue(&que , root);
+
+    while(isEmpty(que))
+    {   temp = dequeue(&que);
+        printf("Enter the LeftChild Element of %d\n",temp-&gtdata);
+        scanf("%d",&x);
+
+        // for left_child.
+
+
+        if(x != -1)
+        {
+            r = (struct Node *)malloc(sizeof(struct Node));
+            r-&gtdata = x;
+            r-&gtlchild = r-&gtrchild = NULL;
+            temp-&gtlchild = r;
+            enqueue(&que , r);
+        }
+
+        printf("Enter the RightChild Element of %d\n",temp-&gtdata);
+        scanf("%d",&x);
+
+        // for right_child.
+
+        if(x != -1)
+        {
+            r = (struct Node *)malloc(sizeof(struct Node));
+            r-&gtdata = x;
+            r-&gtlchild = r-&gtrchild = NULL;
+            temp-&gtrchild = r;
+            enqueue(&que , r);
+        }
+    }
+}
+
+void preOrder(struct Node *q)
+{
+    if(q == NULL)
+    {
+        return;
+    }
+    else
+    {
+        printf("%d ",q-&gtdata);
+        preOrder(q-&gtlchild);
+        preOrder(q-&gtrchild);
+    }
+}
+
+void inOrder(struct Node *q)
+{
+    if(q == NULL)
+    {
+        return;
+    }
+    else
+    {
+        inOrder(q-&gtlchild);
+        printf("%d ",q-&gtdata);
+        inOrder(q-&gtrchild);
+    }
+}
+
+void postOrder(struct Node *q)
+{
+    if(q == NULL)
+    {
+        return;
+    }
+    else
+    {
+        postOrder(q-&gtlchild);
+        postOrder(q-&gtrchild);
+        printf("%d ",q-&gtdata);
+    }
+}
+
+int height(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        int hlc = height(root-&gtlchild);
+        int hrc = height(root-&gtrchild);
+
+        if(hlc &gt hrc)
+            return (hlc + 1);
+        else
+            return (hrc + 1);
+    }
+}
+
+int numberOfLeafNode(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        int llc = numberOfLeafNode(root-&gtlchild);
+        int rlc = numberOfLeafNode(root-&gtrchild);
+
+        if(root-&gtlchild == NULL && root-&gtrchild == NULL)
+        {
+            return llc + rlc + 1;
+        }
+        else
+        {
+            return llc + rlc;
+        }
+    }
+}
+
+int TwoDegreeNode(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        int lc = TwoDegreeNode(root-&gtlchild);
+        int rc = TwoDegreeNode(root-&gtrchild);
+
+        if(root-&gtlchild != NULL && root-&gtrchild != NULL)
+        {
+            return lc + rc + 1;
+        }
+        else
+        {
+            return lc + rc;
+        }
+    }
+}
+
+int oneDegreeNode(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        int lc = oneDegreeNode(root-&gtlchild);
+        int rc = oneDegreeNode(root-&gtrchild);
+
+        if((root-&gtlchild == NULL && root-&gtrchild != NULL) || (root-&gtlchild != NULL && root-&gtrchild == NULL))
+        {
+            return (lc + rc + 1);
+        }
+        else
+        {
+            return (lc + rc);
+        }
+    }
+}
+
+int nodeCount(struct Node *root)
+{
+    if(root == NULL)
+        return 0;
+    else
+    {
+        int clcn = nodeCount(root-&gtlchild);
+        int crcn = nodeCount(root-&gtrchild);
+
+        return (clcn + crcn + 1);
+    }
+}
+
+void levelOrderTraversal(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return;
+    }
+    else
+    {
+        struct Queue q;
+        createQueue(&q , 100);
+        printf("%d ",root-&gtdata);
+        enqueue(&q , root);
+
+        while(isEmpty(q))
+        {
+            struct Node *p = dequeue(&q);
+            if(p-&gtlchild != NULL)
+            {
+                printf("%d ",p-&gtlchild-&gtdata);
+                enqueue(&q , p-&gtlchild);
+            }
+            if(p-&gtrchild != NULL)
+            {
+                printf("%d ",p-&gtrchild-&gtdata);
+                enqueue(&q , p-&gtrchild);
+            }
+        }
+
+        printf(".\n");
+    }
+}
+
+int main()
+{
+    struct Node root;
+    createTree(&root);
+    levelOrderTraversal(&root);
+    printf("Total number of Nodes is %d",nodeCount(&root));
+
+
+
+}
+                  </code></pre></div>
+              </div>
+
+            </div>  
+            
         
        
    
