@@ -627,11 +627,35 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseOne" aria-expanded="false" aria-controls="linkedList-collapseOne">
-                  #1. WAP 
+                  #1. WAP To Create Node and Initilise LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseOne" class="accordion-collapse collapse" aria-labelledby="linkedList-headingOne" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Node
+{
+    int data;
+    struct Node *next;
+} *head = NULL , *tail = NULL;
+
+void create(int arr[] , int n)
+{
+    struct Node *temp = (struct Node *)malloc(sizeof(struct Node));
+    temp-&gtdata = arr[0];
+    temp-&gtnext = NULL;
+    head = tail = temp;
+
+    for(int i = 1; i &lt n; i++)
+    {
+        struct Node *temp = (struct Node *)malloc(sizeof(struct Node));
+        temp-&gtdata = arr[i];
+        temp-&gtnext = NULL;
+        tail-&gtnext = temp;
+        tail = temp;
+    }
+
+}
+                  
+                  </code></pre></div>
               </div>
 
             </div>
@@ -641,11 +665,21 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseTwo" aria-expanded="false" aria-controls="linkedList-collapseTwo">
-                  #2. WAP 
+                  #2. WAP To Display LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseTwo" class="accordion-collapse collapse" aria-labelledby="linkedList-headingTwo" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void display(struct Node *head)
+{
+    struct Node *temp = head;
+    while(temp != NULL)
+    {
+        printf("%d  ",temp-&gtdata);
+        temp = temp-&gtnext;
+    }
+    printf("\n");
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -655,11 +689,22 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseThree" aria-expanded="false" aria-controls="linkedList-collapseThree">
-                  #3. WAP 
+                  #3. WAP To Calculate Lenght Of The LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseThree" class="accordion-collapse collapse" aria-labelledby="linkedList-headingThree" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int lenght(struct Node *head)
+{
+    int size = 0;
+    struct Node *temp = head;
+    while(temp != NULL)
+    {
+        size++;
+        temp = temp-&gtnext;
+    }
+    return size;
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -670,11 +715,52 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseFour" aria-expanded="false" aria-controls="linkedList-collapseFour">
-                  #4. WAP 
+                  #4. WAP To Insert Element In The LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseFour" class="accordion-collapse collapse" aria-labelledby="linkedList-headingFour" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void insert(int idx , int data)
+{
+    struct Node *temp = (struct Node*) malloc(sizeof(struct Node));
+    temp-&gtdata = data;
+    temp-&gtnext = NULL;
+
+    if(idx &lt 0 || idx &gt lenght(head))
+    {
+        printf("Invalid Arguments.\n");
+        return;
+    }
+
+    if(idx == 0)
+    {
+        temp-&gtnext = head;
+        head = temp;
+        if(tail == NULL)
+        {
+            tail = temp;
+        }
+    }
+    else
+    {
+        struct Node *tHead = head;
+        for(int i = 0; i &lt idx -1; i++)
+        {
+            tHead = tHead-&gtnext;
+        }
+
+        if(tHead == tail)
+        {
+          tail-&gtnext = temp;
+          tail = temp;
+        }
+        else
+        {
+            temp-&gtnext = tHead-&gtnext;
+            tHead-&gtnext = temp;
+        }
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>   
@@ -684,11 +770,27 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseFive" aria-expanded="false" aria-controls="linkedList-collapseFive">
-                  #5. WAP 
+                  #5. WAP To Add Element In The Beginning Of The LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseFive" class="accordion-collapse collapse" aria-labelledby="linkedList-headingFive" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void addFirst(int data)
+{
+    struct Node *temp = (struct Node *) malloc(sizeof(struct Node));
+    temp-&gtdata = data;
+    temp-&gtnext = NULL;
+
+    if(head == NULL)
+    {
+        head = tail = temp;
+    }
+    else
+    {
+        temp-&gtnext = head;
+        head = temp;
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -698,11 +800,28 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseSix" aria-expanded="false" aria-controls="linkedList-collapseSix">
-                  #6. WAP 
+                  #6. WAP To Add Element in The Last Of The LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseSix" class="accordion-collapse collapse" aria-labelledby="linkedList-headingSix" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void addLast(int data)
+{
+    struct Node *temp = (struct Node*)malloc(sizeof(struct Node));
+    temp-&gtdata = data;
+    temp-&gtnext = NULL;
+
+    if(head == NULL)
+    {
+        head = tail = temp;
+    }
+    else
+    {
+        tail-&gtnext = temp;
+        tail = temp;
+
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -712,11 +831,24 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseSeven" aria-expanded="false" aria-controls="linkedList-collapseSeven">
-                  #7. WAP 
+                  #7. WAP To Find Element In The LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseSeven" class="accordion-collapse collapse" aria-labelledby="linkedList-headingSeven" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int find(int data)
+{
+    struct Node *tHead = head;
+    while(tHead != NULL)
+    {
+        if(tHead-&gtdata == data)
+        {
+            return tHead;
+        }
+        tHead = tHead-&gtnext;
+    }
+    return NULL;
+}
+                </code></pre></div>
               </div>
 
             </div> 
@@ -726,11 +858,30 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingEight">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseEight" aria-expanded="false" aria-controls="linkedList-collapseEight">
-                  #8. WAP 
+                  #8. WAP To Calculate The Sum Of All Elements Of The LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseEight" class="accordion-collapse collapse" aria-labelledby="linkedList-headingEight" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int sumNode()
+{
+    if(head == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        struct Node *tHead = head;
+        int sum = 0;
+
+        while(tHead != NULL)
+        {
+            sum += tHead-&gtdata;
+            tHead = tHead-&gtnext;
+        }
+        return sum;
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -740,11 +891,30 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingNine">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseNine" aria-expanded="false" aria-controls="linkedList-collapseNine">
-                  #9. WAP 
+                  #9. WAP To Find Maximum Element In The LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseNine" class="accordion-collapse collapse" aria-labelledby="linkedList-headingNine" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int max()
+{
+    if(head == NULL)
+    {
+        return NULL;
+    }
+    int res = head-&gtdata;
+    struct Node *tHead = head-&gtnext;
+
+    while(tHead != NULL)
+    {
+        if(tHead-&gtdata &gt res)
+        {
+            res = tHead-&gtdata;
+        }
+        tHead = tHead-&gtnext;
+    }
+    return res;
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -754,11 +924,45 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="linkedList-headingTen">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#linkedList-collapseTen" aria-expanded="false" aria-controls="linkedList-collapseTen">
-                  #10. WAP 
+                  #10. WAP To Move Element In The Beginning Of The LinkedList.
                 </button>
               </h2>
               <div id="linkedList-collapseTen" class="accordion-collapse collapse" aria-labelledby="linkedList-headingTen" data-bs-parent="#LinkedListExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>#void moveToHead(int data)
+{
+    if(head == NULL)
+    {
+        return;
+    }
+
+    if(data == head-&gtdata)
+    {
+        return;
+    }
+    else
+    {
+        struct Node *tHead , *pre;
+        tHead = head;
+
+        while(tHead != NULL)
+        {
+            if(tHead-&gtdata == data)
+            {
+                struct Node *temp = pre;
+                pre-&gtnext = head;
+                pre = tHead-&gtnext; null
+                tHead-&gtnext = head-&gtnext;
+                head-&gtnext = pre;
+                head = tHead;
+                break;
+            }
+
+            pre = tHead;
+            tHead = tHead-&gtnext;
+        }
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -1280,11 +1484,24 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="queue-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseOne" aria-expanded="false" aria-controls="queue-collapseOne">
-                  #1. WAP 
+                  #1. WAP To Implement Queue.
                 </button>
               </h2>
               <div id="queue-collapseOne" class="accordion-collapse collapse" aria-labelledby="queue-headingOne" data-bs-parent="#QueueExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Queue
+{
+  int data , size , front , rear;
+  int *Q;
+};
+// Create Queue
+void createQueue(struct Queue *q , int size)
+{
+// q = (struct Queue *)malloc(sizeof(struct Queue));
+  q->size = size;
+  q->front = q->rear = -1;
+  q->Q = (int *)malloc(q->size * sizeof(int));
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -1294,11 +1511,23 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="queue-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseTwo" aria-expanded="false" aria-controls="queue-collapseTwo">
-                  #2. WAP 
+                  #2. WAP To Implement enQueue Function.
                 </button>
               </h2>
               <div id="queue-collapseTwo" class="accordion-collapse collapse" aria-labelledby="queue-headingTwo" data-bs-parent="#QueueExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>// enqueue code.
+void enqueue(struct Queue *q , int key)
+{
+  if(q->rear == q->size -1)
+  {
+    printf("Queue overflow.\n");
+  }
+  else
+  {
+    q->Q[++q->rear] = key;
+  }
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -1308,11 +1537,24 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="queue-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseThree" aria-expanded="false" aria-controls="queue-collapseThree">
-                  #3. WAP 
+                  #3. WAP To Implement deQueue Function.
                 </button>
               </h2>
               <div id="queue-collapseThree" class="accordion-collapse collapse" aria-labelledby="queue-headingThree" data-bs-parent="#QueueExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>// dequeue code.
+int dequeue(struct Queue *q)
+{
+    if(q->rear == q->front)
+    {
+        printf("Queue underflow.\n");
+        return -1;
+    }
+    else
+    {
+        return q->Q[++q->front];
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -1323,11 +1565,22 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="queue-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseFour" aria-expanded="false" aria-controls="queue-collapseFour">
-                  #4. WAP 
+                  #4. WAP To Implement Peek Function.
                 </button>
               </h2>
               <div id="queue-collapseFour" class="accordion-collapse collapse" aria-labelledby="queue-headingFour" data-bs-parent="#QueueExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int peek(struct Queue q)
+{
+    if(q.rear == q.front)
+    {
+        printf("Queue underflow.\n");
+    }
+    else
+    {
+        return q.Q[q.front + 1];
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>   
@@ -1337,11 +1590,22 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="queue-headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseFive" aria-expanded="false" aria-controls="queue-collapseFive">
-                  #5. WAP 
+                  #5. WAP To Implement isEmpty Function.
                 </button>
               </h2>
               <div id="queue-collapseFive" class="accordion-collapse collapse" aria-labelledby="queue-headingFive" data-bs-parent="#QueueExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int isEmpty(struct Queue q)
+{
+    if(q.front == q.rear)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -1351,11 +1615,19 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="queue-headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseSix" aria-expanded="false" aria-controls="queue-collapseSix">
-                  #6. WAP 
+                  #6. WAP To Implement Display Function.
                 </button>
               </h2>
               <div id="queue-collapseSix" class="accordion-collapse collapse" aria-labelledby="queue-headingSix" data-bs-parent="#QueueExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>void display(struct Queue q)
+{
+  for(int i = q.front + 1; i <= q.rear; i++)
+  {
+  printf("%d ",q.Q[i]);
+  }
+  printf("\n\n");
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -1365,11 +1637,211 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="queue-headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#queue-collapseSeven" aria-expanded="false" aria-controls="queue-collapseSeven">
-                  #7. WAP 
+                  #7. ALL IN ONE. ( CIRCULAR QUEUE)
                 </button>
               </h2>
               <div id="queue-collapseSeven" class="accordion-collapse collapse" aria-labelledby="queue-headingSeven" data-bs-parent="#QueueExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+                  #include &ltstdlib.h&gt
+                  struct Queue
+                  {
+                   int data , size , front , rear;
+                   int *Q;
+                  };
+                  // Create Queue
+                  void createQueue(struct Queue *q , int size)
+                  {
+                  // q = (struct Queue *)malloc(sizeof(struct Queue));
+                   q-&gtsize = size;
+                   q-&gtfront = q-&gtrear = -1;
+                   q-&gtQ = (int *)malloc(q-&gtsize * sizeof(int));
+                  }
+                  // enqueue code.
+                  void enqueue(struct Queue *q , int key)
+                  {
+                   if(q-&gtrear == q-&gtsize -1)
+                   {
+                   printf("Queue overflow.\n");
+                   }
+                   else
+                   {
+                   q-&gtQ[++q-&gtrear] = key;
+                   }
+                  }
+                  // dequeue code.
+                  int dequeue(struct Queue *q)
+                  {
+                   if(q-&gtrear == q-&gtfront)
+                   {
+                   printf("Queue underflow.\n");
+                   return -1;
+                   }
+                   else
+                   {
+                   return q-&gtQ[++q-&gtfront];
+                   }
+                  }
+                  int peek(struct Queue q)
+                  {
+                   if(q.rear == q.front)
+                   {
+                   printf("Queue underflow.\n");
+                   }
+                   else
+                   {
+                   return q.Q[q.front + 1];
+                   }
+                  }
+                  int isEmpty(struct Queue q)
+                  {
+                   if(q.front == q.rear)
+                   {
+                   return 0;
+                   }
+                   else
+                   {
+                   return 1;
+                   }
+                  }
+                  void display(struct Queue q)
+                  {
+                   for(int i = q.front + 1; i &lt= q.rear; i++)
+                   {
+                   printf("%d ",q.Q[i]);
+                   }
+                   printf("\n\n");
+                  }
+                  int main()
+                  {
+                   struct Queue q;
+                   createQueue(&q , 5);
+                   enqueue(&q , 2);
+                   enqueue(&q , 3);
+                   enqueue(&q , 2);
+                   enqueue(&q , 4);
+                   enqueue(&q , 9);
+                   display(q);
+                   printf("%d ",dequeue(&q));
+                   printf("%d ",dequeue(&q));
+                   printf("%d ",dequeue(&q));
+                   printf("%d ",dequeue(&q));
+                   printf("%d ",dequeue(&q));
+                   printf("%d\n",dequeue(&q));
+                   display(q);
+                   int res = isEmpty(q);
+                   printf("%d \n",res);
+                  }
+                  // Circular Queue.
+                  #include &ltstdio.h&gt
+                  #include &ltstdlib.h&gt
+                  struct Queue
+                  {
+                   int data , size , front , rear;
+                   int *Q;
+                  };
+                  void createQueue(struct Queue *q , int size)
+                  {
+                   q-&gtsize = size;
+                   q-&gtfront = q-&gtrear = 0;
+                   q-&gtQ = (int *)malloc(q-&gtsize * sizeof(int));
+                  }
+                  void enqueue(struct Queue *q , int key)
+                  {
+                   if(q-&gtfront == (q-&gtrear + 1)% q-&gtsize)
+                   {
+                   printf("Queue overflow.\n");
+                   }
+                   else
+                   {
+                   q-&gtrear = (q-&gtrear + 1) % q-&gtsize;
+                   q-&gtQ[q-&gtrear] = key;
+                   }
+                  }
+                  int dequeue(struct Queue *q)
+                  {
+                   if(q-&gtfront == q-&gtrear)
+                   {
+                   printf("Queue underflow.\n");
+                   return -1;
+                   }
+                   else
+                   {
+                   q-&gtfront = (q-&gtfront + 1) % q-&gtsize;
+                   return q-&gtQ[q-&gtfront];
+                   }
+                  }
+                  int isEmpty(struct Queue q)
+                  {
+                   if(q.front == q.rear)
+                   {
+                   printf("Queue underflow.\n");
+                   return 0;
+                   }
+                   else
+                   {
+                   return 1;
+                   }
+                  }
+                  int peek(struct Queue q)
+                  {
+                   if(q.rear == q.front)
+                   {
+                   printf("Queue underflow.\n");
+                   return -1;
+                   }
+                   else
+                   {
+                   return q.Q[(q.front + 1) % q.size];
+                   }
+                  }
+                  void display(struct Queue q)
+                  {
+                   if(q.front == q.rear)
+                   {
+                   printf("\n");
+                   return;
+                   }
+                   else
+                   {
+                   while(q.front != q.rear)
+                   {
+                   q.front = (q.front + 1) % q.size;
+                   printf("%d ",q.Q[q.front]);
+                   }
+                   printf("\n");
+                   }
+                  }
+                  int size(struct Queue q)
+                  {
+                   int count = 0;
+                   while(q.front != q.rear)
+                   {
+                   q.front = (q.front + 1) % q.size;
+                   count++;
+                   }
+                   return count;
+                  }
+                  int main()
+                  {
+                   struct Queue q;
+                   createQueue(&q , 5);
+                   enqueue(&q , 143);
+                   enqueue(&q , 2);
+                   enqueue(&q , 2);
+                   enqueue(&q , 2);
+                  // enqueue(&q , 5);
+                   display(q);
+                   int res = dequeue(&q);dequeue(&q);dequeue(&q);dequeue(&q);dequeue(&q);
+                   printf("size is %d.\n",size(q));
+                   display(q);
+                   enqueue(&q , 1);
+                   enqueue(&q , 2);
+                   enqueue(&q , 3);
+                   enqueue(&q , 3);
+                   enqueue(&q , 4);
+                   display(q);
+                   printf("size is %d.\n",size(q));
+                  }</code></pre></div>
               </div>
 
             </div> 
