@@ -2667,11 +2667,16 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseOne" aria-expanded="false" aria-controls="AVLTree-collapseOne">
-                  #1. WAP 
+                  #1. WAP To Create Node of AVL Tree.
                 </button>
               </h2>
               <div id="AVLTree-collapseOne" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingOne" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Node
+{
+    int data , height;
+    struct Node *lchild , *rchild;
+}*head = NULL;
+                </code></pre></div>
               </div>
 
             </div>
@@ -2681,11 +2686,19 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseTwo" aria-expanded="false" aria-controls="AVLTree-collapseTwo">
-                  #2. WAP 
+                  #2. WAP To Calculate nodeHeight of AVL Tree.
                 </button>
               </h2>
               <div id="AVLTree-collapseTwo" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingTwo" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int nodeHeight(struct Node *p)
+{
+
+        int hlc = p && p-&gtlchild ? p-&gtlchild-&gtheight : 0;
+        int hrc = p && p-&gtrchild ? p-&gtrchild-&gtheight : 0;
+        return hlc &gt hrc ? hlc + 1 : hrc + 1;
+
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -2695,11 +2708,19 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseThree" aria-expanded="false" aria-controls="AVLTree-collapseThree">
-                  #3. WAP 
+                  #3. WAP To Calculate balanceFactor Of AVL Tree.
                 </button>
               </h2>
               <div id="AVLTree-collapseThree" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingThree" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>int balanceFactor(struct Node *p)
+{
+
+        int hlc = p && p-&gtlchild ? p-&gtlchild-&gtheight : 0;
+        int hrc = p && p-&gtrchild ? p-&gtrchild-&gtheight : 0;
+        return (hlc - hrc);
+
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -2710,11 +2731,31 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseFour" aria-expanded="false" aria-controls="AVLTree-collapseFour">
-                  #4. WAP 
+                  #4. WAP To Make LL-Rotation Function.
                 </button>
               </h2>
               <div id="AVLTree-collapseFour" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingFour" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Node* llRotation(struct Node *root)
+{
+    struct Node *rootLC = root-&gtlchild;
+    struct Node *rootRC = rootLC-&gtrchild;
+
+    rootLC-&gtrchild = root;
+    root-&gtlchild = rootRC;
+
+    root-&gtheight = nodeHeight(root);
+    rootLC-&gtlchild-&gtheight = nodeHeight(rootLC-&gtlchild);
+    rootLC-&gtheight = nodeHeight(rootLC);
+
+    if(head == root)
+    {
+        head = rootLC;
+    }
+
+    return rootLC;
+
+}
+                </code></pre></div>
               </div>
 
             </div>   
@@ -2724,11 +2765,34 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseFive" aria-expanded="false" aria-controls="AVLTree-collapseFive">
-                  #5. WAP 
+                  #5. WAP To Make LR-Rotation Function.
                 </button>
               </h2>
               <div id="AVLTree-collapseFive" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingFive" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Node* lrRotation(struct Node *root)
+{
+    struct Node *rootLC = root-&gtlchild;
+    struct Node *rootLCR = rootLC-&gtrchild;
+
+    root-&gtlchild = rootLCR-&gtrchild;
+    rootLC-&gtrchild = rootLCR-&gtlchild;
+
+    rootLCR-&gtlchild = rootLC;
+    rootLCR-&gtrchild = root;
+
+    rootLCR-&gtlchild-&gtheight = nodeHeight(rootLCR-&gtlchild);
+    rootLCR-&gtrchild-&gtheight = nodeHeight(rootLCR-&gtrchild);
+    rootLCR-&gtheight =  nodeHeight(rootLCR);
+
+    if(head == root)
+    {
+        head = rootLCR;
+    }
+
+    return rootLCR;
+
+}
+                </code></pre></div>
               </div>
 
             </div>  
@@ -2738,11 +2802,29 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseSix" aria-expanded="false" aria-controls="AVLTree-collapseSix">
-                  #6. WAP 
+                  #6. WAP To Make RR-Rotation Function.
                 </button>
               </h2>
               <div id="AVLTree-collapseSix" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingSix" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Node* rrRotation(struct Node *root)
+{
+    struct Node *rootRC = root-&gtrchild;
+    struct Node *rootRCL = rootRC-&gtlchild;
+
+    root-&gtrchild = rootRCL;
+    rootRC-&gtlchild = root;
+
+    root-&gtheight = nodeHeight(root);
+    rootRC-&gtrchild-&gtheight = nodeHeight(rootRC-&gtrchild);
+    rootRC-&gtheight = nodeHeight(rootRC);
+
+    if(head == root)
+    {
+        head = rootRC;
+    }
+    return rootRC;
+}
+                </code></pre></div>
               </div>
 
             </div>
@@ -2752,11 +2834,34 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseSeven" aria-expanded="false" aria-controls="AVLTree-collapseSeven">
-                  #7. WAP 
+                  #7. WAP To Make RL-Rotation Function.
                 </button>
               </h2>
               <div id="AVLTree-collapseSeven" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingSeven" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Node* rlRotation(struct Node *root)
+{
+    struct Node* rootRC = root-&gtrchild;
+    struct Node* rootRCL = rootRC-&gtlchild;
+
+    root-&gtrchild = rootRCL-&gtlchild;
+    rootRC-&gtlchild = rootRCL-&gtrchild;
+
+    rootRCL-&gtlchild = root;
+    rootRCL-&gtrchild = rootRC;
+
+    root-&gtheight = nodeHeight(root);
+    rootRC-&gtheight = nodeHeight(rootRC);
+    rootRCL-&gtheight = nodeHeight(rootRCL);
+
+    if(head == root)
+    {
+        head = rootRCL;
+    }
+
+    return rootRCL;
+
+}
+                </code></pre></div>
               </div>
 
             </div> 
@@ -2766,11 +2871,52 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingEight">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseEight" aria-expanded="false" aria-controls="AVLTree-collapseEight">
-                  #8. WAP 
+                  #8. WAP To Make Insert AVL Tree Function.
                 </button>
               </h2>
               <div id="AVLTree-collapseEight" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingEight" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>struct Node* insert(struct Node *root , int key)
+{
+    if(root == NULL)
+    {
+        struct Node *p = (struct Node*)malloc(sizeof(struct Node));
+        p-&gtdata = key;
+        p-&gtlchild = p-&gtrchild = NULL;
+        p-&gtheight = 1;
+        return p;
+    }
+    else if(root-&gtdata &gt key)
+    {
+        root-&gtlchild = insert(root -&gtlchild , key);
+    }
+    else if(root-&gtdata &lt key)
+    {
+        root-&gtrchild = insert(root-&gtrchild , key);
+    }
+
+    root-&gtheight = nodeHeight(root);
+
+    if(balanceFactor(root) == 2 && balanceFactor(root-&gtlchild) == 1)
+    {
+        return llRotation(root);
+    }
+    else if(balanceFactor(root) == 2 && balanceFactor(root-&gtlchild) == -1)
+    {
+        return lrRotation(root);
+    }
+    else if(balanceFactor(root) == -2 && balanceFactor(root-&gtrchild) == -1)
+    {
+        return rrRotation(root);
+    }
+    else if(balanceFactor(root) == -2 && balanceFactor(root-&gtrchild) == 1)
+    {
+        return rlRotation(root);
+    }
+
+    return root;
+}
+                
+                  </code></pre></div>
               </div>
 
             </div>
@@ -2780,11 +2926,226 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingNine">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseNine" aria-expanded="false" aria-controls="AVLTree-collapseNine">
-                  #9. WAP 
+                  #9. ALL IN ONE. (AVL TREE FULL Implementation) 
                 </button>
               </h2>
               <div id="AVLTree-collapseNine" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingNine" data-bs-parent="#AVLTreeExample">
-                <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                <div class="accordion-body"><pre class="language-c"><code>// AVL Tree Code.
+
+#include &ltstdio.h&gt
+#include &ltstdlib.h&gt
+
+struct Node
+{
+    int data , height;
+    struct Node *lchild , *rchild;
+}*head = NULL;
+
+int nodeHeight(struct Node *p)
+{
+
+        int hlc = p && p-&gtlchild ? p-&gtlchild-&gtheight : 0;
+        int hrc = p && p-&gtrchild ? p-&gtrchild-&gtheight : 0;
+        return hlc &gt hrc ? hlc + 1 : hrc + 1;
+
+}
+
+int balanceFactor(struct Node *p)
+{
+
+        int hlc = p && p-&gtlchild ? p-&gtlchild-&gtheight : 0;
+        int hrc = p && p-&gtrchild ? p-&gtrchild-&gtheight : 0;
+        return (hlc - hrc);
+
+}
+
+//llRotation code.
+
+struct Node* llRotation(struct Node *root)
+{
+    struct Node *rootLC = root-&gtlchild;
+    struct Node *rootRC = rootLC-&gtrchild;
+
+    rootLC-&gtrchild = root;
+    root-&gtlchild = rootRC;
+
+    root-&gtheight = nodeHeight(root);
+    rootLC-&gtlchild-&gtheight = nodeHeight(rootLC-&gtlchild);
+    rootLC-&gtheight = nodeHeight(rootLC);
+
+    if(head == root)
+    {
+        head = rootLC;
+    }
+
+    return rootLC;
+
+}
+
+// lrRotation code.
+
+struct Node* lrRotation(struct Node *root)
+{
+    struct Node *rootLC = root-&gtlchild;
+    struct Node *rootLCR = rootLC-&gtrchild;
+
+    root-&gtlchild = rootLCR-&gtrchild;
+    rootLC-&gtrchild = rootLCR-&gtlchild;
+
+    rootLCR-&gtlchild = rootLC;
+    rootLCR-&gtrchild = root;
+
+    rootLCR-&gtlchild-&gtheight = nodeHeight(rootLCR-&gtlchild);
+    rootLCR-&gtrchild-&gtheight = nodeHeight(rootLCR-&gtrchild);
+    rootLCR-&gtheight =  nodeHeight(rootLCR);
+
+    if(head == root)
+    {
+        head = rootLCR;
+    }
+
+    return rootLCR;
+
+}
+
+//rrRotation code..
+
+struct Node* rrRotation(struct Node *root)
+{
+    struct Node *rootRC = root-&gtrchild;
+    struct Node *rootRCL = rootRC-&gtlchild;
+
+    root-&gtrchild = rootRCL;
+    rootRC-&gtlchild = root;
+
+    root-&gtheight = nodeHeight(root);
+    rootRC-&gtrchild-&gtheight = nodeHeight(rootRC-&gtrchild);
+    rootRC-&gtheight = nodeHeight(rootRC);
+
+    if(head == root)
+    {
+        head = rootRC;
+    }
+    return rootRC;
+}
+
+// rlRotation code.
+
+struct Node* rlRotation(struct Node *root)
+{
+    struct Node* rootRC = root-&gtrchild;
+    struct Node* rootRCL = rootRC-&gtlchild;
+
+    root-&gtrchild = rootRCL-&gtlchild;
+    rootRC-&gtlchild = rootRCL-&gtrchild;
+
+    rootRCL-&gtlchild = root;
+    rootRCL-&gtrchild = rootRC;
+
+    root-&gtheight = nodeHeight(root);
+    rootRC-&gtheight = nodeHeight(rootRC);
+    rootRCL-&gtheight = nodeHeight(rootRCL);
+
+    if(head == root)
+    {
+        head = rootRCL;
+    }
+
+    return rootRCL;
+
+
+}
+
+// insert function.
+
+struct Node* insert(struct Node *root , int key)
+{
+    if(root == NULL)
+    {
+        struct Node *p = (struct Node*)malloc(sizeof(struct Node));
+        p-&gtdata = key;
+        p-&gtlchild = p-&gtrchild = NULL;
+        p-&gtheight = 1;
+        return p;
+    }
+    else if(root-&gtdata &gt key)
+    {
+        root-&gtlchild = insert(root -&gtlchild , key);
+    }
+    else if(root-&gtdata &lt key)
+    {
+        root-&gtrchild = insert(root-&gtrchild , key);
+    }
+
+    root-&gtheight = nodeHeight(root);
+
+    if(balanceFactor(root) == 2 && balanceFactor(root-&gtlchild) == 1)
+    {
+        return llRotation(root);
+    }
+    else if(balanceFactor(root) == 2 && balanceFactor(root-&gtlchild) == -1)
+    {
+        return lrRotation(root);
+    }
+    else if(balanceFactor(root) == -2 && balanceFactor(root-&gtrchild) == -1)
+    {
+        return rrRotation(root);
+    }
+    else if(balanceFactor(root) == -2 && balanceFactor(root-&gtrchild) == 1)
+    {
+        return rlRotation(root);
+    }
+
+    return root;
+}
+
+
+// inOrder Traversal code.
+
+void inOrder(struct Node *root)
+{
+    if(root == NULL)
+    {
+        return;
+    }
+    else
+        inOrder(root-&gtlchild);
+        printf("%d ",root-&gtdata);
+        inOrder(root-&gtrchild);
+}
+
+int main()
+{
+
+    head = insert(head , 10);
+    head = insert(head , 20);
+    head = insert(head , 30);
+    head = insert(head , 40);
+    head = insert(head , 50);
+    head = insert(head , 60);
+    head = insert(head , 70);
+    head = insert(head , 80);
+    head = insert(head , 90);
+    head = insert(head , 100);
+//   insert(head , 3);
+//   insert(head , 10);
+//   insert(head , 1);
+//   insert(head , 6);
+//   insert(head , 14);
+//   insert(head , 4);
+//   insert(head , 7);
+//   insert(head , 13);
+    inOrder(head);
+    printf("\nheight is %d.\n",nodeHeight(head));
+
+
+}
+
+
+//OUTPUT
+//10 20 30 40 50 60 70 80 90 100
+//height is 4.
+                  </code></pre></div>
               </div>
 
             </div>
@@ -2794,7 +3155,7 @@ int main()
             <div class="accordion-item">
               <h2 class="accordion-header" id="AVLTree-headingTen">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AVLTree-collapseTen" aria-expanded="false" aria-controls="AVLTree-collapseTen">
-                  #10. WAP 
+                  #10. WAP To Make Delete Function of ALV Tree. (Comming Soon)
                 </button>
               </h2>
               <div id="AVLTree-collapseTen" class="accordion-collapse collapse" aria-labelledby="AVLTree-headingTen" data-bs-parent="#AVLTreeExample">
