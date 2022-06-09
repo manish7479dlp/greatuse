@@ -1,109 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C Language Programming Questions</title>
 
-    <link rel="stylesheet" href="../Bootstrap Download folder/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="../Bootstrap Download folder/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css"
+    />
     <script src="../Bootstrap Download folder/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- prism link -->
 
     <script src="../Prism/prism.js"></script>
-    <link rel="stylesheet" href="../Prism/prism.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../Prism/prism.css" />
+    <link rel="stylesheet" href="../css/index.css" />
 
     <style>
-        body{
-            background-color: grey;
-        }
-        .header{
-            position: sticky;
-            top:0px;
-            z-index: 100;
-        }
+      body {
+        background-color: grey;
+      }
+      .header {
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+      }
 
-        .removeMargin{
-          margin-top: 0px;
-        }
-
+      .removeMargin {
+        margin-top: 0px;
+      }
       
     </style>
-    
+
     <!-- code of universal script for navlink message -->
     <script src="../uvScript/script.js"></script>
 
     <!-- prismstyle link -->
 
-    <link rel="stylesheet" href="../Prism/prismStyle.css">
+    <link rel="stylesheet" href="../Prism/prismStyle.css" />
 
     <!-- Accordance heading uvStyle -->
 
-    <link rel="stylesheet" href="../uvStyle/uvStyle.css"> <!-- uvStyle code -->
-
-</head>
-<body>
-    
+    <link rel="stylesheet" href="../uvStyle/uvStyle.css" />
+    <!-- uvStyle code -->
+  </head>
+  <body>
     <!-- navbar code  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary header">
       <div class="container-fluid">
         <a class="navbar-brand logo" href="#">GreatUse</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse navLink" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html"
+              >Home</a
+            >
             <!-- <a class="nav-link active" aria-current="page" href="#" onclick="progress('About')">About</a>
             <a class="nav-link active" aria-current="page" href="#" onclick="progress('Features')">Feature</a> -->
-            <a class="nav-link active" aria-current="page" href="../pdf Collections//Question List.pdf" target="_blank">Resources</a>
-            <a class="nav-link active" aria-current="page"  target="_blank">Developer Hub</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="../pdf Collections//Question List.pdf"
+              target="_blank"
+              >Resources</a
+            >
+            <a class="nav-link active" aria-current="page" target="_blank"
+              >Developer Hub</a
+            >
             <!-- <a class="nav-link active" aria-current="page" href="./developer.html" target="_blank">Developer Hub</a> -->
-           
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- navbar code end.. --> 
+    <!-- navbar code end.. -->
 
-      <!-- title code start -->
+    <!-- title code start -->
 
-      <div class="card heading mb-10 removeMargin" >
-        <div class="card-body">
-          <!-- Programming Question Links. -->
-          <marquee behavior="" direction="">Programming Questions in C Language are given below.All Questions are very useful for develop programming skills..</marquee>
-        </div>
+    <div class="card heading mb-10 removeMargin">
+      <div class="card-body">
+        <!-- Programming Question Links. -->
+        <marquee behavior="" direction=""
+          >Programming Questions in C Language are given below.All Questions are
+          very useful for develop programming skills..</marquee
+        >
       </div>
+    </div>
 
-      <!-- title code end -->
+    <!-- title code end -->
 
+    <!--Simple C Questions heading code -->
 
-      <!--Simple C Questions heading code -->
-
-      <div class="card heading mb-10 removeMargin" >
-        <div class="card-body text-success bg-warning">
-         1. Simple C Questions
-          <div class="coderName">Coder-Name : <span>Sukanya</span></div>
-        </div>
+    <div class="card heading mb-10 removeMargin">
+      <div class="card-body headingBackgroundColor">
+        1. Simple C Questions
+        <div class="coderName">Coder-Name : <span>Sukanya</span></div>
       </div>
+    </div>
 
+    <!--Main Accordance code start -->
 
-      <!--Main Accordance code start -->
-
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-
-        <!-- 1 child -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseOne" aria-expanded="false" aria-controls="simple-collapseOne">
-              #1. WAP To Find Area And Circumferance Of The Circle.
-            </button>
-          </h2>
-          <div id="simple-collapseOne" class="accordion-collapse collapse" aria-labelledby="simple-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <!-- 1 child -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseOne"
+            aria-expanded="false"
+            aria-controls="simple-collapseOne"
+          >
+            #1. WAP To Find Area And Circumferance Of The Circle.
+          </button>
+        </h2>
+        <div
+          id="simple-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -117,20 +148,34 @@ printf("The Area Of The Circle is %f",ar);
 printf("The Circumferance Of The Circle is %f",c);
 getch();	
 return(0);
-}</code></pre></div>
+}</code></pre>
           </div>
         </div>
-    
-        <!-- 2 child  -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseTwo" aria-expanded="false" aria-controls="simple-collapseTwo">
-              #2. WAP For Printing Ascii Value Of the Character.
-            </button>
-          </h2>
-          <div id="simple-collapseTwo" class="accordion-collapse collapse" aria-labelledby="simple-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      </div>
+
+      <!-- 2 child  -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseTwo"
+            aria-expanded="false"
+            aria-controls="simple-collapseTwo"
+          >
+            #2. WAP For Printing Ascii Value Of the Character.
+          </button>
+        </h2>
+        <div
+          id="simple-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -140,20 +185,34 @@ ch=getche();
 printf("Ascii Value of %c is %u",ch,ch);
 getch();
 return(0);	
-}</code></pre></div>
+}</code></pre>
           </div>
         </div>
-      
-        <!--  3 child -->
+      </div>
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseThree" aria-expanded="false" aria-controls="simple-collapseThree">
-              #3. WAP to Calculate HCF of two number.
-            </button>
-          </h2>
-          <div id="simple-collapseThree" class="accordion-collapse collapse" aria-labelledby="simple-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <!--  3 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseThree"
+            aria-expanded="false"
+            aria-controls="simple-collapseThree"
+          >
+            #3. WAP to Calculate HCF of two number.
+          </button>
+        </h2>
+        <div
+          id="simple-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int fnum ,snum;
@@ -175,20 +234,34 @@ int main()
         }
     }
 }
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
-      
-        <!-- 4 child -->
+      </div>
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseFour" aria-expanded="false" aria-controls="simple-collapseFour">
-              #4. WAP to Calculate LCM of two number.
-            </button>
-          </h2>
-          <div id="simple-collapseFour" class="accordion-collapse collapse" aria-labelledby="simple-headingFour" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <!-- 4 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseFour"
+            aria-expanded="false"
+            aria-controls="simple-collapseFour"
+          >
+            #4. WAP to Calculate LCM of two number.
+          </button>
+        </h2>
+        <div
+          id="simple-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int fnum , snum;
@@ -211,20 +284,34 @@ int main()
       }
 
 }
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 5 child -->
+      <!-- 5 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseFive" aria-expanded="false" aria-controls="simple-collapseFive">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseFive"
+            aria-expanded="false"
+            aria-controls="simple-collapseFive"
+          >
             #5. WAP To Find Area Of Triangle.
-            </button>
-          </h2>
-          <div id="simple-collapseFive" class="accordion-collapse collapse" aria-labelledby="simple-headingFive" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -237,20 +324,34 @@ ar=0.5*b*h;
 printf("The Area Of The Triangle Is %f",ar);
 getch();
 return(0);
-}</code></pre></div>
+}</code></pre>
           </div>
         </div>
-        
-        <!-- 6 child -->
+      </div>
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseSix" aria-expanded="false" aria-controls="simple-collapseSix">
+      <!-- 6 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseSix"
+            aria-expanded="false"
+            aria-controls="simple-collapseSix"
+          >
             #6. WAP To Convert Name Of A Person In Abbreviated Form.
-            </button>
-          </h2>
-          <div id="simple-collapseSix" class="accordion-collapse collapse" aria-labelledby="simple-headingSix" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -259,20 +360,34 @@ printf("Enter The Full Name:");
 scanf("%s%s%s",fname,mname,lname);
 printf("The Abbreviated Name is %c%c%s",fname[20],mname[20],lname);
 return(0);	
-}</code></pre></div>
+}</code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 7 child -->
+      <!-- 7 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseSeven" aria-expanded="false" aria-controls="simple-collapseSeven">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseSeven"
+            aria-expanded="false"
+            aria-controls="simple-collapseSeven"
+          >
             #7. WAP To Calculate Simple Interest.
-            </button>
-          </h2>
-          <div id="simple-collapseSeven" class="accordion-collapse collapse" aria-labelledby="simple-headingSeven" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -289,20 +404,34 @@ printf("The Amount Of Interest is %f",i);
 getch();
 return(0);	
 }
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 8 child -->
+      <!-- 8 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseEight" aria-expanded="false" aria-controls="simple-collapseEight">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseEight"
+            aria-expanded="false"
+            aria-controls="simple-collapseEight"
+          >
             #8. WAP To Calculate Gross Salary Of An Employee.
-            </button>
-          </h2>
-          <div id="simple-collapseEight" class="accordion-collapse collapse" aria-labelledby="simple-headingEight" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -320,20 +449,34 @@ printf("The given salary is %f",t);
 getch();
 return(0);
 }
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-       <!-- 9 child -->
+      <!-- 9 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingNine">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseNine" aria-expanded="false" aria-controls="simple-collapseNine">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseNine"
+            aria-expanded="false"
+            aria-controls="simple-collapseNine"
+          >
             #9. WAP To Calculate Percentage Of 5 Subjects.
-            </button>
-          </h2>
-          <div id="simple-collapseNine" class="accordion-collapse collapse" aria-labelledby="simple-headingNine" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -355,21 +498,34 @@ printf("The percentage of marks is %f",p);
 getch();
 return(0);
 }
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
-   
-        
-        <!-- 10 child -->
+      </div>
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingTen">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseTen" aria-expanded="false" aria-controls="simple-collapseTen">
+      <!-- 10 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingTen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseTen"
+            aria-expanded="false"
+            aria-controls="simple-collapseTen"
+          >
             #10. WAP To Convert The Temperature Celcius Into Farenheit.
-            </button>
-          </h2>
-          <div id="simple-collapseTen" class="accordion-collapse collapse" aria-labelledby="simple-headingTen" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseTen"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingTen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -381,20 +537,34 @@ printf("The temperature in farenheit scale is %f",g);
 getch();
 return(0);
 }
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-       <!-- 11 child -->
+      <!-- 11 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingEleven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseEleven" aria-expanded="false" aria-controls="simple-collapseEleven">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingEleven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseEleven"
+            aria-expanded="false"
+            aria-controls="simple-collapseEleven"
+          >
             #11. WAP To Display Size Of Different Data Type.
-            </button>
-          </h2>
-          <div id="simple-collapseEleven" class="accordion-collapse collapse" aria-labelledby="simple-headingEleven" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseEleven"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingEleven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -411,20 +581,34 @@ printf("long double is %d bytes",sizeof(long double));
 getch();
 return(0);	
 }
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-       <!-- 12 child -->
+      <!-- 12 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingTwelve">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseTwelve" aria-expanded="false" aria-controls="simple-collapseTwelve">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingTwelve">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseTwelve"
+            aria-expanded="false"
+            aria-controls="simple-collapseTwelve"
+          >
             #12. WAP To Calculate Factorial Of A Given Number.
-            </button>
-          </h2>
-          <div id="simple-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="simple-headingTwelve" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseTwelve"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingTwelve"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -441,21 +625,34 @@ getch();
 return(0);	
 }
               
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        
-       <!-- 13 child -->
+      <!-- 13 child -->
 
-       <div class="accordion-item">
+      <div class="accordion-item">
         <h2 class="accordion-header" id="simple-headingThirteen">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseThirteen" aria-expanded="false" aria-controls="simple-collapseThirteen">
-          #13. WAP To Read Integer N And Print Its First Three Powers.
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseThirteen"
+            aria-expanded="false"
+            aria-controls="simple-collapseThirteen"
+          >
+            #13. WAP To Read Integer N And Print Its First Three Powers.
           </button>
         </h2>
-        <div id="simple-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="simple-headingThirteen" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+        <div
+          id="simple-collapseThirteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingThirteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -466,20 +663,34 @@ printf("%d%d%d",n,n*n,n*n*n);
 getch();
 return(0);	
 }
-            </code></pre></div>
+            </code></pre>
+          </div>
         </div>
-       </div>
+      </div>
 
-       <!-- 14 child -->
+      <!-- 14 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingFourteen">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseFourteen" aria-expanded="false" aria-controls="simple-collapseFourteen">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingFourteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseFourteen"
+            aria-expanded="false"
+            aria-controls="simple-collapseFourteen"
+          >
             #14. WAP To Calculate Area Of A Circle.
-            </button>
-          </h2>
-          <div id="simple-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="simple-headingFourteen" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseFourteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingFourteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -491,20 +702,35 @@ printf("The Area Of The Circle Is %f",ar);
 getch();
 return(0);
 }
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-       <!-- 15 child -->
+      <!-- 15 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingFifteen">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseFifteen" aria-expanded="false" aria-controls="simple-collapseFifteen">
-            #15. WAP To Calculate The Greatest Number Among The Given Three Numbers.
-            </button>
-          </h2>
-          <div id="simple-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="simple-headingFifteen" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingFifteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseFifteen"
+            aria-expanded="false"
+            aria-controls="simple-collapseFifteen"
+          >
+            #15. WAP To Calculate The Greatest Number Among The Given Three
+            Numbers.
+          </button>
+        </h2>
+        <div
+          id="simple-collapseFifteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingFifteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -526,20 +752,34 @@ printf("The Greatest OF The Three Numbers Is %d",c);
 getch;
 return(0);
   
-}</code></pre></div>
+}</code></pre>
           </div>
         </div>
+      </div>
 
-       <!-- 16 child -->
+      <!-- 16 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="simple-headingSixteen">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#simple-collapseSixteen" aria-expanded="false" aria-controls="simple-collapseSixteen">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="simple-headingSixteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#simple-collapseSixteen"
+            aria-expanded="false"
+            aria-controls="simple-collapseSixteen"
+          >
             #16. WAP To Print The Table Of A Number.
-            </button>
-          </h2>
-          <div id="simple-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="simple-headingSixteen" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="simple-collapseSixteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="simple-headingSixteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -553,43 +793,55 @@ for(i=1;i&lt=10;i++)
 }	
 getch();
 return(0);
-}</code></pre></div>
+}</code></pre>
           </div>
         </div>
-
-      
+      </div>
 
       <!-- </div>  -->
 
       <!-- first section end -->
 
-<!-- *************************************************************************************************** -->
+      <!-- *************************************************************************************************** -->
 
-<!-- If/Else Statement Questions heading code -->
+      <!-- If/Else Statement Questions heading code -->
 
-            <!-- heading code -->
+      <!-- heading code -->
 
-            <div class="card heading mb-10 removeMargin" >
-              <div class="card-body text-success bg-warning">
-               2. If/Else Statement Questions
-                <div class="coderName">Coder-Name : <span>Manish</span></div>
-              </div>
-            </div>
+      <div class="card heading mb-10 removeMargin">
+        <div class="card-body headingBackgroundColor">
+          2. If/Else Statement Questions
+          <div class="coderName">Coder-Name : <span>Manish</span></div>
+        </div>
+      </div>
 
-            <!-- Accordance code start -->
+      <!-- Accordance code start -->
 
-            <!-- <div class="accordion accordion-flush" id="accordionFlushExample"> -->
+      <!-- <div class="accordion accordion-flush" id="accordionFlushExample"> -->
 
-              <!-- 21 Child -->
+      <!-- 21 Child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwentyOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyOne" aria-expanded="false" aria-controls="flush-collapseTwentyOne">
-                    #1. WAP To Check Whether Greatest Among The Given Three Number.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwentyOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyOne"
+          >
+            #1. WAP To Check Whether Greatest Among The Given Three Number.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwentyOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int fnum , snum ,tnum;
@@ -631,20 +883,35 @@ int main()
         printf("%d is Greater than %d and %d.\n",tnum , fnum ,snum);
     }
 }
-                    </code></pre></div>
-                </div>
-              </div>
-                
-              <!-- 22 child -->
-               
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwentyTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyTwo" aria-expanded="false" aria-controls="flush-collapseTwentyTwo">
-                   #2. WAP To Check Whether a Given Number is Positive Negative or Zero.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 22 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwentyTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyTwo"
+          >
+            #2. WAP To Check Whether a Given Number is Positive Negative or
+            Zero.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwentyTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -666,20 +933,34 @@ int main()
         printf("%d is Zero.\n",num);
     }
 }
-                    </code></pre></div>
-                </div>
-              </div>
+                    </code></pre>
+          </div>
+        </div>
+      </div>
 
-                <!-- 23 child -->
+      <!-- 23 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwentyThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyThree" aria-expanded="false" aria-controls="flush-collapseTwentyThree">
-                   #3. WAP a Program To Find Character is Vowel or Consonant.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwentyThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyThree"
+          >
+            #3. WAP a Program To Find Character is Vowel or Consonant.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwentyThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     char ch;
@@ -706,20 +987,34 @@ int main()
 //Enter the Character.
 //a
 //a is VoWel.
-                    </code></pre></div>
-                </div>
-              </div>
+                    </code></pre>
+          </div>
+        </div>
+      </div>
 
-              <!-- 24 child -->
+      <!-- 24 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwentyFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyFour" aria-expanded="false" aria-controls="flush-collapseTwentyFour">
-                    #4. WAP To Check Whether Given Character is an Alphabet or Not.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwentyFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyFour"
+          >
+            #4. WAP To Check Whether Given Character is an Alphabet or Not.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwentyFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     char ch;
@@ -748,20 +1043,35 @@ int main()
 //Enter the Character.
 //7
 //7 is not Alphabet.
-                    </code></pre></div>
-                </div>
-              </div>
+                    </code></pre>
+          </div>
+        </div>
+      </div>
 
-              <!-- 25 child -->
+      <!-- 25 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headineTwentyFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyFive" aria-expanded="false" aria-controls="flush-collapseTwentyFive">
-                    #5. WAP To Check Whether a Given Character is Uppercase , Lowercase , Special Character , or Digit.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyFive" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyFive" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headineTwentyFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyFive"
+          >
+            #5. WAP To Check Whether a Given Character is Uppercase , Lowercase
+            , Special Character , or Digit.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headineTwentyFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     char ch;
@@ -809,21 +1119,34 @@ int main()
 
 //Enter the Character.
 //8
-//8 is Digit.</code></pre></div>
-                </div>
-              </div>
+//8 is Digit.</code></pre>
+          </div>
+        </div>
+      </div>
 
-              
-              <!-- 26 child -->
+      <!-- 26 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headineTwentySix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentySix" aria-expanded="false" aria-controls="flush-collapseTwentySix">
-                    #6. WAP To Check Whether a Given Number is Odd or Even.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentySix" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headineTwentySix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentySix"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentySix"
+          >
+            #6. WAP To Check Whether a Given Number is Odd or Even.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentySix"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headineTwentySix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -852,20 +1175,34 @@ int main()
 //Enter the number.
 //24
 //24 is Even Number.
-                    </code></pre></div>
-                </div>
-              </div>
+                    </code></pre>
+          </div>
+        </div>
+      </div>
 
-              <!-- 27 child -->
+      <!-- 27 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headineTwentySeven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentySeven" aria-expanded="false" aria-controls="flush-collapseTwentySeven">
-                    #7. WAP To Check Whether Greatest Among Two Numbers.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentySeven" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentySeven" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headineTwentySeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentySeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentySeven"
+          >
+            #7. WAP To Check Whether Greatest Among Two Numbers.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentySeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headineTwentySeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int fnum , snum;
@@ -891,20 +1228,34 @@ int main()
 //8
 //Enter the second number.
 //7
-//8 is Greater than 7</code></pre></div>
-                </div>
-              </div>
+//8 is Greater than 7</code></pre>
+          </div>
+        </div>
+      </div>
 
-              <!-- 28 child -->
+      <!-- 28 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headineTwentyEight">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyEight" aria-expanded="false" aria-controls="flush-collapseTwentyEight">
-                    #8. WAP To Check Voting Eligibility.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyEight" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyEight" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headineTwentyEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyEight"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyEight"
+          >
+            #8. WAP To Check Voting Eligibility.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headineTwentyEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 
 int main()
 {
@@ -933,20 +1284,34 @@ int main()
 //Enter Your Age.
 //23
 //You Are Eligible.
-                    </code></pre></div>
-                </div>
-              </div>
+                    </code></pre>
+          </div>
+        </div>
+      </div>
 
-              <!-- 29 child -->
+      <!-- 29 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headineTwentyNine">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyNine" aria-expanded="false" aria-controls="flush-collapseTwentyNine">
-                    #9. WAP To Check Whether a Given Number is Divisible by 5 and 11.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyNine" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyNine" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headineTwentyNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyNine"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyNine"
+          >
+            #9. WAP To Check Whether a Given Number is Divisible by 5 and 11.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headineTwentyNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -976,20 +1341,34 @@ int main()
 
 //Enter the Number.
 //77
-//77 is not divisible by 5 and 11.</code></pre></div>
-                </div>
-              </div>
+//77 is not divisible by 5 and 11.</code></pre>
+          </div>
+        </div>
+      </div>
 
-              <!-- 30 child -->
+      <!-- 30 child -->
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headineThirty">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirty" aria-expanded="false" aria-controls="flush-collapseThirty">
-                    #10. WAP To Enter Week Number and Print WeekDay.
-                  </button>
-                </h2>
-                <div id="flush-collapseThirty" class="accordion-collapse collapse" aria-labelledby="flush-headineThirty" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headineThirty">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThirty"
+            aria-expanded="false"
+            aria-controls="flush-collapseThirty"
+          >
+            #10. WAP To Enter Week Number and Print WeekDay.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThirty"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headineThirty"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int weekNumber;
@@ -1027,20 +1406,35 @@ int main()
         printf("Saturday.\n");
     }
 }</code>
-                    </pre></div>
-                </div>
-              </div>
+                    </pre>
+          </div>
+        </div>
+      </div>
 
-              <!-- 31 child -->
+      <!-- 31 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headineTwentyEleven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyEleven" aria-expanded="false" aria-controls="flush-collapseTwentyEleven">
-                    #11. WAP To Input Month Number and Print Number of Days in That Month.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyEleven" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyEleven" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headineTwentyEleven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyEleven"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyEleven"
+          >
+            #11. WAP To Input Month Number and Print Number of Days in That
+            Month.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyEleven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headineTwentyEleven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int monthNumber;
@@ -1104,20 +1498,34 @@ int main()
 // 12
 // 31 days.
                     
-                    </code></pre></div>
-                </div>
-              </div>
+                    </code></pre>
+          </div>
+        </div>
+      </div>
 
-              <!-- 32 child -->
+      <!-- 32 child -->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headineTwentyTwelve">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyTwelve" aria-expanded="false" aria-controls="flush-collapseTwentyTwelve">
-                    #12. WAP To Enter Total Number of Notes in a Given Amount.
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headineTwentyTwelve" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headineTwentyTwelve">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwentyTwelve"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwentyTwelve"
+          >
+            #12. WAP To Enter Total Number of Notes in a Given Amount.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwentyTwelve"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headineTwentyTwelve"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int amount;
@@ -1209,14 +1617,15 @@ int main()
 //10 : 0.
 //5 : 1.
 //2 : 2.
-//1 : 0.</code></pre></div>
-                </div>
-              </div>
+//1 : 0.</code></pre>
+          </div>
+        </div>
+      </div>
 
-            <!-- copy and past the below code for adding more content. -->
+      <!-- copy and past the below code for adding more content. -->
 
-               <!-- 33 child -->
-<!-- 
+      <!-- 33 child -->
+      <!-- 
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headineTwentySix">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentySix" aria-expanded="false" aria-controls="flush-collapseTwentySix">
@@ -1228,35 +1637,45 @@ int main()
                 </div>
               </div>  -->
 
-            
-              <!-- last line of accordance. -->
-            <!-- </div> -->
+      <!-- last line of accordance. -->
+      <!-- </div> -->
 
+      <!--Loop C Questions heading code -->
 
-            <!--Loop C Questions heading code -->
-
-      <div class="card heading mb-10 removeMargin" >
-        <div class="card-body text-success bg-warning">
-         3. While Loop C Questions
+      <div class="card heading mb-10 removeMargin">
+        <div class="card-body headingBackgroundColor">
+          3. While Loop C Questions
           <div class="coderName">Coder-Name : <span>Manish</span></div>
         </div>
       </div>
 
       <!-- Accordance code start -->
 
-
       <!-- <div class="accordion accordion-flush" id="accordionFlushExample"> -->
 
-        <!-- 41 child -->
+      <!-- 41 child -->
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortyOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyOne" aria-expanded="false" aria-controls="flush-collapseFortyOne">
-              #1. WAP to Print Reverse of a Number.
-            </button>
-          </h2>
-          <div id="flush-collapseFortyOne" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortyOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortyOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortyOne"
+          >
+            #1. WAP to Print Reverse of a Number.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortyOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortyOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -1278,20 +1697,34 @@ int main()
 //Enter the Number.
 //12345
 
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
-        
-        <!-- 42 child -->
+      </div>
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortyTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyTwo" aria-expanded="false" aria-controls="flush-collapseFortyTwo">
+      <!-- 42 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortyTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortyTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortyTwo"
+          >
             #2. WAP To Calculate the Sum of n Natural Numbers.
-            </button>
-          </h2>
-          <div id="flush-collapseFortyTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortyTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortyTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int n;
@@ -1316,20 +1749,34 @@ int main()
 //10
 //The Sum 10 Natural Number is 55.
 
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 43 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortyThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyThree" aria-expanded="false" aria-controls="flush-collapseFortyThree">
+      <!-- 43 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortyThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortyThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortyThree"
+          >
             #3. WAP to Display Fibonacci Series of n Number.
-            </button>
-          </h2>
-          <div id="flush-collapseFortyThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortyThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortyThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -1394,20 +1841,35 @@ int main()
 //Enter the Number.
 //10
 //0 + 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + 34.
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 44 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortyFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyFour" aria-expanded="false" aria-controls="flush-collapseFortyFour">
-            #4. Write a Program to Reverse a Number and Stored in Another Variable.
-            </button>
-          </h2>
-          <div id="flush-collapseFortyFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyFour" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <!-- 44 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortyFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortyFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortyFour"
+          >
+            #4. Write a Program to Reverse a Number and Stored in Another
+            Variable.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortyFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortyFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -1437,20 +1899,34 @@ int main()
 //12345
 //Reverse of 12345 is 54321.
 
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-       <!-- 45 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortyFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyFive" aria-expanded="false" aria-controls="flush-collapseFortyFive">
+      <!-- 45 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortyFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortyFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortyFive"
+          >
             #5. WAP To Check Whether Given Number is Palindrome or Not.
-            </button>
-          </h2>
-          <div id="flush-collapseFortyFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyFive" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortyFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortyFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -1491,20 +1967,34 @@ int main()
 //Enter the Number.
 //121
 //121 is Palindrome.
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 46 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortySix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortySix" aria-expanded="false" aria-controls="flush-collapseFortySix">
+      <!-- 46 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortySix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortySix"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortySix"
+          >
             #6. WAP to Calculate the Count of Digits in a Number.
-            </button>
-          </h2>
-          <div id="flush-collapseFortySix" class="accordion-collapse collapse" aria-labelledby="flush-headingFortySix" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortySix"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortySix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -1529,20 +2019,34 @@ int main()
 
 //Enter the number.
 //747932
-//6 digits are Present in 747932.</code></pre></div>
+//6 digits are Present in 747932.</code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 47 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortySeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortySeven" aria-expanded="false" aria-controls="flush-collapseFortySeven">
+      <!-- 47 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortySeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortySeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortySeven"
+          >
             #7. WAP To Convert Decimal To Binary.
-            </button>
-          </h2>
-          <div id="flush-collapseFortySeven" class="accordion-collapse collapse" aria-labelledby="flush-headingFortySeven" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortySeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortySeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -1571,20 +2075,34 @@ int main()
 //Enter the Number.
 //5
 //Binary of 5 is 101.
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 48 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortyEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyEight" aria-expanded="false" aria-controls="flush-collapseFortyEight">
+      <!-- 48 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortyEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortyEight"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortyEight"
+          >
             #8. WAP To Convert Binary To Decimal.
-            </button>
-          </h2>
-          <div id="flush-collapseFortyEight" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyEight" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortyEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortyEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     int num;
@@ -1613,51 +2131,78 @@ int main()
 //Enter the Binary Number.
 //101
 //Decimal of 101 is 5.
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 49 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFortyNine">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFortyNine" aria-expanded="false" aria-controls="flush-collapseFortyNine">
-            #9. Some Important Question is Added very Soon. 
-            </button>
-          </h2>
-          <div id="flush-collapseFortyNine" class="accordion-collapse collapse" aria-labelledby="flush-headingFortyNine" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+      <!-- 49 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFortyNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFortyNine"
+            aria-expanded="false"
+            aria-controls="flush-collapseFortyNine"
+          >
+            #9. Some Important Question is Added very Soon.
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFortyNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFortyNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#Loading....</code></pre>
           </div>
         </div>
+      </div>
 
-
-
-        <!-- last line -->
+      <!-- last line -->
       <!-- </div> -->
 
-              <!-- ********************************************************************** -->
+      <!-- ********************************************************************** -->
 
-            <!--Simple Swithch statement Questions heading code -->
+      <!--Simple Swithch statement Questions heading code -->
 
-            <div class="card heading mb-10 removeMargin" >
-              <div class="card-body text-success bg-warning">
-               4. Switch Statement C Questions
-                <div class="coderName">Coder-Name : <span>Sukanya</span></div>
-              </div>
-            </div>
-      
-            <!-- Accordions code Start head is at top -->
-      
-              <!-- 1 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseOne" aria-expanded="false" aria-controls="string-collapseOne">
-                    #1. WAP Conversion Of Temperature From Celcius To Farenheit Scale And Vice Versa.
-                  </button>
-                </h2>
-                <div id="string-collapseOne" class="accordion-collapse collapse" aria-labelledby="string-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <div class="card heading mb-10 removeMargin">
+        <div class="card-body headingBackgroundColor">
+          4. Switch Statement C Questions
+          <div class="coderName">Coder-Name : <span>Sukanya</span></div>
+        </div>
+      </div>
+
+      <!-- Accordions code Start head is at top -->
+
+      <!-- 1 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseOne"
+            aria-expanded="false"
+            aria-controls="string-collapseOne"
+          >
+            #1. WAP Conversion Of Temperature From Celcius To Farenheit Scale
+            And Vice Versa.
+          </button>
+        </h2>
+        <div
+          id="string-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -1687,21 +2232,34 @@ printf("Enter A Correct Choice");
 getch();
 return(0);
 }
-                    </code></pre></div>
-                </div>
-      
-              </div>
-      
-              <!-- 2 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwo" aria-expanded="false" aria-controls="string-collapseTwo">
-                    #2. WAP To Finding The Day.
-                  </button>
-                </h2>
-                <div id="string-collapseTwo" class="accordion-collapse collapse" aria-labelledby="string-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseTwo"
+            aria-expanded="false"
+            aria-controls="string-collapseTwo"
+          >
+            #2. WAP To Finding The Day.
+          </button>
+        </h2>
+        <div
+          id="string-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -1738,21 +2296,34 @@ printf("Enter A Correct Day:");
 getch();
 return(0);
 }
-                    </code></pre></div>
-                </div>
-      
-              </div>
-      
-              <!-- 3 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseThree" aria-expanded="false" aria-controls="string-collapseThree">
-                    #3. WAP To Make Calculator.
-                  </button>
-                </h2>
-                <div id="string-collapseThree" class="accordion-collapse collapse" aria-labelledby="string-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseThree"
+            aria-expanded="false"
+            aria-controls="string-collapseThree"
+          >
+            #3. WAP To Make Calculator.
+          </button>
+        </h2>
+        <div
+          id="string-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -1783,22 +2354,34 @@ getch();
 return(0);
 
 }
-                    </code></pre></div>
-                </div>
-      
-              </div>  
-              
-      
-              <!-- 4 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFour" aria-expanded="false" aria-controls="string-collapseFour">
-                    #4. WAP To Finding Grade Of A Given Marks Using Switch Case.
-                  </button>
-                </h2>
-                <div id="string-collapseFour" class="accordion-collapse collapse" aria-labelledby="string-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseFour"
+            aria-expanded="false"
+            aria-controls="string-collapseFour"
+          >
+            #4. WAP To Finding Grade Of A Given Marks Using Switch Case.
+          </button>
+        </h2>
+        <div
+          id="string-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -1830,21 +2413,34 @@ break;
 getch();
 return(0);
 }
-                    </code></pre></div>
-                </div>
-      
-              </div>   
-      
-              <!-- 5 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFive" aria-expanded="false" aria-controls="string-collapseFive">
-                    #5. WAP To Find Circumferance And Volume Of The Cylinder.
-                  </button>
-                </h2>
-                <div id="string-collapseFive" class="accordion-collapse collapse" aria-labelledby="string-headingFive" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseFive"
+            aria-expanded="false"
+            aria-controls="string-collapseFive"
+          >
+            #5. WAP To Find Circumferance And Volume Of The Cylinder.
+          </button>
+        </h2>
+        <div
+          id="string-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -1883,21 +2479,34 @@ break;
 getch();
 return(0);
 }
-                    </code></pre></div>
-                </div>
-      
-              </div>  
-      
-              <!-- 6 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseSix" aria-expanded="false" aria-controls="string-collapseSix">
-                    #6. WAP To Print Total Number Of Days In A Month Using Switch Case.
-                  </button>
-                </h2>
-                <div id="string-collapseSix" class="accordion-collapse collapse" aria-labelledby="string-headingSix" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseSix"
+            aria-expanded="false"
+            aria-controls="string-collapseSix"
+          >
+            #6. WAP To Print Total Number Of Days In A Month Using Switch Case.
+          </button>
+        </h2>
+        <div
+          id="string-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -1949,21 +2558,34 @@ break;
 getch();
 return(0);
 }
-                    </code></pre></div>
-                </div>
-      
-              </div>
-      
-              <!-- 7 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingSeven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseSeven" aria-expanded="false" aria-controls="string-collapseSeven">
-                    #7. WAP To Check Whether An Alphabet Is A Vowel Or Consonant.
-                  </button>
-                </h2>
-                <div id="string-collapseSeven" class="accordion-collapse collapse" aria-labelledby="string-headingSeven" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseSeven"
+            aria-expanded="false"
+            aria-controls="string-collapseSeven"
+          >
+            #7. WAP To Check Whether An Alphabet Is A Vowel Or Consonant.
+          </button>
+        </h2>
+        <div
+          id="string-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -1997,21 +2619,34 @@ printf("It is not an alphabet:");
 getch();
 return(0);
 }
-                    </code></pre></div>
-                </div>
-      
-              </div> 
-      
-              <!-- 8 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingEight">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseEight" aria-expanded="false" aria-controls="string-collapseEight">
-                    #8. WAP To Find The Maximum Between Two Numbers Using Switch Case.
-                  </button>
-                </h2>
-                <div id="string-collapseEight" class="accordion-collapse collapse" aria-labelledby="string-headingEight" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseEight"
+            aria-expanded="false"
+            aria-controls="string-collapseEight"
+          >
+            #8. WAP To Find The Maximum Between Two Numbers Using Switch Case.
+          </button>
+        </h2>
+        <div
+          id="string-collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -2031,21 +2666,34 @@ break;
 }
 getch();
 return(0);
-}</code></pre></div>
-                </div>
-      
-              </div>
-      
-              <!-- 9 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingNine">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseNine" aria-expanded="false" aria-controls="string-collapseNine">
-                    #9. WAP To Check whether A Number Is Even Or Odd Using Switch Case
-                  </button>
-                </h2>
-                <div id="string-collapseNine" class="accordion-collapse collapse" aria-labelledby="string-headingNine" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseNine"
+            aria-expanded="false"
+            aria-controls="string-collapseNine"
+          >
+            #9. WAP To Check whether A Number Is Even Or Odd Using Switch Case
+          </button>
+        </h2>
+        <div
+          id="string-collapseNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 #include&ltconio.h&gt
 int main()
 {
@@ -2062,21 +2710,35 @@ break;
 getch();
 return(0);
 }
-                    </code></pre></div>
-                </div>
-      
-              </div>
-      
-              <!-- 10 child -->
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="string-headingTen">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTen" aria-expanded="false" aria-controls="string-collapseTen">
-                    #10. WAP To Check Whether The Number Is Positive,Negative Or Zero using Switch Case.
-                  </button>
-                </h2>
-                <div id="string-collapseTen" class="accordion-collapse collapse" aria-labelledby="string-headingTen" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingTen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseTen"
+            aria-expanded="false"
+            aria-controls="string-collapseTen"
+          >
+            #10. WAP To Check Whether The Number Is Positive,Negative Or Zero
+            using Switch Case.
+          </button>
+        </h2>
+        <div
+          id="string-collapseTen"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingTen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
     #include&ltconio.h&gt
     int main()
     {
@@ -2103,18 +2765,17 @@ return(0);
     getch();
     return(0);
     }
-                    </code></pre></div>
-                </div>
-      
-              </div> 
+                    </code></pre>
+          </div>
+        </div>
+      </div>
 
-      
-<!-- *************************************************************************************************** -->
+      <!-- *************************************************************************************************** -->
       <!--Simple Arrays Questions heading code -->
 
-      <div class="card heading mb-10 removeMargin" >
-        <div class="card-body text-success bg-warning">
-         5. Arrays C Questions
+      <div class="card heading mb-10 removeMargin">
+        <div class="card-body headingBackgroundColor">
+          5. Arrays C Questions
           <div class="coderName">Coder-Name : <span>Manish</span></div>
         </div>
       </div>
@@ -2123,16 +2784,29 @@ return(0);
 
       <!-- <div class="accordion accordion-flush" id="accordionFlushExample"> -->
 
-        <!-- 1 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseOne" aria-expanded="false" aria-controls="array-collapseOne">
-              #1. WAP To Read and Display n Numbers Using an Array.
-            </button>
-          </h2>
-          <div id="array-collapseOne" class="accordion-collapse collapse" aria-labelledby="array-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <!-- 1 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseOne"
+            aria-expanded="false"
+            aria-controls="array-collapseOne"
+          >
+            #1. WAP To Read and Display n Numbers Using an Array.
+          </button>
+        </h2>
+        <div
+          id="array-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int arr[40];
@@ -2168,21 +2842,34 @@ int main()
 //5
 //Elements Stored in an Array is
 //1 2 3 4 5
-              </code></pre></div>
+              </code></pre>
           </div>
-
         </div>
+      </div>
 
-        <!-- 2 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseTwo" aria-expanded="false" aria-controls="array-collapseTwo">
-              #2. WAP To Find The Mean Of n Numbers Using Array. 
-            </button>
-          </h2>
-          <div id="array-collapseTwo" class="accordion-collapse collapse" aria-labelledby="array-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <!-- 2 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseTwo"
+            aria-expanded="false"
+            aria-controls="array-collapseTwo"
+          >
+            #2. WAP To Find The Mean Of n Numbers Using Array.
+          </button>
+        </h2>
+        <div
+          id="array-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int arr[40];
@@ -2223,20 +2910,34 @@ int main()
 //4
 //5
 //3.000000 is the Mean of an Array.
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 3 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseThree" aria-expanded="false" aria-controls="array-collapseThree">
-              #3. WAP To Find the Largest Of n Numbers Using Array. 
-            </button>
-          </h2>
-          <div id="array-collapseThree" class="accordion-collapse collapse" aria-labelledby="array-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <!-- 3 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseThree"
+            aria-expanded="false"
+            aria-controls="array-collapseThree"
+          >
+            #3. WAP To Find the Largest Of n Numbers Using Array.
+          </button>
+        </h2>
+        <div
+          id="array-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int arr[40];
@@ -2277,20 +2978,35 @@ int main()
 //19
 //45
 //Greatest Element of an Array is 45.
-              </code></pre></div>
+              </code></pre>
           </div>
         </div>
+      </div>
 
-        <!-- 4 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseFour" aria-expanded="false" aria-controls="array-collapseFour">
-              #4. WAP To Interchange The Largest And The Smallest Number In An Array. 
-            </button>
-          </h2>
-          <div id="array-collapseFour" class="accordion-collapse collapse" aria-labelledby="array-headingFour" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <!-- 4 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseFour"
+            aria-expanded="false"
+            aria-controls="array-collapseFour"
+          >
+            #4. WAP To Interchange The Largest And The Smallest Number In An
+            Array.
+          </button>
+        </h2>
+        <div
+          id="array-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int arr[40];
@@ -2361,20 +3077,35 @@ int main()
 //
 //5 2 3 4 1
 
-              </code></pre></div>
+              </code></pre>
           </div>
-        </div>        
+        </div>
+      </div>
 
-        <!-- 5 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseFive" aria-expanded="false" aria-controls="array-collapseFive">
-              #5. WAP To Find The Second Largest Number Using An Array Of n Numbers.
-            </button>
-          </h2>
-          <div id="array-collapseFive" class="accordion-collapse collapse" aria-labelledby="array-headingFive" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <!-- 5 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseFive"
+            aria-expanded="false"
+            aria-controls="array-collapseFive"
+          >
+            #5. WAP To Find The Second Largest Number Using An Array Of n
+            Numbers.
+          </button>
+        </h2>
+        <div
+          id="array-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int arr[40];
@@ -2450,20 +3181,35 @@ int main()
 //5
 //4 is The Second Largest Element in an Array.
 //4 is The Second Largest Element in an Array.
-              </code></pre></div>
+              </code></pre>
           </div>
-        </div>                
+        </div>
+      </div>
 
-        <!-- 6 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseSix" aria-expanded="false" aria-controls="array-collapseSix">
-              #6. WAP To Find Whether The Array Of Intergers Contain a Duplicate Number.
-            </button>
-          </h2>
-          <div id="array-collapseSix" class="accordion-collapse collapse" aria-labelledby="array-headingSix" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+      <!-- 6 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseSix"
+            aria-expanded="false"
+            aria-controls="array-collapseSix"
+          >
+            #6. WAP To Find Whether The Array Of Intergers Contain a Duplicate
+            Number.
+          </button>
+        </h2>
+        <div
+          id="array-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int arr[40];
@@ -2509,20 +3255,35 @@ int main()
 //3
 //5
 //Duplicate Element Present in an Array.
-              </code></pre></div>
+              </code></pre>
           </div>
-        </div>  
-        
-        <!-- 7 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseSeven" aria-expanded="false" aria-controls="array-collapseSeven">
-              #7. WAP To Enter n Number of Digits. Form a Number Using These digits.
-            </button>
-          </h2>
-          <div id="array-collapseSeven" class="accordion-collapse collapse" aria-labelledby="array-headingSeven" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+        </div>
+      </div>
+
+      <!-- 7 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseSeven"
+            aria-expanded="false"
+            aria-controls="array-collapseSeven"
+          >
+            #7. WAP To Enter n Number of Digits. Form a Number Using These
+            digits.
+          </button>
+        </h2>
+        <div
+          id="array-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int arr[40];
@@ -2565,20 +3326,35 @@ int main()
 //4
 //5
 //12345 is The Number Obtained form the given Digits.
-              </code></pre></div>
+              </code></pre>
           </div>
-        </div>               
- 
-        <!-- 8 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseEight" aria-expanded="false" aria-controls="array-collapseEight">
-              #8. WAP To Print The index Of the Smallest Number Of n Numbers Using Array.
-            </button>
-          </h2>
-          <div id="array-collapseEight" class="accordion-collapse collapse" aria-labelledby="array-headingEight" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include&ltstdio.h&gt
+        </div>
+      </div>
+
+      <!-- 8 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseEight"
+            aria-expanded="false"
+            aria-controls="array-collapseEight"
+          >
+            #8. WAP To Print The index Of the Smallest Number Of n Numbers Using
+            Array.
+          </button>
+        </h2>
+        <div
+          id="array-collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include&ltstdio.h&gt
 int main()
 {
     int arr[40];
@@ -2625,20 +3401,35 @@ int main()
 //1 is the Smallest Number of an Array.
 //At index Number 0.
               
-              </code></pre></div>
+              </code></pre>
           </div>
-        </div>  
+        </div>
+      </div>
 
-        <!-- 9 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="array-headingNine">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseNine" aria-expanded="false" aria-controls="array-collapseNine">
-              #9. BinarySearch On Infite Length of an Array Or Unknown Length Array.
-            </button>
-          </h2>
-          <div id="array-collapseNine" class="accordion-collapse collapse" aria-labelledby="array-headingNine" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <!-- 9 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseNine"
+            aria-expanded="false"
+            aria-controls="array-collapseNine"
+          >
+            #9. BinarySearch On Infite Length of an Array Or Unknown Length
+            Array.
+          </button>
+        </h2>
+        <div
+          id="array-collapseNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 
 int binarySearch(int arr[] , int lo , int hi , int data)
 {
@@ -2679,21 +3470,35 @@ int main()
 
     printf("%d \n",res);
 }
-              </code></pre></div>
+              </code></pre>
           </div>
-        </div>   
-        
-        
-                <!-- 9 child -->
-        
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="array-headingTen">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#array-collapseTen" aria-expanded="false" aria-controls="array-collapseTen">
-                      #10. WAP To Search First Index of 1 in 0 or 1 containing infinite array.
-                    </button>
-                  </h2>
-                  <div id="array-collapseTen" class="accordion-collapse collapse" aria-labelledby="array-headingTen" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+        </div>
+      </div>
+
+      <!-- 9 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="array-headingTen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#array-collapseTen"
+            aria-expanded="false"
+            aria-controls="array-collapseTen"
+          >
+            #10. WAP To Search First Index of 1 in 0 or 1 containing infinite
+            array.
+          </button>
+        </h2>
+        <div
+          id="array-collapseTen"
+          class="accordion-collapse collapse"
+          aria-labelledby="array-headingTen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 
 int firstIndex(int arr[] ,int lo , int hi, int key)
 {
@@ -2735,34 +3540,47 @@ int main()
 
     printf("%d",res);
 }
-                      </code></pre></div>
-                  </div>
-                </div>  
-        
-        
-        <!-- ********************************************************************** -->
+                      </code></pre>
+          </div>
+        </div>
+      </div>
 
-            <!--Simple String Questions heading code -->
+      <!-- ********************************************************************** -->
 
-      <div class="card heading mb-10 removeMargin" >
-        <div class="card-body text-success bg-warning">
-         6. Strings C Questions
+      <!--Simple String Questions heading code -->
+
+      <div class="card heading mb-10 removeMargin">
+        <div class="card-body headingBackgroundColor">
+          6. Strings C Questions
           <div class="coderName">Coder-Name : <span>Manish</span></div>
         </div>
       </div>
 
       <!-- Accordions code Start head is at top -->
 
-        <!-- 1 child -->
-     
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="string-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseOne" aria-expanded="false" aria-controls="string-collapseOne">
-              #1.WAP to Get String From The User.
-            </button>
-          </h2>
-          <div id="string-collapseOne" class="accordion-collapse collapse" aria-labelledby="string-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <!-- 1 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseOne"
+            aria-expanded="false"
+            aria-controls="string-collapseOne"
+          >
+            #1.WAP to Get String From The User.
+          </button>
+        </h2>
+        <div
+          id="string-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     char string[100];
@@ -2777,21 +3595,34 @@ int main()
 //Enter Your Name.
 //Manish Kumar
 //Your Name is Manish Kumar.
-              </code></pre></div>
+              </code></pre>
           </div>
-
         </div>
+      </div>
 
-        <!-- 2 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="string-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseTwo" aria-expanded="false" aria-controls="string-collapseTwo">
-              #2. WAP To Find The Length Of a String.
-            </button>
-          </h2>
-          <div id="string-collapseTwo" class="accordion-collapse collapse" aria-labelledby="string-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <!-- 2 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseTwo"
+            aria-expanded="false"
+            aria-controls="string-collapseTwo"
+          >
+            #2. WAP To Find The Length Of a String.
+          </button>
+        </h2>
+        <div
+          id="string-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     char string[100];
@@ -2814,21 +3645,34 @@ int main()
 //Enter a String.
 //Manish Kumar
 //Entered String is Manish Kumar.
-//Length of the String is 12.</code></pre></div>
+//Length of the String is 12.</code></pre>
           </div>
-
         </div>
+      </div>
 
-        <!-- 3 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="string-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseThree" aria-expanded="false" aria-controls="string-collapseThree">
-              #3. WAP To Convert The Characters Of a String into Lower Case.
-            </button>
-          </h2>
-          <div id="string-collapseThree" class="accordion-collapse collapse" aria-labelledby="string-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <!-- 3 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseThree"
+            aria-expanded="false"
+            aria-controls="string-collapseThree"
+          >
+            #3. WAP To Convert The Characters Of a String into Lower Case.
+          </button>
+        </h2>
+        <div
+          id="string-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     char string[100];
@@ -2855,22 +3699,34 @@ int main()
 //Manish Kumar
 //Entered String is Manish Kumar.
 //Transform String is manish kumar.
-              </code></pre></div>
+              </code></pre>
           </div>
+        </div>
+      </div>
 
-        </div>  
-        
+      <!-- 4 child -->
 
-        <!-- 4 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="string-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFour" aria-expanded="false" aria-controls="string-collapseFour">
-              #4. WAP To Convert The Character Of a String into Upper Case.
-            </button>
-          </h2>
-          <div id="string-collapseFour" class="accordion-collapse collapse" aria-labelledby="string-headingFour" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseFour"
+            aria-expanded="false"
+            aria-controls="string-collapseFour"
+          >
+            #4. WAP To Convert The Character Of a String into Upper Case.
+          </button>
+        </h2>
+        <div
+          id="string-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#include &ltstdio.h&gt
 int main()
 {
     char string[100];
@@ -2897,32 +3753,48 @@ int main()
 //Mintu Kumar
 //Entered String is Mintu Kumar.
 //Transform String is MINTU KUMAR.
-              </code></pre></div>
+              </code></pre>
           </div>
-
-        </div>   
-
-        <!-- 5 child -->
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="string-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#string-collapseFive" aria-expanded="false" aria-controls="string-collapseFive">
-              #5. WAP 
-            </button>
-          </h2>
-          <div id="string-collapseFive" class="accordion-collapse collapse" aria-labelledby="string-headingFive" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
-          </div>
-
-        </div>  
-
-                                                                                                           
-        
-      
-
-         <!-- last code of accordions -->
         </div>
-      
-      
-</body>
+      </div>
+
+      <!-- 5 child -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="string-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#string-collapseFive"
+            aria-expanded="false"
+            aria-controls="string-collapseFive"
+          >
+            #5. WAP
+          </button>
+        </h2>
+        <div
+          id="string-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="string-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <pre class="language-c"><code>#Loading....</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!--Simple String Questions heading code -->
+
+      <div class="card heading mb-10 removeMargin ">
+        <div class="card-body  headingBackgroundColor">
+          7. Function C Questions
+          <div class="coderName">Coder-Name : <span>*****</span></div>
+        </div>
+      </div>
+
+      <!-- last code of accordions -->
+    </div>
+  </body>
 </html>

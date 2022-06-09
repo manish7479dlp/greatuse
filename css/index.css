@@ -66,15 +66,15 @@ a{
 
 .heading{
     margin-top: 30px;
-    background-color: rgb(187, 255, 227);
+    background-color: rgb(159, 244, 250);
     text-align: center;
 }
 .heading div{
     font-size: 40px;
-    color:rgba(24, 38, 243, 0.959);
+    color: white;
     font-family: cursive;
     opacity: 1;
-    text-shadow: 4px 4px 5px magenta;
+    text-shadow: 4px 4px 5px #474545;
     font-weight: bold;
 }
 
