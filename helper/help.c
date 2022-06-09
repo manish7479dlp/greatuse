@@ -1,8 +1,8 @@
-      <!--Simple structure Questions heading code -->
+      <!--Simple For-Loop Questions heading code -->
 
       <div class="card heading mb-10 removeMargin ">
         <div class="card-body  headingBackgroundColor">
-          7. Structure C Questions
+          7. For-Loop C Questions
           <div class="coderName">Coder-Name : <span>*****</span></div>
         </div>
       </div>
@@ -13,12 +13,12 @@
         <!-- 1 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseOne" aria-expanded="false" aria-controls="structure-collapseOne">
+          <h2 class="accordion-header" id="For-Loop-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseOne" aria-expanded="false" aria-controls="For-Loop-collapseOne">
               #1. WAP 
             </button>
           </h2>
-          <div id="structure-collapseOne" class="accordion-collapse collapse" aria-labelledby="structure-headingOne" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseOne" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingOne" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
           </div>
 
@@ -27,12 +27,12 @@
         <!-- 2 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseTwo" aria-expanded="false" aria-controls="structure-collapseTwo">
+          <h2 class="accordion-header" id="For-Loop-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseTwo" aria-expanded="false" aria-controls="For-Loop-collapseTwo">
               #2. WAP 
             </button>
           </h2>
-          <div id="structure-collapseTwo" class="accordion-collapse collapse" aria-labelledby="structure-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseTwo" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingTwo" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
           </div>
 
@@ -41,12 +41,12 @@
         <!-- 3 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseThree" aria-expanded="false" aria-controls="structure-collapseThree">
+          <h2 class="accordion-header" id="For-Loop-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseThree" aria-expanded="false" aria-controls="For-Loop-collapseThree">
               #3. WAP 
             </button>
           </h2>
-          <div id="structure-collapseThree" class="accordion-collapse collapse" aria-labelledby="structure-headingThree" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseThree" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingThree" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
           </div>
 
@@ -56,12 +56,12 @@
         <!-- 4 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseFour" aria-expanded="false" aria-controls="structure-collapseFour">
+          <h2 class="accordion-header" id="For-Loop-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseFour" aria-expanded="false" aria-controls="For-Loop-collapseFour">
               #4. WAP 
             </button>
           </h2>
-          <div id="structure-collapseFour" class="accordion-collapse collapse" aria-labelledby="structure-headingFour" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseFour" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingFour" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
           </div>
 
@@ -70,12 +70,12 @@
         <!-- 5 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseFive" aria-expanded="false" aria-controls="structure-collapseFive">
+          <h2 class="accordion-header" id="For-Loop-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseFive" aria-expanded="false" aria-controls="For-Loop-collapseFive">
               #5. WAP 
             </button>
           </h2>
-          <div id="structure-collapseFive" class="accordion-collapse collapse" aria-labelledby="structure-headingFive" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseFive" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingFive" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
           </div>
 
@@ -84,12 +84,12 @@
         <!-- 6 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseSix" aria-expanded="false" aria-controls="structure-collapseSix">
+          <h2 class="accordion-header" id="For-Loop-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseSix" aria-expanded="false" aria-controls="For-Loop-collapseSix">
               #6. WAP 
             </button>
           </h2>
-          <div id="structure-collapseSix" class="accordion-collapse collapse" aria-labelledby="structure-headingSix" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseSix" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingSix" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
           </div>
 
@@ -98,12 +98,12 @@
         <!-- 7 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseSeven" aria-expanded="false" aria-controls="structure-collapseSeven">
+          <h2 class="accordion-header" id="For-Loop-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseSeven" aria-expanded="false" aria-controls="For-Loop-collapseSeven">
               #7. WAP 
             </button>
           </h2>
-          <div id="structure-collapseSeven" class="accordion-collapse collapse" aria-labelledby="structure-headingSeven" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseSeven" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingSeven" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
           </div>
 
@@ -112,12 +112,12 @@
         <!-- 8 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseEight" aria-expanded="false" aria-controls="structure-collapseEight">
+          <h2 class="accordion-header" id="For-Loop-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseEight" aria-expanded="false" aria-controls="For-Loop-collapseEight">
               #8. WAP 
             </button>
           </h2>
-          <div id="structure-collapseEight" class="accordion-collapse collapse" aria-labelledby="structure-headingEight" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseEight" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingEight" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
           </div>
 
@@ -126,12 +126,12 @@
         <!-- 9 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingNine">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseNine" aria-expanded="false" aria-controls="structure-collapseNine">
+          <h2 class="accordion-header" id="For-Loop-headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseNine" aria-expanded="false" aria-controls="For-Loop-collapseNine">
               #9. WAP 
             </button>
           </h2>
-          <div id="structure-collapseNine" class="accordion-collapse collapse" aria-labelledby="structure-headingNine" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseNine" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingNine" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
           </div>
 
@@ -140,12 +140,12 @@
         <!-- 10 child -->
         
         <div class="accordion-item">
-          <h2 class="accordion-header" id="structure-headingTen">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure-collapseTen" aria-expanded="false" aria-controls="structure-collapseTen">
+          <h2 class="accordion-header" id="For-Loop-headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseTen" aria-expanded="false" aria-controls="For-Loop-collapseTen">
               #10. WAP 
             </button>
           </h2>
-          <div id="structure-collapseTen" class="accordion-collapse collapse" aria-labelledby="structure-headingTen" data-bs-parent="#accordionFlushExample">
+          <div id="For-Loop-collapseTen" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingTen" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
           </div>
 

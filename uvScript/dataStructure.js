@@ -36,6 +36,67 @@ function alertMessage(idx){
     }
 }
 
+
+const getActiveContent = (idx) => {
+    switch(idx) {
+        case 1:
+            parent = document.getElementById("ArrayList");
+            child = document.getElementsByClassName("ArrayListContent")[0];
+            break;
+        case 2:
+            parent = document.getElementById("LinkedList");
+            child = document.getElementsByClassName("LinkedListContent")[0];
+            break;
+        case 3:
+            parent = document.getElementById("DoublyLinkedList");
+            child = document.getElementsByClassName("DoublyLinkedListContent")[0];
+            break;
+        case 4:
+            parent = document.getElementById("Stack");
+            child = document.getElementsByClassName("StackContent")[0];
+            break;
+        case 5:
+            parent = document.getElementById("Queue");
+            child = document.getElementsByClassName("QueueContent")[0];
+            break;
+        case 6:
+            parent = document.getElementById("Tree");
+            child = document.getElementsByClassName("TreeContent")[0];
+            break;
+        case 7:
+            parent = document.getElementById("AVLTree");
+            child = document.getElementsByClassName("AVLTreeContent")[0];
+            break;
+        case 8:
+            parent = document.getElementById("Graph");
+            child = document.getElementsByClassName("GraphContent")[0];
+            break;
+        case 9:
+            parent = document.getElementById("HashTable");
+            child = document.getElementsByClassName("HashTableContent")[0];
+            break;
+    }
+
+    return child;
+}
+
+const onToggle = () => {}
+
+// const onToggle = (idx) => {
+//     let parent , child;
+    
+//     const temp  = getActiveContent(idx);
+//     arr[idx] = 1;
+//     console.log(temp);
+    
+
+//     let toggle = toggleButton(idx);
+//     const temp2 = getActiveContent(toggle);
+
+//     console.log(temp2);
+
+// }
+
 const Arraylist = document.getElementById("ArrayList");
 Arraylist.addEventListener('click' , () =>{
     const ArrayListContent = document.getElementsByClassName("ArrayListContent")[0];
