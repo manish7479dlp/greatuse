@@ -4,6 +4,7 @@ for(let i = 1; i < arr.length; i++) {
     arr[i] = 0;
 }
 
+// return 0 if all tab is close other-wise return open tab number.
 function toggleButton(idx) {
     for(let i = 0; i < arr.length; i++){
         if(i != idx && arr[i] == 1){
