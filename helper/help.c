@@ -1,34 +1,27 @@
 #include <stdio.h>
 
-int greaterAmongTwo(int num1 , int num2) {
-    
-    if(num1 > num2) {
-        return num1;
-    } else {
-        return num2;
-    }
-}
-
 void main()
 {
-    int num1 , num2;
-    
-    printf("Enter 1st number.\n");
-    scanf("%d",&num1);
+    int tableNumber;
+    printf("Enter a Table Number.\n");
+    scanf("%d",&tableNumber);
 
-    printf("Enter 2nd number.\n");
-    scanf("%d",&num2);
-
-    int res = greaterAmongTwo(num1 , num2);
-
-    printf("%d is Greater among %d and %d",res , num1 ,num2);
-
+    for(int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", tableNumber, i , tableNumber * i);
+    }
 }
 
 // OUTPUT
 
-// Enter 1st number.
+// Enter a Table Number.
 // 5
-// Enter 2nd number.
-// 6
-// 6 is Greater among 5 and 6
+// 5 x 1 = 5  
+// 5 x 2 = 10 
+// 5 x 3 = 15 
+// 5 x 4 = 20 
+// 5 x 5 = 25 
+// 5 x 6 = 30 
+// 5 x 7 = 35 
+// 5 x 8 = 40 
+// 5 x 9 = 45 
+// 5 x 10 = 50
