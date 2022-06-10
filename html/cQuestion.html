@@ -2180,11 +2180,34 @@ int main()
               <div class="accordion-item">
                 <h2 class="accordion-header" id="For-Loop-headingOne">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseOne" aria-expanded="false" aria-controls="For-Loop-collapseOne">
-                    #1. WAP 
+                    #1. WAP to Print Number From a Given Range.
                   </button>
                 </h2>
                 <div id="For-Loop-collapseOne" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+void main()
+{
+    int num;
+    
+    printf("Enter a number.\n");
+    scanf("%d",&num);
+
+    for(int i = 1; i &lt= num; i++) {
+        printf("%d\n",i);
+    }
+
+}
+
+// OUTPUT
+
+// Enter a number.
+// 5 
+// 1
+// 2
+// 3
+// 4
+// 5</code></pre></div>
                 </div>
       
               </div>
@@ -2194,11 +2217,36 @@ int main()
               <div class="accordion-item">
                 <h2 class="accordion-header" id="For-Loop-headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseTwo" aria-expanded="false" aria-controls="For-Loop-collapseTwo">
-                    #2. WAP 
+                    #2. WAP to Print all Prime Number between 1 to 100.
                   </button>
                 </h2>
                 <div id="For-Loop-collapseTwo" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+#include &ltstdbool.h&gt
+
+void main()
+{
+    int start = 1, end = 100;
+
+    for(int i = start; i &lt= end; i++) {
+
+        // Logic for check given number is prime or not...
+        bool flag = true;
+
+        for(int j = 2; j &lt= i / 2; j++) {
+            if(i % j == 0) {
+                flag = false;
+                break;
+            }
+        }
+
+        if(flag) {
+            printf("%d\t",i);
+        }
+    }
+
+    printf("\n"); // it is for new line.
+}</code></pre></div>
                 </div>
       
               </div>
@@ -2208,11 +2256,28 @@ int main()
               <div class="accordion-item">
                 <h2 class="accordion-header" id="For-Loop-headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseThree" aria-expanded="false" aria-controls="For-Loop-collapseThree">
-                    #3. WAP 
+                    #3. WAP to Print all Alphabet.
                   </button>
                 </h2>
                 <div id="For-Loop-collapseThree" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+                  <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+void main()
+{
+    char ch = 'a';
+
+    for(int i = 0; i &lt= 25; i++) {
+        printf("%c\t",ch + i);
+    }
+
+    printf("\n");
+}
+
+// OUTPUT
+
+// a       b       c       d       e       f       g       h       i
+//   j     k       l       m       n       o       p       q       r
+//   s     t       u       v       w       x       y       z        </code></pre></div>
                 </div>
       
               </div>  
@@ -2223,11 +2288,37 @@ int main()
               <div class="accordion-item">
                 <h2 class="accordion-header" id="For-Loop-headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#For-Loop-collapseFour" aria-expanded="false" aria-controls="For-Loop-collapseFour">
-                    #4. WAP 
+                    #4. WAP to Print Table of a Given Number.
                   </button>
                 </h2>
                 <div id="For-Loop-collapseFour" class="accordion-collapse collapse" aria-labelledby="For-Loop-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+                  <div class="accordion-body"><pre class="language-c"><code>#include <stdio.h>
+
+void main()
+{
+    int tableNumber;
+    printf("Enter a Table Number.\n");
+    scanf("%d",&tableNumber);
+
+    for(int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", tableNumber, i , tableNumber * i);
+    }
+}
+
+// OUTPUT
+
+// Enter a Table Number.
+// 5
+// 5 x 1 = 5  
+// 5 x 2 = 10 
+// 5 x 3 = 15 
+// 5 x 4 = 20 
+// 5 x 5 = 25 
+// 5 x 6 = 30 
+// 5 x 7 = 35 
+// 5 x 8 = 40 
+// 5 x 9 = 45 
+// 5 x 10 = 50</code></pre></div>
                 </div>
       
               </div>   
