@@ -4012,7 +4012,7 @@ int main()
       <div class="card heading mb-10 removeMargin ">
         <div class="card-body  headingBackgroundColor">
           9. Function Questions
-          <div class="coderName">Coder-Name : <span>*****</span></div>
+          <div class="coderName">Coder-Name : <span>Manish</span></div>
         </div>
       </div>
 
@@ -4024,11 +4024,23 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseOne" aria-expanded="false" aria-controls="function-collapseOne">
-              #1. WAP 
+              #1. WAP to Add two Numbers using Function.
             </button>
           </h2>
           <div id="function-collapseOne" class="accordion-collapse collapse" aria-labelledby="function-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+int sum(int num1 , int num2) {
+  return num1 + num2;
+}
+
+int main()
+{
+  int res = sum(2 , 4);
+  printf("%d",res);
+  res = sum(4 , 4);
+  printf("%d",res);
+}</code></pre></div>
           </div>
 
         </div>
@@ -4038,11 +4050,44 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseTwo" aria-expanded="false" aria-controls="function-collapseTwo">
-              #2. WAP 
+              #2. WAP To Print Table of a Given Number.
             </button>
           </h2>
           <div id="function-collapseTwo" class="accordion-collapse collapse" aria-labelledby="function-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+void printTable(int tableNumber) {
+    for(int i = 1; i &lt= 10; i++) {
+        printf("%d x %d = %d\n" , tableNumber , i , tableNumber * i);
+    }
+}
+
+int main()
+{
+    int tableNum;
+    printf("Enter a Table-Number.\n");
+    scanf("%d",&tableNum);
+
+    printTable(tableNum);  // Called printTable function
+
+    return 0;
+
+}
+
+// OUTPUT
+
+// Enter a Table-Number.
+// 10
+// 10 x 1 = 10
+// 10 x 2 = 20
+// 10 x 3 = 30
+// 10 x 4 = 40
+// 10 x 5 = 50
+// 10 x 6 = 60
+// 10 x 7 = 70
+// 10 x 8 = 80
+// 10 x 9 = 90
+// 10 x 10 = 100</code></pre></div>
           </div>
 
         </div>
@@ -4052,11 +4097,37 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseThree" aria-expanded="false" aria-controls="function-collapseThree">
-              #3. WAP 
+              #3. WAP To Convert LowerCase Character into UpperCase Character.
             </button>
           </h2>
           <div id="function-collapseThree" class="accordion-collapse collapse" aria-labelledby="function-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+char toUpperCase(char ch) {
+  // It is check that the input character is lowerCase or not.. if Yes then execute if block code other-wise return without any changes
+  if(ch >= 'a' && ch <= 'z') {
+      return (ch - 32);  // Why substract 32...? Because The Difference Between ASCII Code of lowercase and
+  // uppercase character is 32. (ex: ASCII Code of 'a' = 97 and ASCII Code of 'A' = 65).  97 - 65 = 32
+  }
+
+  return ch;
+}
+
+void main()
+{
+    char ch;
+    printf("Enter a Character.\n");
+    scanf("%c",&ch);
+
+    char res = toUpperCase(ch);
+
+    printf("%c is The UpperCase of %c", res , ch);
+}
+
+// OUTPUT
+// Enter a Character.
+// a
+// A is The UpperCase of a</code></pre></div>
           </div>
 
         </div>  
@@ -4067,11 +4138,35 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseFour" aria-expanded="false" aria-controls="function-collapseFour">
-              #4. WAP 
+              #4. WAP To Convert UpperCase Character to LowerCase Character.
             </button>
           </h2>
           <div id="function-collapseFour" class="accordion-collapse collapse" aria-labelledby="function-headingFour" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+char toLowerCase(char ch) {
+    if(ch >= 'A' && ch <= 'Z') {
+        return (ch + 32); 
+    }
+
+    return ch;
+}
+
+void main()
+{
+    char ch;
+    printf("Enter a Character.\n");
+    scanf("%c",&ch);
+
+    char res = toLowerCase(ch);
+
+    printf("%c is the LowerCase of %c", res , ch);
+}
+
+// OUTPUT
+// Enter a Character.
+// a
+// A is The UpperCase of a</code></pre></div>
           </div>
 
         </div>   
@@ -4081,11 +4176,42 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseFive" aria-expanded="false" aria-controls="function-collapseFive">
-              #5. WAP 
+              #5. WAP to Convert Decimal Number into Binary Number.
             </button>
           </h2>
           <div id="function-collapseFive" class="accordion-collapse collapse" aria-labelledby="function-headingFive" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt 
+
+int toBinary(int num) {
+    int x = 1;
+    int res = 0;
+    while(num &gt 0) {
+        int temp = num % 2;
+        num /= 2;
+        res = res + temp * x;
+        x *= 10;
+    }
+
+    return res;
+}
+
+void main()
+{
+    int num;
+    printf("Enter a number\n");
+    scanf("%d",&num);
+
+    int res = toBinary(num);
+
+    printf("Binary of %d is %d.\n",num , res);
+}
+
+// OUTPUT
+
+// Enter a number
+// 31
+// Binary of 31 is 11111.
+              </code></pre></div>
           </div>
 
         </div>  
@@ -4095,11 +4221,43 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingSix">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseSix" aria-expanded="false" aria-controls="function-collapseSix">
-              #6. WAP 
+              #6. WAP to Convert Decimal Number into Octal Number.
             </button>
           </h2>
           <div id="function-collapseSix" class="accordion-collapse collapse" aria-labelledby="function-headingSix" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt 
+
+int toOctal(int num) {
+    int x = 1;
+    int res = 0;
+    while(num &gt 0) {
+        int temp = num % 8;
+        num /= 8;
+        res = res + temp * x;
+        x *= 10;
+    }
+
+    return res;
+}
+
+void main()
+{
+    int num;
+    printf("Enter a number\n");
+    scanf("%d",&num);
+
+    int res = toOctal(num);
+
+    printf("Octal Number of %d is %d.\n",num , res);
+}
+
+// OUTPUT
+
+// Enter a number
+// 15
+// Octal Number of 15 is 17.
+              
+                            </code></pre></div>
           </div>
 
         </div>
@@ -4109,11 +4267,43 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingSeven">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseSeven" aria-expanded="false" aria-controls="function-collapseSeven">
-              #7. WAP 
+              #7. WAP to Convert Decimal Number into Hexa-Decimal Number.
             </button>
           </h2>
           <div id="function-collapseSeven" class="accordion-collapse collapse" aria-labelledby="function-headingSeven" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ttstdio.h&gt 
+
+int toHexaDecimal(int num) {
+    int x = 1;
+    int res = 0;
+    while(num &gt 0) {
+        int temp = num % 16;
+        num /= 16;
+        res = res + temp * x;
+        x *= 10;
+    }
+
+    return res;
+}
+
+void main()
+{
+    int num;
+    printf("Enter a number\n");
+    scanf("%d",&num);
+
+    int res = toHexaDecimal(num);
+
+    printf("Hexa-Decimal Number of %d is %d.\n",num , res);
+}
+
+// OUTPUT
+
+// Enter a number
+// 150
+// Hexa-Decimal Number of 150 is 96.
+                            
+                                          </code></pre></div>
           </div>
 
         </div> 
@@ -4123,11 +4313,46 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingEight">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseEight" aria-expanded="false" aria-controls="function-collapseEight">
-              #8. WAP 
+              #8. WAP to Convert Binary Number into Decimal Number.
             </button>
           </h2>
           <div id="function-collapseEight" class="accordion-collapse collapse" aria-labelledby="function-headingEight" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+int toDecimal(int bNum) {
+    int res = 0;
+    int x = 1;
+
+    while(bNum &gt 0) {
+        int temp = bNum % 10;
+        bNum /= 10;
+
+        res += temp * x;
+        x *= 2; 
+
+    }
+
+    return res;
+}
+
+void main()
+{
+    int bNum;
+    printf("Enter a Binary Number.\n");
+    scanf("%d",&bNum);
+
+    int res = toDecimal(bNum);
+
+    printf("Decimal of %d is %d\n",bNum , res);
+}
+
+// OUTPUT
+
+// Enter a Binary Number.
+// 1010
+// Decimal of 1010 is 10
+
+              </code></pre></div>
           </div>
 
         </div>
@@ -4137,11 +4362,44 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingNine">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseNine" aria-expanded="false" aria-controls="function-collapseNine">
-              #9. WAP 
+              #9. WAP to Check Weather a Given Number is Prime or Not.
             </button>
           </h2>
           <div id="function-collapseNine" class="accordion-collapse collapse" aria-labelledby="function-headingNine" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+#include &ltstdbool.h&gt
+
+bool isPrime(int num) {
+    
+    for(int i = 2; i &lt= num / 2; i++) {
+        if(num % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+void main()
+{
+    int num;
+    printf("Enter a Number.\n");
+    scanf("%d",&num);
+    
+    bool res = isPrime(num);
+
+    if(res) {
+        printf("%d is is Prime Number.\n",num);
+    } else {
+        printf("%d is Not Prime Number.\n",num);
+    }
+}
+
+// OUTPUT
+
+// Enter a Number.
+// 15
+// 15 is Not Prime Number.</code></pre></div>
           </div>
 
         </div>
@@ -4151,11 +4409,44 @@ int main()
         <div class="accordion-item">
           <h2 class="accordion-header" id="function-headingTen">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#function-collapseTen" aria-expanded="false" aria-controls="function-collapseTen">
-              #10. WAP 
+              #10. WAP to Find Greater among two Number.
             </button>
           </h2>
           <div id="function-collapseTen" class="accordion-collapse collapse" aria-labelledby="function-headingTen" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><pre class="language-c"><code>#Loading....</code></pre></div>
+            <div class="accordion-body"><pre class="language-c"><code>#include &ltstdio.h&gt
+
+int greaterAmongTwo(int num1 , int num2) {
+    
+    if(num1 > num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
+
+void main()
+{
+    int num1 , num2;
+    
+    printf("Enter 1st number.\n");
+    scanf("%d",&num1);
+
+    printf("Enter 2nd number.\n");
+    scanf("%d",&num2);
+
+    int res = greaterAmongTwo(num1 , num2);
+
+    printf("%d is Greater among %d and %d",res , num1 ,num2);
+
+}
+
+// OUTPUT
+
+// Enter 1st number.
+// 5
+// Enter 2nd number.
+// 6
+// 6 is Greater among 5 and 6</code></pre></div>
           </div>
 
         </div> 
